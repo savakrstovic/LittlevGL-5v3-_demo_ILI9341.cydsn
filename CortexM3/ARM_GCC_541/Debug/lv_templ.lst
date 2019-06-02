@@ -1,0 +1,127 @@
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccWlJK8L.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"lv_templ.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.inline.d4b8038,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d\000\001&\006d\000\000\000\236\000\010"
+  19      60640001 
+  19      26066400 
+  19      00009E00 
+  19      08
+  20              		.text
+  21              		.section	.gnu.lto_.symbol_nodes.d4b8038,"",%progbits
+  22 0000 789C6361 		.ascii	"x\234ca`d`b\000\001\000\000F\000\010"
+  22      60646062 
+  22      00010000 
+  22      460008
+  23              		.text
+  24              		.section	.gnu.lto_.refs.d4b8038,"",%progbits
+  25 0000 789C6361 		.ascii	"x\234ca`\004B \000\000\0009\000\007"
+  25      60044220 
+  25      00000039 
+  25      0007
+  26              		.text
+  27              		.section	.gnu.lto_.decls.d4b8038,"",%progbits
+  28 0000 789C6361 		.ascii	"x\234ca`d\200\001\020K\005\210\377\003\001\210\035\306"
+  28      60648001 
+  28      104B0588 
+  28      FF030188 
+  28      1DC6
+  29 0012 40000000 		.ascii	"@\000\000\000\260\216\004~"
+  29      B08E047E 
+  30              		.text
+  31              		.section	.gnu.lto_.symtab.d4b8038,"",%progbits
+  32              		.text
+  33              		.section	.gnu.lto_.opts,"",%progbits
+  34 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+  34      6174682D 
+  34      6572726E 
+  34      6F272027 
+  34      2D667369 
+  35 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-strict-overflow' '-fno-openmp' '-"
+  35      2D747261 
+  35      70762720 
+  35      272D666E 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccWlJK8L.s 			page 2
+
+
+  35      6F2D7374 
+  36 0066 666E6F2D 		.ascii	"fno-openacc' '-mcpu=cortex-m3' '-mthumb' '-g' '-O0'"
+  36      6F70656E 
+  36      61636327 
+  36      20272D6D 
+  36      6370753D 
+  37 0099 20272D66 		.ascii	" '-ffunction-sections' '-ffat-lto-objects' '-finlin"
+  37      66756E63 
+  37      74696F6E 
+  37      2D736563 
+  37      74696F6E 
+  38 00cc 652D6675 		.ascii	"e-functions' '-flto'\000"
+  38      6E637469 
+  38      6F6E7327 
+  38      20272D66 
+  38      6C746F27 
+  39              		.text
+  40              		.cfi_sections	.debug_frame
+  41              	.Letext0:
+  42              		.section	.debug_line,"",%progbits
+  43              	.Ldebug_line0:
+  44              		.section	.debug_str,"MS",%progbits,1
+  45              	.LASF0:
+  46 0000 6C76676C 		.ascii	"lvgl\\lv_misc\\lv_templ.c\000"
+  46      5C6C765F 
+  46      6D697363 
+  46      5C6C765F 
+  46      74656D70 
+  47              	.LASF1:
+  48 0018 433A5C55 		.ascii	"C:\\Users\\Sava\\Documents\\PSoC Creator\\GUI_and_d"
+  48      73657273 
+  48      5C536176 
+  48      615C446F 
+  48      63756D65 
+  49 0046 6973706C 		.ascii	"isplay\\LittlevGL(5v3)_demo_ILI9341.cydsn\000"
+  49      61795C4C 
+  49      6974746C 
+  49      6576474C 
+  49      28357633 
+  50              	.LASF2:
+  51 006f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+  51      43313120 
+  51      352E342E 
+  51      31203230 
+  51      31363036 
+  52 00a2 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+  52      20726576 
+  52      6973696F 
+  52      6E203233 
+  52      37373135 
+  53 00d5 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects -finline-fu"
+  53      66756E63 
+  53      74696F6E 
+  53      2D736563 
+  53      74696F6E 
+  54 0108 6E637469 		.ascii	"nctions -flto\000"
+  54      6F6E7320 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccWlJK8L.s 			page 3
+
+
+  54      2D666C74 
+  54      6F00
+  55              		.comm	__gnu_lto_v1,1,1
+  56              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

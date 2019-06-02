@@ -1,0 +1,311 @@
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"lv_theme_templ.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.inline.d4c032b,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d\000\001&\006d\000\000\000\236\000\010"
+  19      60640001 
+  19      26066400 
+  19      00009E00 
+  19      08
+  20              		.text
+  21              		.section	.gnu.lto_.symbol_nodes.d4c032b,"",%progbits
+  22 0000 789C6361 		.ascii	"x\234ca`d`b\000\001\000\000F\000\010"
+  22      60646062 
+  22      00010000 
+  22      460008
+  23              		.text
+  24              		.section	.gnu.lto_.refs.d4c032b,"",%progbits
+  25 0000 789C6361 		.ascii	"x\234ca`\004B \000\000\0009\000\007"
+  25      60044220 
+  25      00000039 
+  25      0007
+  26              		.text
+  27              		.section	.gnu.lto_.decls.d4c032b,"",%progbits
+  28 0000 789C6361 		.ascii	"x\234ca`d\200\001\020K\005\210\377\003\001\210\035\306"
+  28      60648001 
+  28      104B0588 
+  28      FF030188 
+  28      1DC6
+  29 0012 40000000 		.ascii	"@\000\000\000\260\216\004~"
+  29      B08E047E 
+  30              		.text
+  31              		.section	.gnu.lto_.symtab.d4c032b,"",%progbits
+  32              		.text
+  33              		.section	.gnu.lto_.opts,"",%progbits
+  34 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+  34      6174682D 
+  34      6572726E 
+  34      6F272027 
+  34      2D667369 
+  35 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-strict-overflow' '-fno-openmp' '-"
+  35      2D747261 
+  35      70762720 
+  35      272D666E 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 2
+
+
+  35      6F2D7374 
+  36 0066 666E6F2D 		.ascii	"fno-openacc' '-mcpu=cortex-m3' '-mthumb' '-g' '-O0'"
+  36      6F70656E 
+  36      61636327 
+  36      20272D6D 
+  36      6370753D 
+  37 0099 20272D66 		.ascii	" '-ffunction-sections' '-ffat-lto-objects' '-finlin"
+  37      66756E63 
+  37      74696F6E 
+  37      2D736563 
+  37      74696F6E 
+  38 00cc 652D6675 		.ascii	"e-functions' '-flto'\000"
+  38      6E637469 
+  38      6F6E7327 
+  38      20272D66 
+  38      6C746F27 
+  39              		.text
+  40              		.cfi_sections	.debug_frame
+  41              	.Letext0:
+  42              		.section	.debug_info,"",%progbits
+  43              	.Ldebug_info0:
+  44 0000 75000000 		.4byte	0x75
+  45 0004 0400     		.2byte	0x4
+  46 0006 00000000 		.4byte	.Ldebug_abbrev0
+  47 000a 04       		.byte	0x4
+  48 000b 01       		.uleb128 0x1
+  49 000c F6000000 		.4byte	.LASF12
+  50 0010 0C       		.byte	0xc
+  51 0011 1B000000 		.4byte	.LASF13
+  52 0015 3B000000 		.4byte	.LASF14
+  53 0019 00000000 		.4byte	.Ldebug_line0
+  54 001d 02       		.uleb128 0x2
+  55 001e 01       		.byte	0x1
+  56 001f 06       		.byte	0x6
+  57 0020 EA000000 		.4byte	.LASF0
+  58 0024 02       		.uleb128 0x2
+  59 0025 01       		.byte	0x1
+  60 0026 08       		.byte	0x8
+  61 0027 BB000000 		.4byte	.LASF1
+  62 002b 02       		.uleb128 0x2
+  63 002c 02       		.byte	0x2
+  64 002d 05       		.byte	0x5
+  65 002e A9010000 		.4byte	.LASF2
+  66 0032 02       		.uleb128 0x2
+  67 0033 02       		.byte	0x2
+  68 0034 07       		.byte	0x7
+  69 0035 D7000000 		.4byte	.LASF3
+  70 0039 02       		.uleb128 0x2
+  71 003a 04       		.byte	0x4
+  72 003b 05       		.byte	0x5
+  73 003c CE000000 		.4byte	.LASF4
+  74 0040 02       		.uleb128 0x2
+  75 0041 04       		.byte	0x4
+  76 0042 07       		.byte	0x7
+  77 0043 92000000 		.4byte	.LASF5
+  78 0047 02       		.uleb128 0x2
+  79 0048 08       		.byte	0x8
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 3
+
+
+  80 0049 05       		.byte	0x5
+  81 004a 00000000 		.4byte	.LASF6
+  82 004e 02       		.uleb128 0x2
+  83 004f 08       		.byte	0x8
+  84 0050 07       		.byte	0x7
+  85 0051 A4000000 		.4byte	.LASF7
+  86 0055 03       		.uleb128 0x3
+  87 0056 04       		.byte	0x4
+  88 0057 05       		.byte	0x5
+  89 0058 696E7400 		.ascii	"int\000"
+  90 005c 02       		.uleb128 0x2
+  91 005d 04       		.byte	0x4
+  92 005e 07       		.byte	0x7
+  93 005f 0E000000 		.4byte	.LASF8
+  94 0063 02       		.uleb128 0x2
+  95 0064 08       		.byte	0x8
+  96 0065 04       		.byte	0x4
+  97 0066 9D010000 		.4byte	.LASF9
+  98 006a 02       		.uleb128 0x2
+  99 006b 04       		.byte	0x4
+ 100 006c 07       		.byte	0x7
+ 101 006d B3010000 		.4byte	.LASF10
+ 102 0071 02       		.uleb128 0x2
+ 103 0072 01       		.byte	0x1
+ 104 0073 08       		.byte	0x8
+ 105 0074 C9000000 		.4byte	.LASF11
+ 106 0078 00       		.byte	0
+ 107              		.section	.debug_abbrev,"",%progbits
+ 108              	.Ldebug_abbrev0:
+ 109 0000 01       		.uleb128 0x1
+ 110 0001 11       		.uleb128 0x11
+ 111 0002 01       		.byte	0x1
+ 112 0003 25       		.uleb128 0x25
+ 113 0004 0E       		.uleb128 0xe
+ 114 0005 13       		.uleb128 0x13
+ 115 0006 0B       		.uleb128 0xb
+ 116 0007 03       		.uleb128 0x3
+ 117 0008 0E       		.uleb128 0xe
+ 118 0009 1B       		.uleb128 0x1b
+ 119 000a 0E       		.uleb128 0xe
+ 120 000b 10       		.uleb128 0x10
+ 121 000c 17       		.uleb128 0x17
+ 122 000d 00       		.byte	0
+ 123 000e 00       		.byte	0
+ 124 000f 02       		.uleb128 0x2
+ 125 0010 24       		.uleb128 0x24
+ 126 0011 00       		.byte	0
+ 127 0012 0B       		.uleb128 0xb
+ 128 0013 0B       		.uleb128 0xb
+ 129 0014 3E       		.uleb128 0x3e
+ 130 0015 0B       		.uleb128 0xb
+ 131 0016 03       		.uleb128 0x3
+ 132 0017 0E       		.uleb128 0xe
+ 133 0018 00       		.byte	0
+ 134 0019 00       		.byte	0
+ 135 001a 03       		.uleb128 0x3
+ 136 001b 24       		.uleb128 0x24
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 4
+
+
+ 137 001c 00       		.byte	0
+ 138 001d 0B       		.uleb128 0xb
+ 139 001e 0B       		.uleb128 0xb
+ 140 001f 3E       		.uleb128 0x3e
+ 141 0020 0B       		.uleb128 0xb
+ 142 0021 03       		.uleb128 0x3
+ 143 0022 08       		.uleb128 0x8
+ 144 0023 00       		.byte	0
+ 145 0024 00       		.byte	0
+ 146 0025 00       		.byte	0
+ 147              		.section	.debug_aranges,"",%progbits
+ 148 0000 14000000 		.4byte	0x14
+ 149 0004 0200     		.2byte	0x2
+ 150 0006 00000000 		.4byte	.Ldebug_info0
+ 151 000a 04       		.byte	0x4
+ 152 000b 00       		.byte	0
+ 153 000c 0000     		.2byte	0
+ 154 000e 0000     		.2byte	0
+ 155 0010 00000000 		.4byte	0
+ 156 0014 00000000 		.4byte	0
+ 157              		.section	.debug_line,"",%progbits
+ 158              	.Ldebug_line0:
+ 159 0000 19000000 		.section	.debug_str,"MS",%progbits,1
+ 159      02001300 
+ 159      00000201 
+ 159      FB0E0D00 
+ 159      01010101 
+ 160              	.LASF6:
+ 161 0000 6C6F6E67 		.ascii	"long long int\000"
+ 161      206C6F6E 
+ 161      6720696E 
+ 161      7400
+ 162              	.LASF8:
+ 163 000e 756E7369 		.ascii	"unsigned int\000"
+ 163      676E6564 
+ 163      20696E74 
+ 163      00
+ 164              	.LASF13:
+ 165 001b 6C76676C 		.ascii	"lvgl\\lv_themes\\lv_theme_templ.c\000"
+ 165      5C6C765F 
+ 165      7468656D 
+ 165      65735C6C 
+ 165      765F7468 
+ 166              	.LASF14:
+ 167 003b 433A5C55 		.ascii	"C:\\Users\\Sava\\Documents\\PSoC Creator\\GUI_and_d"
+ 167      73657273 
+ 167      5C536176 
+ 167      615C446F 
+ 167      63756D65 
+ 168 0069 6973706C 		.ascii	"isplay\\LittlevGL(5v3)_demo_ILI9341.cydsn\000"
+ 168      61795C4C 
+ 168      6974746C 
+ 168      6576474C 
+ 168      28357633 
+ 169              	.LASF5:
+ 170 0092 6C6F6E67 		.ascii	"long unsigned int\000"
+ 170      20756E73 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 5
+
+
+ 170      69676E65 
+ 170      6420696E 
+ 170      7400
+ 171              	.LASF7:
+ 172 00a4 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 172      206C6F6E 
+ 172      6720756E 
+ 172      7369676E 
+ 172      65642069 
+ 173              	.LASF1:
+ 174 00bb 756E7369 		.ascii	"unsigned char\000"
+ 174      676E6564 
+ 174      20636861 
+ 174      7200
+ 175              	.LASF11:
+ 176 00c9 63686172 		.ascii	"char\000"
+ 176      00
+ 177              	.LASF4:
+ 178 00ce 6C6F6E67 		.ascii	"long int\000"
+ 178      20696E74 
+ 178      00
+ 179              	.LASF3:
+ 180 00d7 73686F72 		.ascii	"short unsigned int\000"
+ 180      7420756E 
+ 180      7369676E 
+ 180      65642069 
+ 180      6E7400
+ 181              	.LASF0:
+ 182 00ea 7369676E 		.ascii	"signed char\000"
+ 182      65642063 
+ 182      68617200 
+ 183              	.LASF12:
+ 184 00f6 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 184      43313120 
+ 184      352E342E 
+ 184      31203230 
+ 184      31363036 
+ 185 0129 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 185      20726576 
+ 185      6973696F 
+ 185      6E203233 
+ 185      37373135 
+ 186 015c 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 186      66756E63 
+ 186      74696F6E 
+ 186      2D736563 
+ 186      74696F6E 
+ 187 018f 6E637469 		.ascii	"nctions -flto\000"
+ 187      6F6E7320 
+ 187      2D666C74 
+ 187      6F00
+ 188              	.LASF9:
+ 189 019d 6C6F6E67 		.ascii	"long double\000"
+ 189      20646F75 
+ 189      626C6500 
+ 190              	.LASF2:
+ 191 01a9 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc83kfac.s 			page 6
+
+
+ 191      7420696E 
+ 191      7400
+ 192              	.LASF10:
+ 193 01b3 73697A65 		.ascii	"sizetype\000"
+ 193      74797065 
+ 193      00
+ 194              		.comm	__gnu_lto_v1,1,1
+ 195              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

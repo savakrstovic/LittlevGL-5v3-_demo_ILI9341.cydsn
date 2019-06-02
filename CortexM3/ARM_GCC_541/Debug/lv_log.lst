@@ -1,0 +1,1475 @@
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"lv_log.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.inline.d4ba533,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d\000\001\023\006\004`b``a\006R,\037\364\030"
+  19      60640001 
+  19      13060460 
+  19      62606061 
+  19      06522C1F 
+  20 0016 58403C90 		.ascii	"X@<\220\220\220,\220\024Z0\207\021&\304.\014T6\301\017"
+  20      90902C90 
+  20      145A3087 
+  20      1126C42E 
+  20      0C5436C1 
+  21 002b 0219007E 		.ascii	"\002\031\000~\006\006\213"
+  21      06068B
+  22              		.text
+  23              		.section	.gnu.lto_lv_log_register_print.d4ba533,"",%progbits
+  24 0000 789C2550 		.ascii	"x\234%P=K\003A\020\235\267sIPPl\024\224 \351B\012\375"
+  24      3D4B0341 
+  24      109DB773 
+  24      4950506C 
+  24      149420E9 
+  25 0017 31D68245 		.ascii	"1\326\202E\320 \234X\010i\263^r\250\225\205\250\020"
+  25      D0209C58 
+  25      0869B35E 
+  25      72A89585 
+  25      A810
+  26 0029 94601112 		.ascii	"\224`\021\022\277\022-S\010G\320N\221\024V6\301\300"
+  26      BF122D53 
+  26      0847D04E 
+  26      91145636 
+  26      C1C0
+  27 003b 09C12201 		.ascii	"\011\301\"\001-c\2349\007\226\331\367v\346\315\333q"
+  27      2D639C39 
+  27      0796D9F7 
+  27      76E6CDDB 
+  27      71
+  28 004c 08A4B124 		.ascii	"\010\244\261$iA\362\254\002&\030\222\003}\003\025\014"
+  28      6941F2AC 
+  28      02261892 
+  28      037D0315 
+  28      0C
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 2
+
+
+  29 005d 0AF83123 		.ascii	"\012\3701#\203\366^\3302\231\232\225\350VO\331\326\003"
+  29      83F65ED8 
+  29      32999A95 
+  29      E8564FD9 
+  29      D603
+  30 006f F84C3436 		.ascii	"\370L46\221\006\241\206\214TuJwg\374m|\006\034\201\303"
+  30      9106A186 
+  30      8C54754A 
+  30      7767FC6D 
+  30      7C061C81 
+  31 0084 97726F5A 		.ascii	"\227roZ\241AJ\340\347\223\3273<\017\222{\3308\354:\351"
+  31      A1414AE0 
+  31      E793D733 
+  31      3C0F927B 
+  31      D838EC3A 
+  32 0099 AAB59EB5 		.ascii	"\252\265\236\265G\353v\302g\306\025X\364p\211$\352H"
+  32      47EB76C2 
+  32      67C61558 
+  32      F4708924 
+  32      EA48
+  33 00ab 9250846B 		.ascii	"\222P\204k\244\265\374\343\376\367x*^\322\361\251\377"
+  33      A4B5FCE3 
+  33      FEF7782A 
+  33      5ED2F1A9 
+  33      FF
+  34 00bc A1B8415C 		.ascii	"\241\270A\\M6W\002;\036\027m\360\020\273`G\214k\007"
+  34      4D365702 
+  34      3B1E176D 
+  34      F010BB60 
+  34      478C6B07 
+  35 00d0 0D225F43 		.ascii	"\015\"_C#\211Cx\345asQ\033D\351\304o\277&\324\223\023"
+  35      23894378 
+  35      E5617351 
+  35      1B44E9C4 
+  35      6FBF26D4 
+  36 00e6 F968B5BE 		.ascii	"\371h\265\276\336\023\205\221\335\267vF\270\003\371"
+  36      DE138591 
+  36      DDB77646 
+  36      B803F9
+  37 00f5 93D2FDE7 		.ascii	"\223\322\375\347\267\307\311\012\316wm\3043\032\262"
+  37      B7C7C90A 
+  37      CE776DC4 
+  37      331AB2
+  38 0104 885B3145 		.ascii	"\210[1Eh\242\202\"\033\352\303\013:1U\215600\342F\306"
+  38      68A28222 
+  38      1BEAC30B 
+  38      3A31558D 
+  38      363030E2 
+  39 011a CDB9F99C 		.ascii	"\315\271\371\234\273\352\346\327\2666w\262\232\335\355"
+  39      BBEAE6D7 
+  39      B63677B2 
+  39      9ADDED
+  40 0129 DC7296B0 		.ascii	"\334r\226\260\361\007\037:k\267"
+  40      F1071F3A 
+  40      6BB7
+  41              		.text
+  42              		.section	.gnu.lto_lv_log_add.d4ba533,"",%progbits
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 3
+
+
+  43 0000 789C9593 		.ascii	"x\234\225\223MHTQ\024\307\357\271\347}\314\230\015\256"
+  43      4D485451 
+  43      14C7EFB9 
+  43      E77DCC98 
+  43      0DAE
+  44 0012 8A40C845 		.ascii	"\212@\310E\".\022\253\215\320&hU\313\326\205\3204\311"
+  44      222E12AB 
+  44      8DD02668 
+  44      55CBD685 
+  44      D034C9
+  45 0025 C0CB22C3 		.ascii	"\300\313\"\303\255WgF\233]B\032~\033!jV~\224\037c\231"
+  45      AD576746 
+  45      9B5D421A 
+  45      7E1B216A 
+  45      567E941F 
+  46 003b 931FAD0C 		.ascii	"\223\037\255\014\323\014\212\301\350\303\206\220(G\262"
+  46      D30C8AC1 
+  46      E8C38690 
+  46      2847B2
+  47 004a 9D4EE7DC 		.ascii	"\235N\347\334y(\305lz\360\336\275\367\334\373\373\377"
+  47      7928C56C 
+  47      7AF0DEBD 
+  47      F7DCFBFB 
+  47      FF
+  48 005b EF3BF75C 		.ascii	"\357;\367\\C\200\340g\022\2058C\355Y\036x\004HA\257"
+  48      4380E067 
+  48      12853843 
+  48      ED591E78 
+  48      044841AF 
+  49 006f A4A09206 		.ascii	"\244\240\222\006}\014\004\233\"\20649bs\304\224\326"
+  49      7D0C049B 
+  49      22863439 
+  49      6273C494 
+  49      D6
+  50 0080 6EDFD2B3 		.ascii	"n\337\322\2636\260\026\210\032\211\206i\331P\003[r["
+  50      36B01688 
+  50      1A898669 
+  50      D950035B 
+  50      725B
+  51 0092 C24C4332 		.ascii	"\302LC2&\213{\025=\037{:Q\365\305!B\302i\251\215\005"
+  51      268B7B15 
+  51      3D1F7B3A 
+  51      51F5C521 
+  51      42C269A9 
+  52 00a8 F44231AD 		.ascii	"\364B1\255z\333\224N\372\360\020\010\352\177]\213&\214"
+  52      7ADB944E 
+  52      FAF01008 
+  52      EA7F5D8B 
+  52      268C
+  53 00ba A21E2654 		.ascii	"\242\036&T\343\005\205\021\004\350\003$\002N\344Ci\276"
+  53      E3058511 
+  53      04E80324 
+  53      024EE443 
+  53      69BE
+  54 00cc A080807E 		.ascii	"\240\200\200~(\242\265K\341\241v\374%#(\301\240a\352"
+  54      28A2B54B 
+  54      E1A176FC 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 4
+
+
+  54      252328C1 
+  54      A061EA
+  55 00df 55EB171F 		.ascii	"U\353\027\037\017\021\012h\330=\337X\206\207\265h\353"
+  55      0F110A68 
+  55      D83DDF58 
+  55      8687B568 
+  55      EB
+  56 00f0 6CBAD164 		.ascii	"l\272\321d\321:\245\336\007\2247\202\006<\310\210\016"
+  56      D13AA5DE 
+  56      07943782 
+  56      063CC888 
+  56      0E
+  57 0101 403EDC07 		.ascii	"@>\334\007\2265\004<\324\262m;\233\365\200G4\331\220"
+  57      9635043C 
+  57      D4B26D3B 
+  57      9BF58047 
+  57      34D990
+  58 0114 9EEEF4BA 		.ascii	"\236\356\364\272\333\331\326\244\011\217\376%M\001\203"
+  58      DBD9D6A4 
+  58      098FFE25 
+  58      4D0183
+  59 0123 9A6C5A9E 		.ascii	"\232lZ\236\352\360a\261&\333&\306\332\245\353\371\346"
+  59      EAF061B1 
+  59      26DB26C6 
+  59      DAA5EBF9 
+  59      E6
+  60 0134 65AEBA05 		.ascii	"e\256\272\005\354:\224\305u\030\212\030\370<\274\323"
+  60      EC3A94C5 
+  60      75188A18 
+  60      F83CBCD3 
+  61 0144 B4DF0AB3 		.ascii	"\264\337\012\263SA&C0\002\026\245\025ir\365\303\370"
+  61      53412643 
+  61      300216A5 
+  61      156972F5 
+  61      C3F8
+  62 0156 B2C4A35A 		.ascii	"\262\304\243Zy\371\366oo\341=\026\216\337\251\367\265"
+  62      79F9F66F 
+  62      6FE13D16 
+  62      8EDFA9F7 
+  62      B5
+  63 0167 F4C5C305 		.ascii	"\364\305\303\005\021\264\340\361\337\322:\277O\240\220"
+  63      11B4E0F1 
+  63      DFD23ABF 
+  63      4FA090
+  64 0176 80C1C462 		.ascii	"\200\301\304b\332\207e\032^\231[I\346fh\265\272\326"
+  64      DA87651A 
+  64      5E995B49 
+  64      E66668B5 
+  64      BAD6
+  65 0188 0D2A7A8A 		.ascii	"\015*z\212\341\321,\360\230\206\177$\373k}xZ\303K\365"
+  65      E1D12CF0 
+  65      98867F24 
+  65      FB6B7D78 
+  65      5AC34BF5 
+  66 019c 93B3960B 		.ascii	"\223\263\226\013\217\274V\300\3066\214ga'\240p\360\\"
+  66      8FBC56C0 
+  66      C6368C67 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 5
+
+
+  66      6127A070 
+  66      F05C
+  67 01ae 5CA5D321 		.ascii	"\\\245\323!\025\3372c\271\373$\360\241\031\364\307\226"
+  67      15DF3263 
+  67      B9FB24F0 
+  67      A119F4C7 
+  67      96
+  68 01bf C91F0B38 		.ascii	"\311\037\0138g6um\017p\342\275\240\023!6tm\244$5\370"
+  68      6736756D 
+  68      0F70E2BD 
+  68      A0132136 
+  68      746DA424 
+  69 01d5 09C2EF42 		.ascii	"\011\302\357B?Or\036B\310\365\024mo\031\260\371\210"
+  69      3F4F721E 
+  69      42C8F514 
+  69      6D6F19B0 
+  69      F988
+  70 01e7 011062AE 		.ascii	"\001\020b\256\331\006\327*\246\270X3\304\026\356\021"
+  70      D906D72A 
+  70      A6B85833 
+  70      C416EE11 
+  71 01f7 A30D0BC3 		.ascii	"\243\015\013\3039\031\002`\322%R\\\313\230\204\272\346"
+  71      39190260 
+  71      D225525C 
+  71      CB9884BA 
+  71      E6
+  72 0208 D4FC0B77 		.ascii	"\324\374\013w1WPsdfQ\313{\364\357\306b\337\023v\315"
+  72      31575073 
+  72      646651CB 
+  72      7BF4EFC6 
+  72      62DF1376 
+  73 021d B6BAA954 		.ascii	"\266\272\251T\036\305\242d\303\341\365\205\267s9]\320"
+  73      1EC5A264 
+  73      C3E1F585 
+  73      B773395D 
+  73      D0
+  74 022e 51AB74DC 		.ascii	"Q\253t\334\202gT\356OY\032\246\240\013\004\355!\021"
+  74      826754EE 
+  74      4F591AA6 
+  74      A00B04ED 
+  74      2111
+  75 0240 AACCA24A 		.ascii	"\252\314\242J\207\011\317w\267`\271[\270{0\263\324\374"
+  75      8709CF77 
+  75      B760B95B 
+  75      B87B30B3 
+  75      D4FC
+  76 0252 0FC7E95D 		.ascii	"\017\307\351]\3078;\222\314\246\235Q\261Ch\211o\240"
+  76      C7383B92 
+  76      CCA69D51 
+  76      B1436889 
+  76      6FA0
+  77 0264 478244E9 		.ascii	"G\202D\351\225!\364\350\011\252^\257\266\246\033\213"
+  77      9521F4E8 
+  77      09AA5EAF 
+  77      B6A61B8B 
+  78 0274 6B509B27 		.ascii	"kP\233'\024]\246u\250\313\023n\"\251\332(\357\007\234"
+  78      145DA675 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 6
+
+
+  78      A8CB136E 
+  78      22A9DA28 
+  78      EF079C
+  79 0287 EA0AE7BC 		.ascii	"\352\012\347\274S]~%X\345\347\326\271ZQ\342\027\246"
+  79      535D7E25 
+  79      58E5E7D6 
+  79      B95A51E2 
+  79      17A6
+  80 0299 13A80E38 		.ascii	"\023\250\0168\306\345\240\0230\234`e\000/U\371s\256"
+  80      C6E5A013 
+  80      309C6065 
+  80      002F55F9 
+  80      73AE
+  81 02ab 5D0F56DE 		.ascii	"]\017V\336(\367_,)\335\353\036\263x\272\344\370\037"
+  81      28F75F2C 
+  81      29DDEB1E 
+  81      B378BAE4 
+  81      F81F
+  82 02bd E3253E9D 		.ascii	"\343%>\235"
+  83              		.text
+  84              		.section	.gnu.lto_.symbol_nodes.d4ba533,"",%progbits
+  85 0000 789C6361 		.ascii	"x\234ca`d0a\000\002&\306z\006\206\011\347\030\030\200"
+  85      60643061 
+  85      000226C6 
+  85      7A068609 
+  85      E7181880 
+  86 0014 D4AA4645 		.ascii	"\324\252FE\006\006V\006\206\026!\006\006f&\246zF\024"
+  86      06065606 
+  86      86162106 
+  86      066626A6 
+  86      7A4614
+  87 0027 09162686 		.ascii	"\011\026&\206\317\017\377920\000\000\016\263\013I"
+  87      CF0FFF39 
+  87      32300000 
+  87      0EB30B49 
+  88              		.text
+  89              		.section	.gnu.lto_.refs.d4ba533,"",%progbits
+  90 0000 789C6361 		.ascii	"x\234ca`d\340c`\000\222\214\214\214LL\014\214\314\014"
+  90      6064E063 
+  90      6000928C 
+  90      8C8C4C4C 
+  90      0C8CCC0C 
+  91 0014 8CAC0C00 		.ascii	"\214\254\014\000\001\361\000&"
+  91      01F10026 
+  92              		.text
+  93              		.section	.gnu.lto_.decls.d4ba533,"",%progbits
+  94 0000 789CBD55 		.ascii	"x\234\275U]L\034U\024\236\2633]\226\351B\015\251\300"
+  94      5D4C1C55 
+  94      149EB333 
+  94      5D96E942 
+  94      0DA9C0
+  95 0013 030F6B2B 		.ascii	"\003\017k+\202\017\335H\213\206\370jR}2}\261Oc&\313"
+  95      820FDD48 
+  95      8B86F86A 
+  95      527D327D 
+  95      B14F6326 
+  96 0028 32854D96 		.ascii	"2\205M\226\335\315\354B$1\351\345'\026\245\021P!-\245"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 7
+
+
+  96      DDCDEC42 
+  96      2431E9E5 
+  96      2716A511 
+  96      50212DA5 
+  97 003c 4A29955F 		.ascii	"J)\225_\373\007(\250\264[\212\374\263\224\345\337\266"
+  97      FB0728A8 
+  97      B45B8AFC 
+  97      B394E5DF 
+  97      B6
+  98 004d 29496362 		.ascii	")Icb\250&\265i\242\005j=w\356\354\316\026\227\370\346"
+  98      A826B569 
+  98      A2056A3D 
+  98      77EEECCE 
+  98      1697F8E6 
+  99 0061 0D97B9F7 		.ascii	"\015\227\271\367\334\357\234\357|\337\334\001\201\003"
+  99      DCEF9CEF 
+  99      7CDFDC01 
+  99      8103
+ 100 006f 8E8E0B66 		.ascii	"\216\216\013f\216\373\002\227A\\?\303\301\343\363(g"
+ 100      8EFB0297 
+ 100      415C3FC3 
+ 100      C1E3F328 
+ 100      67
+ 101 0080 0C13CE10 		.ascii	"\014\023\316\020\316E\2344c\231{~\320\263]zN\012\316"
+ 101      CE459C34 
+ 101      63997B7E 
+ 101      D0B35D7A 
+ 101      4E0ACE
+ 102 0093 BD38A770 		.ascii	"\2758\247p\256\350\347\240c\342\345\322\232\242\236"
+ 102      AEE8E7A0 
+ 102      63E2E5D2 
+ 102      9AA29E
+ 103 00a2 3B16937F 		.ascii	";\026\223\177\025\347\021\275N\226^k2\246\336\242\336"
+ 103      15E711BD 
+ 103      4E965E6B 
+ 103      32A6DEA2 
+ 103      DE
+ 104 00b3 17ADB7BA 		.ascii	"\027\255\267\272\255\346S\023lm\206n$\334\206U\012\005"
+ 104      ADE65313 
+ 104      6C6D866E 
+ 104      24DC8655 
+ 104      0A05
+ 105 00c5 3A385D6B 		.ascii	":8]kt\000\233\000Q\211\006\002\340\337`\255\204\021"
+ 105      74009B00 
+ 105      51890602 
+ 105      E0DF60AD 
+ 105      8411
+ 106 00d7 DF06D07C 		.ascii	"\337\006\320|\323\206q\000\214\230%\305\342#\324H\313"
+ 106      D3867100 
+ 106      8C9825C5 
+ 106      E223D448 
+ 106      CB
+ 107 00e8 96C045BB 		.ascii	"\226\300E\273\210`c\352\351\335\033\315n\033|D\364D"
+ 107      886063EA 
+ 107      E9DD1BCD 
+ 107      6E1B7C44 
+ 107      F444
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 8
+
+
+ 108 00fa E8AB4681 		.ascii	"\350\253F\201\307\232\270\276\367\244\343\260\275\207"
+ 108      C79AB8BE 
+ 108      F7A4E3B0 
+ 108      BD87
+ 109 0108 E0A823C4 		.ascii	"\340\250#\304\224g83Wu\271\231\177l\202\024\021\004"
+ 109      94673833 
+ 109      5775B999 
+ 109      7F6C8214 
+ 109      1104
+ 110 011a DCFE31D3 		.ascii	"\334\3761\323t?\031\267{E\260\341v\361\257\241\015+"
+ 110      743F19B7 
+ 110      7B45B0E1 
+ 110      76F1AFA1 
+ 110      0D2B
+ 111 012c FF122D21 		.ascii	"\377\022-!\364V\334;\227\014\331\031\000\370#~\035\251"
+ 111      F456DC3B 
+ 111      970CD919 
+ 111      00F8237E 
+ 111      1DA9
+ 112 013e C5C16510 		.ascii	"\305\301e\020\241\007\370\010\177\023\251&\344\341q"
+ 112      A107F808 
+ 112      7F13A926 
+ 112      E4E171
+ 113 014d 1AC6B545 		.ascii	"\032\306\265E{b\244\202<l%\346t\016\016e\300k\031\034"
+ 113      7B62A482 
+ 113      3C6C25E6 
+ 113      740E0E65 
+ 113      C06B191C 
+ 114 0161 7C03D9DA 		.ascii	"|\003\331\332\021\007\227\260\340E\310\240\335\374<"
+ 114      110797B0 
+ 114      E045C8A0 
+ 114      DDFC3C
+ 115 0170 365D6516 		.ascii	"6]e\026ut\335\177\241\257\255\267\235\022\254\237Pt"
+ 115      7574DD7F 
+ 115      A1AFADB7 
+ 115      9D12AC9F 
+ 115      5074
+ 116 0182 5D254979 		.ascii	"]%Iy\007\256`'\335x\336\205\347\034\\\005\253.\262j"
+ 116      07AE6027 
+ 116      DD78DE85 
+ 116      E71C5C05 
+ 116      AB2EB26A 
+ 117 0196 BDFEA304 		.ascii	"\275\376\243\004\301\304b\220/\320\330\335\361\316n"
+ 117      C1C46290 
+ 117      2FD0D8DD 
+ 117      F1CE6E
+ 118 01a5 2A3C4B04 		.ascii	"*<K\004\352\353\036\014]\372m\360I\022\013QD\270\366"
+ 118      EAEB1E0C 
+ 118      5DFA6DF0 
+ 118      49120B51 
+ 118      44B8F6
+ 119 01b8 515B02FF 		.ascii	"Q[\002\377\012]\233\272\353\037\204\023!\233\311^\233"
+ 119      0A5D9BBA 
+ 119      EB1F8413 
+ 119      219BC95E 
+ 119      9B
+ 120 01c9 BF601D24 		.ascii	"\277`\035$\344\005\030@\276o\201\207N\260\323\367\224"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 9
+
+
+ 120      E4051840 
+ 120      BE6F8187 
+ 120      4EB0D3F7 
+ 120      94
+ 121 01da 456F6E75 		.ascii	"Eonu\264\035.\332\013|\207\355cU\212\203~\014\3661\001"
+ 121      B41D2EDA 
+ 121      0B7C87ED 
+ 121      63558A83 
+ 121      7E0CF631 
+ 122 01ef 9D6DF5AD 		.ascii	"\235m\365\255f\276\0174\212\256\213\263\243\011 f\307"
+ 122      66BE0F34 
+ 122      8AAE8BB3 
+ 122      A3092066 
+ 122      C7
+ 123 0200 2DF0439C 		.ascii	"-\360C\234\002\254\227\315\232\334\036\332\313\367\330"
+ 123      02AC97CD 
+ 123      9ADC1EDA 
+ 123      CBF7D8
+ 124 020f CBA0D1CB 		.ascii	"\313\240\321\313\0005K{\301\177o\315$i\332)\242\027"
+ 124      00354B7B 
+ 124      C17F6FCD 
+ 124      2469DA29 
+ 124      A217
+ 125 0221 34F1C3FD 		.ascii	"4\361\303\375=as\324\220\037Y\260\353\374\332\227\211"
+ 125      3D6173D4 
+ 125      901F59B0 
+ 125      EBFCDA97 
+ 125      89
+ 126 0232 283F0D1D 		.ascii	"(?\015\035\241\373\353\363k\315\"\333\223\343\270o\010"
+ 126      A1FBEBF3 
+ 126      6BCD22DB 
+ 126      93E3B86F 
+ 126      08
+ 127 0243 352F58F8 		.ascii	"5/X\370>\355B\231F\232\206+v\031\206\374^VA\010\300"
+ 127      3EED4299 
+ 127      469A862B 
+ 127      761986FC 
+ 127      5E564108 
+ 128 0258 3052048D 		.ascii	"0R\004\215&\322tC\310\266w\177\003\325\244\351j\256"
+ 128      26D27443 
+ 128      C8B6777F 
+ 128      03D5A4E9 
+ 128      6AAE
+ 129 026a A39A6BCC 		.ascii	"\243\232k\314\216\371;\033A\013?\304\010\332'6\006\314"
+ 129      8EF93B1B 
+ 129      410B3FC4 
+ 129      08DA2736 
+ 129      06CC
+ 130 027c CC8EEDE9 		.ascii	"\314\216\355\351?\305I\217\230\221\332E\315\030\301"
+ 130      3FC5498F 
+ 130      9891DA45 
+ 130      CD18C1
+ 131 028b 3E6E1A7D 		.ascii	">n\032}\014G\314\330\370\245|=\231\037a\014\365\253"
+ 131      0C47CCD8 
+ 131      F8A57C3D 
+ 131      991F610C 
+ 131      F5AB
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 10
+
+
+ 132 029d E1563E3E 		.ascii	"\341V>>\303\370\216\014\313K\231\035\224a\014\031F\015"
+ 132      C3F88E0C 
+ 132      CB4B991D 
+ 132      94610C19 
+ 132      460D
+ 133 02af 869108C3 		.ascii	"\206\221\010\303\2633\241\323\211\232\263\0241\304\234"
+ 133      B333A1D3 
+ 133      899AB314 
+ 133      31C49C
+ 134 02be 3DB912BE 		.ascii	"=\271\022\276\237\224\336\250}2\225\304&\300\321\324"
+ 134      9F94DEA8 
+ 134      7D3295C4 
+ 134      26C0D1D4 
+ 135 02ce 987B3A09 		.ascii	"\230{:\011\351\370{\002\241Z\205\3013\013Wv\307\336"
+ 135      E9F87B02 
+ 135      A15A85C1 
+ 135      330B5776 
+ 135      C7DE
+ 136 02e0 6A3C8F41 		.ascii	"j<\217AOEo\365lm\371\006\273\325S\321[]\363\351g/\357"
+ 136      4F456FF5 
+ 136      6C6DF906 
+ 136      BBD553D1 
+ 136      5B5DF3E9 
+ 137 02f7 4834A311 		.ascii	"H4\243\021MG\210n\0154\324\362\373ZHK\013Y\353_\266"
+ 137      4D47886E 
+ 137      0D34D4F2 
+ 137      FB5A484B 
+ 137      0B59EB5F 
+ 138 030c 37569271 		.ascii	"7V\222q\314\263Q\030t\030\322:\264O\033\332\3416\376"
+ 138      CCB35118 
+ 138      7418D23A 
+ 138      B44F1BDA 
+ 138      E136FE
+ 139 031f D109C13E 		.ascii	"\321\011\301>\314\334\374\263\227\354\341\313y\330\351"
+ 139      CCDCFCB3 
+ 139      97ECE1CB 
+ 139      79D8E9
+ 140 032e E35A3F5B 		.ascii	"\343Z?[\177b\267\026;\"\302-f\302Z\315\235-K\0247\307"
+ 140      7F62B716 
+ 140      3B22C22D 
+ 140      66C25ACD 
+ 140      9D2D4B14 
+ 141 0344 8233938F 		.ascii	"\2023\223\217\253\254Q\273\302,\330>}5\310\357\250b"
+ 141      ABAC51BB 
+ 141      C22CD83E 
+ 141      7D35C8EF 
+ 141      A862
+ 142 0356 4153311F 		.ascii	"AS1\037Qq\252on\"\211\251\010>R\310\307\230$P\014\314"
+ 142      5171AA6F 
+ 142      6E2289A9 
+ 142      083E52C8 
+ 142      C7982450 
+ 143 036c 1A126663 		.ascii	"\032\022fc%,j\022\206\303\343\357\363'\231\202\266\023"
+ 143      252C6A12 
+ 143      86C3E3EF 
+ 143      F3279982 
+ 143      B613
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 11
+
+
+ 144 037e 8DB3D6CC 		.ascii	"\215\263\326\314\363\204\264\222\340\323\017O\223\240"
+ 144      F384B492 
+ 144      E0D30F4F 
+ 144      93A0
+ 145 038c A039BAC4 		.ascii	"\2409\272\304\012\304P/\321:\260\014\231\230\364\340"
+ 145      0AC4502F 
+ 145      D13AB00C 
+ 145      9998F4E0 
+ 146 039c F35F6FF2 		.ascii	"\363_o\362\261\257\211\246\030\320\025\366\232\350\223"
+ 146      B1AF89A6 
+ 146      18D015F6 
+ 146      9AE893
+ 147 03ab 7EE8A377 		.ascii	"~\350\243w\033\022\366\237\243\212\202g\017\223j\013"
+ 147      1B12F69F 
+ 147      A38A8267 
+ 147      0F936A0B 
+ 148 03bb 4AD23A61 		.ascii	"J\322:a\377\000Va?\367\242\273Tv{\013eU)t\371\003\212"
+ 148      FF005661 
+ 148      3FF7A2BB 
+ 148      54767B0B 
+ 148      65552974 
+ 149 03d2 2AFB5497 		.ascii	"*\373T\227'`y\373\335\367lo\345\344p\202\263\310\241"
+ 149      276079FB 
+ 149      DDF76C6F 
+ 149      E5E47082 
+ 149      B3C8A1
+ 150 03e5 8AB25C82 		.ascii	"\212\262\\\202\301C\007\345@98\337\224|\252\267Pu\024"
+ 150      C14307E5 
+ 150      403938DF 
+ 150      947CAAB7 
+ 150      507514
+ 151 03f8 DB8EB9DC 		.ascii	"\333\216\271\334\212\337\226\375A\336\033\257J\3162"
+ 151      8ADF96FD 
+ 151      41DE1BAF 
+ 151      4ACE32
+ 152 0407 9FAAF8FD 		.ascii	"\237\252\370\375\222\317\357u\332\234\252\342\010xU"
+ 152      92CFEF75 
+ 152      DA9CAAE2 
+ 152      087855
+ 153 0416 29D77EF0 		.ascii	")\327~\360\371\200\253\330\347U\003R\241\247Dr\250\305"
+ 153      F980ABD8 
+ 153      E7550352 
+ 153      A1A74472 
+ 153      A8C5
+ 154 0428 D2EBF65C 		.ascii	"\322\353\366\\{\016]\035\360x=\312\001\305\221\357\222"
+ 154      7B0E5D1D 
+ 154      F0783DCA 
+ 154      01C591EF 
+ 154      92
+ 155 0439 5C1EA7BB 		.ascii	"\\\036\247\273\244@\221\212\035\316\"\227G\221\344\002"
+ 155      A440918A 
+ 155      1DCE2297 
+ 155      4791E402 
+ 156 0449 E598A3C4 		.ascii	"\345\230\243\304\035\220\003e>\305o/\342,\221^J\377"
+ 156      1D900365 
+ 156      3EC56F2F 
+ 156      E22C915E 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 12
+
+
+ 156      4AFF
+ 157 045b AF56FC65 		.ascii	"\257V\374e~I\366\007\012\220\227\362\3132.\362\344\200"
+ 157      7E49F607 
+ 157      0A9097F2 
+ 157      CB322EF2 
+ 157      E480
+ 158 046d 993D9275 		.ascii	"\231=\222u\007\335J\251\342\226\003\251\356\322B\267"
+ 158      07DD4AA9 
+ 158      E29603A9 
+ 158      EED242B7 
+ 159 047d 84B16297 		.ascii	"\204\261b\227\337)\2613\314\212\033vr\242\236\354(("
+ 159      DF29B133 
+ 159      CC8A1B76 
+ 159      72A29EEC 
+ 159      2828
+ 160 048f B068CECB 		.ascii	"\260h\316\313\316\374\177\000!\300j\311"
+ 160      CEFC7F00 
+ 160      21C06AC9 
+ 161              		.text
+ 162              		.section	.gnu.lto_.symtab.d4ba533,"",%progbits
+ 163 0000 6C765F6C 		.ascii	"lv_log_register_print\000"
+ 163      6F675F72 
+ 163      65676973 
+ 163      7465725F 
+ 163      7072696E 
+ 164 0016 00       		.ascii	"\000"
+ 165 0017 00       		.ascii	"\000"
+ 166 0018 00       		.ascii	"\000"
+ 167 0019 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 167      00000000 
+ 168 0021 CE000000 		.ascii	"\316\000\000\000"
+ 169 0025 6C765F6C 		.ascii	"lv_log_add\000"
+ 169      6F675F61 
+ 169      646400
+ 170 0030 00       		.ascii	"\000"
+ 171 0031 00       		.ascii	"\000"
+ 172 0032 00       		.ascii	"\000"
+ 173 0033 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 173      00000000 
+ 174 003b D5000000 		.ascii	"\325\000\000\000"
+ 175              		.text
+ 176              		.section	.gnu.lto_.opts,"",%progbits
+ 177 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+ 177      6174682D 
+ 177      6572726E 
+ 177      6F272027 
+ 177      2D667369 
+ 178 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-strict-overflow' '-fno-openmp' '-"
+ 178      2D747261 
+ 178      70762720 
+ 178      272D666E 
+ 178      6F2D7374 
+ 179 0066 666E6F2D 		.ascii	"fno-openacc' '-mcpu=cortex-m3' '-mthumb' '-g' '-O0'"
+ 179      6F70656E 
+ 179      61636327 
+ 179      20272D6D 
+ 179      6370753D 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 13
+
+
+ 180 0099 20272D66 		.ascii	" '-ffunction-sections' '-ffat-lto-objects' '-finlin"
+ 180      66756E63 
+ 180      74696F6E 
+ 180      2D736563 
+ 180      74696F6E 
+ 181 00cc 652D6675 		.ascii	"e-functions' '-flto'\000"
+ 181      6E637469 
+ 181      6F6E7327 
+ 181      20272D66 
+ 181      6C746F27 
+ 182              		.text
+ 183              		.cfi_sections	.debug_frame
+ 184              		.bss
+ 185              		.align	2
+ 186              	print_cb:
+ 187 0000 00000000 		.space	4
+ 188              		.section	.text.lv_log_register_print,"ax",%progbits
+ 189              		.align	2
+ 190              		.global	lv_log_register_print
+ 191              		.thumb
+ 192              		.thumb_func
+ 193              		.type	lv_log_register_print, %function
+ 194              	lv_log_register_print:
+ 195              	.LFB0:
+ 196              		.file 1 "lvgl\\lv_misc\\lv_log.c"
+   1:lvgl\lv_misc/lv_log.c **** /**
+   2:lvgl\lv_misc/lv_log.c ****  * @file lv_log.c
+   3:lvgl\lv_misc/lv_log.c ****  *
+   4:lvgl\lv_misc/lv_log.c ****  */
+   5:lvgl\lv_misc/lv_log.c **** 
+   6:lvgl\lv_misc/lv_log.c **** /*********************
+   7:lvgl\lv_misc/lv_log.c ****  *      INCLUDES
+   8:lvgl\lv_misc/lv_log.c ****  *********************/
+   9:lvgl\lv_misc/lv_log.c **** #include "lv_log.h"
+  10:lvgl\lv_misc/lv_log.c **** #if USE_LV_LOG
+  11:lvgl\lv_misc/lv_log.c **** 
+  12:lvgl\lv_misc/lv_log.c **** #if LV_LOG_PRINTF
+  13:lvgl\lv_misc/lv_log.c **** #include <stdio.h>
+  14:lvgl\lv_misc/lv_log.c **** #endif
+  15:lvgl\lv_misc/lv_log.c **** /*********************
+  16:lvgl\lv_misc/lv_log.c ****  *      DEFINES
+  17:lvgl\lv_misc/lv_log.c ****  *********************/
+  18:lvgl\lv_misc/lv_log.c **** 
+  19:lvgl\lv_misc/lv_log.c **** /**********************
+  20:lvgl\lv_misc/lv_log.c ****  *      TYPEDEFS
+  21:lvgl\lv_misc/lv_log.c ****  **********************/
+  22:lvgl\lv_misc/lv_log.c **** 
+  23:lvgl\lv_misc/lv_log.c **** /**********************
+  24:lvgl\lv_misc/lv_log.c ****  *  STATIC PROTOTYPES
+  25:lvgl\lv_misc/lv_log.c ****  **********************/
+  26:lvgl\lv_misc/lv_log.c **** 
+  27:lvgl\lv_misc/lv_log.c **** /**********************
+  28:lvgl\lv_misc/lv_log.c ****  *  STATIC VARIABLES
+  29:lvgl\lv_misc/lv_log.c ****  **********************/
+  30:lvgl\lv_misc/lv_log.c **** static void (*print_cb)(lv_log_level_t, const char *, uint32_t,  const char *);
+  31:lvgl\lv_misc/lv_log.c **** 
+  32:lvgl\lv_misc/lv_log.c **** /**********************
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 14
+
+
+  33:lvgl\lv_misc/lv_log.c ****  *      MACROS
+  34:lvgl\lv_misc/lv_log.c ****  **********************/
+  35:lvgl\lv_misc/lv_log.c **** 
+  36:lvgl\lv_misc/lv_log.c **** /**********************
+  37:lvgl\lv_misc/lv_log.c ****  *   GLOBAL FUNCTIONS
+  38:lvgl\lv_misc/lv_log.c ****  **********************/
+  39:lvgl\lv_misc/lv_log.c **** 
+  40:lvgl\lv_misc/lv_log.c **** /**
+  41:lvgl\lv_misc/lv_log.c ****  * Register custom print (or anything else) function to call when log is added
+  42:lvgl\lv_misc/lv_log.c ****  * @param f a function pointer:
+  43:lvgl\lv_misc/lv_log.c ****  *          `void my_print (lv_log_level_t level, const char * file, uint32_t line, const char * ds
+  44:lvgl\lv_misc/lv_log.c ****  */
+  45:lvgl\lv_misc/lv_log.c **** void lv_log_register_print(void f(lv_log_level_t, const char *, uint32_t,  const char *))
+  46:lvgl\lv_misc/lv_log.c **** {
+ 197              		.loc 1 46 0
+ 198              		.cfi_startproc
+ 199              		@ args = 0, pretend = 0, frame = 8
+ 200              		@ frame_needed = 1, uses_anonymous_args = 0
+ 201              		@ link register save eliminated.
+ 202 0000 80B4     		push	{r7}
+ 203              		.cfi_def_cfa_offset 4
+ 204              		.cfi_offset 7, -4
+ 205 0002 83B0     		sub	sp, sp, #12
+ 206              		.cfi_def_cfa_offset 16
+ 207 0004 00AF     		add	r7, sp, #0
+ 208              		.cfi_def_cfa_register 7
+ 209 0006 7860     		str	r0, [r7, #4]
+  47:lvgl\lv_misc/lv_log.c ****     print_cb = f;
+ 210              		.loc 1 47 0
+ 211 0008 034A     		ldr	r2, .L2
+ 212 000a 7B68     		ldr	r3, [r7, #4]
+ 213 000c 1360     		str	r3, [r2]
+  48:lvgl\lv_misc/lv_log.c **** }
+ 214              		.loc 1 48 0
+ 215 000e 00BF     		nop
+ 216 0010 0C37     		adds	r7, r7, #12
+ 217              		.cfi_def_cfa_offset 4
+ 218 0012 BD46     		mov	sp, r7
+ 219              		.cfi_def_cfa_register 13
+ 220              		@ sp needed
+ 221 0014 80BC     		pop	{r7}
+ 222              		.cfi_restore 7
+ 223              		.cfi_def_cfa_offset 0
+ 224 0016 7047     		bx	lr
+ 225              	.L3:
+ 226              		.align	2
+ 227              	.L2:
+ 228 0018 00000000 		.word	print_cb
+ 229              		.cfi_endproc
+ 230              	.LFE0:
+ 231              		.size	lv_log_register_print, .-lv_log_register_print
+ 232              		.section	.text.lv_log_add,"ax",%progbits
+ 233              		.align	2
+ 234              		.global	lv_log_add
+ 235              		.thumb
+ 236              		.thumb_func
+ 237              		.type	lv_log_add, %function
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 15
+
+
+ 238              	lv_log_add:
+ 239              	.LFB1:
+  49:lvgl\lv_misc/lv_log.c **** 
+  50:lvgl\lv_misc/lv_log.c **** /**
+  51:lvgl\lv_misc/lv_log.c ****  * Add a log
+  52:lvgl\lv_misc/lv_log.c ****  * @param level the level of log. (From `lv_log_level_t` enum)
+  53:lvgl\lv_misc/lv_log.c ****  * @param file name of the file when the log added
+  54:lvgl\lv_misc/lv_log.c ****  * @param line line number in the source code where the log added
+  55:lvgl\lv_misc/lv_log.c ****  * @param dsc description of the log
+  56:lvgl\lv_misc/lv_log.c ****  */
+  57:lvgl\lv_misc/lv_log.c **** void lv_log_add(lv_log_level_t level, const char * file, int line, const char * dsc)
+  58:lvgl\lv_misc/lv_log.c **** {
+ 240              		.loc 1 58 0
+ 241              		.cfi_startproc
+ 242              		@ args = 0, pretend = 0, frame = 16
+ 243              		@ frame_needed = 1, uses_anonymous_args = 0
+ 244 0000 90B5     		push	{r4, r7, lr}
+ 245              		.cfi_def_cfa_offset 12
+ 246              		.cfi_offset 4, -12
+ 247              		.cfi_offset 7, -8
+ 248              		.cfi_offset 14, -4
+ 249 0002 85B0     		sub	sp, sp, #20
+ 250              		.cfi_def_cfa_offset 32
+ 251 0004 00AF     		add	r7, sp, #0
+ 252              		.cfi_def_cfa_register 7
+ 253 0006 B960     		str	r1, [r7, #8]
+ 254 0008 7A60     		str	r2, [r7, #4]
+ 255 000a 3B60     		str	r3, [r7]
+ 256 000c 0346     		mov	r3, r0
+ 257 000e FB73     		strb	r3, [r7, #15]
+  59:lvgl\lv_misc/lv_log.c ****     if(level >= _LV_LOG_LEVEL_NUM) return;      /*Invalid level*/
+ 258              		.loc 1 59 0
+ 259 0010 97F90F30 		ldrsb	r3, [r7, #15]
+ 260 0014 032B     		cmp	r3, #3
+ 261 0016 10DC     		bgt	.L7
+  60:lvgl\lv_misc/lv_log.c **** 
+  61:lvgl\lv_misc/lv_log.c ****     if(level >= LV_LOG_LEVEL) {
+ 262              		.loc 1 61 0
+ 263 0018 97F90F30 		ldrsb	r3, [r7, #15]
+ 264 001c 012B     		cmp	r3, #1
+ 265 001e 0DDD     		ble	.L4
+  62:lvgl\lv_misc/lv_log.c **** 
+  63:lvgl\lv_misc/lv_log.c **** #if LV_LOG_PRINTF
+  64:lvgl\lv_misc/lv_log.c ****         static const char * lvl_prefix[] = {"Trace", "Info", "Warn", "Error"};
+  65:lvgl\lv_misc/lv_log.c ****         printf("%s: %s \t(%s #%d)\n", lvl_prefix[level], dsc,  file, line);
+  66:lvgl\lv_misc/lv_log.c **** #else
+  67:lvgl\lv_misc/lv_log.c ****         if(print_cb) print_cb(level, file, line, dsc);
+ 266              		.loc 1 67 0
+ 267 0020 084B     		ldr	r3, .L8
+ 268 0022 1B68     		ldr	r3, [r3]
+ 269 0024 002B     		cmp	r3, #0
+ 270 0026 09D0     		beq	.L4
+ 271              		.loc 1 67 0 is_stmt 0 discriminator 1
+ 272 0028 064B     		ldr	r3, .L8
+ 273 002a 1C68     		ldr	r4, [r3]
+ 274 002c 7A68     		ldr	r2, [r7, #4]
+ 275 002e 97F90F00 		ldrsb	r0, [r7, #15]
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 16
+
+
+ 276 0032 3B68     		ldr	r3, [r7]
+ 277 0034 B968     		ldr	r1, [r7, #8]
+ 278 0036 A047     		blx	r4
+ 279 0038 00E0     		b	.L4
+ 280              	.L7:
+  59:lvgl\lv_misc/lv_log.c **** 
+ 281              		.loc 1 59 0 is_stmt 1
+ 282 003a 00BF     		nop
+ 283              	.L4:
+  68:lvgl\lv_misc/lv_log.c **** #endif
+  69:lvgl\lv_misc/lv_log.c ****     }
+  70:lvgl\lv_misc/lv_log.c **** }
+ 284              		.loc 1 70 0
+ 285 003c 1437     		adds	r7, r7, #20
+ 286              		.cfi_def_cfa_offset 12
+ 287 003e BD46     		mov	sp, r7
+ 288              		.cfi_def_cfa_register 13
+ 289              		@ sp needed
+ 290 0040 90BD     		pop	{r4, r7, pc}
+ 291              	.L9:
+ 292 0042 00BF     		.align	2
+ 293              	.L8:
+ 294 0044 00000000 		.word	print_cb
+ 295              		.cfi_endproc
+ 296              	.LFE1:
+ 297              		.size	lv_log_add, .-lv_log_add
+ 298              		.text
+ 299              	.Letext0:
+ 300              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 301              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 302              		.file 4 "lvgl\\lv_misc\\lv_log.h"
+ 303              		.section	.debug_info,"",%progbits
+ 304              	.Ldebug_info0:
+ 305 0000 52010000 		.4byte	0x152
+ 306 0004 0400     		.2byte	0x4
+ 307 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 308 000a 04       		.byte	0x4
+ 309 000b 01       		.uleb128 0x1
+ 310 000c 63010000 		.4byte	.LASF20
+ 311 0010 0C       		.byte	0xc
+ 312 0011 17010000 		.4byte	.LASF21
+ 313 0015 21000000 		.4byte	.LASF22
+ 314 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 315 001d 00000000 		.4byte	0
+ 316 0021 00000000 		.4byte	.Ldebug_line0
+ 317 0025 02       		.uleb128 0x2
+ 318 0026 00000000 		.4byte	.LASF5
+ 319 002a 02       		.byte	0x2
+ 320 002b 1B       		.byte	0x1b
+ 321 002c 30000000 		.4byte	0x30
+ 322 0030 03       		.uleb128 0x3
+ 323 0031 01       		.byte	0x1
+ 324 0032 06       		.byte	0x6
+ 325 0033 4E010000 		.4byte	.LASF0
+ 326 0037 03       		.uleb128 0x3
+ 327 0038 01       		.byte	0x1
+ 328 0039 08       		.byte	0x8
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 17
+
+
+ 329 003a 7D000000 		.4byte	.LASF1
+ 330 003e 03       		.uleb128 0x3
+ 331 003f 02       		.byte	0x2
+ 332 0040 05       		.byte	0x5
+ 333 0041 32010000 		.4byte	.LASF2
+ 334 0045 03       		.uleb128 0x3
+ 335 0046 02       		.byte	0x2
+ 336 0047 07       		.byte	0x7
+ 337 0048 9D000000 		.4byte	.LASF3
+ 338 004c 03       		.uleb128 0x3
+ 339 004d 04       		.byte	0x4
+ 340 004e 05       		.byte	0x5
+ 341 004f 45010000 		.4byte	.LASF4
+ 342 0053 02       		.uleb128 0x2
+ 343 0054 BF000000 		.4byte	.LASF6
+ 344 0058 02       		.byte	0x2
+ 345 0059 41       		.byte	0x41
+ 346 005a 5E000000 		.4byte	0x5e
+ 347 005e 03       		.uleb128 0x3
+ 348 005f 04       		.byte	0x4
+ 349 0060 07       		.byte	0x7
+ 350 0061 8B000000 		.4byte	.LASF7
+ 351 0065 03       		.uleb128 0x3
+ 352 0066 08       		.byte	0x8
+ 353 0067 05       		.byte	0x5
+ 354 0068 09010000 		.4byte	.LASF8
+ 355 006c 03       		.uleb128 0x3
+ 356 006d 08       		.byte	0x8
+ 357 006e 07       		.byte	0x7
+ 358 006f ED000000 		.4byte	.LASF9
+ 359 0073 04       		.uleb128 0x4
+ 360 0074 04       		.byte	0x4
+ 361 0075 05       		.byte	0x5
+ 362 0076 696E7400 		.ascii	"int\000"
+ 363 007a 03       		.uleb128 0x3
+ 364 007b 04       		.byte	0x4
+ 365 007c 07       		.byte	0x7
+ 366 007d E0000000 		.4byte	.LASF10
+ 367 0081 02       		.uleb128 0x2
+ 368 0082 1A000000 		.4byte	.LASF11
+ 369 0086 03       		.byte	0x3
+ 370 0087 14       		.byte	0x14
+ 371 0088 25000000 		.4byte	0x25
+ 372 008c 02       		.uleb128 0x2
+ 373 008d 3C010000 		.4byte	.LASF12
+ 374 0091 03       		.byte	0x3
+ 375 0092 30       		.byte	0x30
+ 376 0093 53000000 		.4byte	0x53
+ 377 0097 02       		.uleb128 0x2
+ 378 0098 B0000000 		.4byte	.LASF13
+ 379 009c 04       		.byte	0x4
+ 380 009d 23       		.byte	0x23
+ 381 009e 81000000 		.4byte	0x81
+ 382 00a2 05       		.uleb128 0x5
+ 383 00a3 CA000000 		.4byte	.LASF15
+ 384 00a7 01       		.byte	0x1
+ 385 00a8 2D       		.byte	0x2d
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 18
+
+
+ 386 00a9 00000000 		.4byte	.LFB0
+ 387 00ad 1C000000 		.4byte	.LFE0-.LFB0
+ 388 00b1 01       		.uleb128 0x1
+ 389 00b2 9C       		.byte	0x9c
+ 390 00b3 C4000000 		.4byte	0xc4
+ 391 00b7 06       		.uleb128 0x6
+ 392 00b8 6600     		.ascii	"f\000"
+ 393 00ba 01       		.byte	0x1
+ 394 00bb 2D       		.byte	0x2d
+ 395 00bc F0000000 		.4byte	0xf0
+ 396 00c0 02       		.uleb128 0x2
+ 397 00c1 91       		.byte	0x91
+ 398 00c2 74       		.sleb128 -12
+ 399 00c3 00       		.byte	0
+ 400 00c4 07       		.uleb128 0x7
+ 401 00c5 DE000000 		.4byte	0xde
+ 402 00c9 08       		.uleb128 0x8
+ 403 00ca 97000000 		.4byte	0x97
+ 404 00ce 08       		.uleb128 0x8
+ 405 00cf DE000000 		.4byte	0xde
+ 406 00d3 08       		.uleb128 0x8
+ 407 00d4 8C000000 		.4byte	0x8c
+ 408 00d8 08       		.uleb128 0x8
+ 409 00d9 DE000000 		.4byte	0xde
+ 410 00dd 00       		.byte	0
+ 411 00de 09       		.uleb128 0x9
+ 412 00df 04       		.byte	0x4
+ 413 00e0 EB000000 		.4byte	0xeb
+ 414 00e4 03       		.uleb128 0x3
+ 415 00e5 01       		.byte	0x1
+ 416 00e6 08       		.byte	0x8
+ 417 00e7 2D010000 		.4byte	.LASF14
+ 418 00eb 0A       		.uleb128 0xa
+ 419 00ec E4000000 		.4byte	0xe4
+ 420 00f0 09       		.uleb128 0x9
+ 421 00f1 04       		.byte	0x4
+ 422 00f2 C4000000 		.4byte	0xc4
+ 423 00f6 0B       		.uleb128 0xb
+ 424 00f7 0F000000 		.4byte	.LASF16
+ 425 00fb 01       		.byte	0x1
+ 426 00fc 39       		.byte	0x39
+ 427 00fd 00000000 		.4byte	.LFB1
+ 428 0101 48000000 		.4byte	.LFE1-.LFB1
+ 429 0105 01       		.uleb128 0x1
+ 430 0106 9C       		.byte	0x9c
+ 431 0107 44010000 		.4byte	0x144
+ 432 010b 0C       		.uleb128 0xc
+ 433 010c 09000000 		.4byte	.LASF17
+ 434 0110 01       		.byte	0x1
+ 435 0111 39       		.byte	0x39
+ 436 0112 97000000 		.4byte	0x97
+ 437 0116 02       		.uleb128 0x2
+ 438 0117 91       		.byte	0x91
+ 439 0118 6F       		.sleb128 -17
+ 440 0119 0C       		.uleb128 0xc
+ 441 011a 78000000 		.4byte	.LASF18
+ 442 011e 01       		.byte	0x1
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 19
+
+
+ 443 011f 39       		.byte	0x39
+ 444 0120 DE000000 		.4byte	0xde
+ 445 0124 02       		.uleb128 0x2
+ 446 0125 91       		.byte	0x91
+ 447 0126 68       		.sleb128 -24
+ 448 0127 0C       		.uleb128 0xc
+ 449 0128 04010000 		.4byte	.LASF19
+ 450 012c 01       		.byte	0x1
+ 451 012d 39       		.byte	0x39
+ 452 012e 73000000 		.4byte	0x73
+ 453 0132 02       		.uleb128 0x2
+ 454 0133 91       		.byte	0x91
+ 455 0134 64       		.sleb128 -28
+ 456 0135 06       		.uleb128 0x6
+ 457 0136 64736300 		.ascii	"dsc\000"
+ 458 013a 01       		.byte	0x1
+ 459 013b 39       		.byte	0x39
+ 460 013c DE000000 		.4byte	0xde
+ 461 0140 02       		.uleb128 0x2
+ 462 0141 91       		.byte	0x91
+ 463 0142 60       		.sleb128 -32
+ 464 0143 00       		.byte	0
+ 465 0144 0D       		.uleb128 0xd
+ 466 0145 5A010000 		.4byte	.LASF23
+ 467 0149 01       		.byte	0x1
+ 468 014a 1E       		.byte	0x1e
+ 469 014b F0000000 		.4byte	0xf0
+ 470 014f 05       		.uleb128 0x5
+ 471 0150 03       		.byte	0x3
+ 472 0151 00000000 		.4byte	print_cb
+ 473 0155 00       		.byte	0
+ 474              		.section	.debug_abbrev,"",%progbits
+ 475              	.Ldebug_abbrev0:
+ 476 0000 01       		.uleb128 0x1
+ 477 0001 11       		.uleb128 0x11
+ 478 0002 01       		.byte	0x1
+ 479 0003 25       		.uleb128 0x25
+ 480 0004 0E       		.uleb128 0xe
+ 481 0005 13       		.uleb128 0x13
+ 482 0006 0B       		.uleb128 0xb
+ 483 0007 03       		.uleb128 0x3
+ 484 0008 0E       		.uleb128 0xe
+ 485 0009 1B       		.uleb128 0x1b
+ 486 000a 0E       		.uleb128 0xe
+ 487 000b 55       		.uleb128 0x55
+ 488 000c 17       		.uleb128 0x17
+ 489 000d 11       		.uleb128 0x11
+ 490 000e 01       		.uleb128 0x1
+ 491 000f 10       		.uleb128 0x10
+ 492 0010 17       		.uleb128 0x17
+ 493 0011 00       		.byte	0
+ 494 0012 00       		.byte	0
+ 495 0013 02       		.uleb128 0x2
+ 496 0014 16       		.uleb128 0x16
+ 497 0015 00       		.byte	0
+ 498 0016 03       		.uleb128 0x3
+ 499 0017 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 20
+
+
+ 500 0018 3A       		.uleb128 0x3a
+ 501 0019 0B       		.uleb128 0xb
+ 502 001a 3B       		.uleb128 0x3b
+ 503 001b 0B       		.uleb128 0xb
+ 504 001c 49       		.uleb128 0x49
+ 505 001d 13       		.uleb128 0x13
+ 506 001e 00       		.byte	0
+ 507 001f 00       		.byte	0
+ 508 0020 03       		.uleb128 0x3
+ 509 0021 24       		.uleb128 0x24
+ 510 0022 00       		.byte	0
+ 511 0023 0B       		.uleb128 0xb
+ 512 0024 0B       		.uleb128 0xb
+ 513 0025 3E       		.uleb128 0x3e
+ 514 0026 0B       		.uleb128 0xb
+ 515 0027 03       		.uleb128 0x3
+ 516 0028 0E       		.uleb128 0xe
+ 517 0029 00       		.byte	0
+ 518 002a 00       		.byte	0
+ 519 002b 04       		.uleb128 0x4
+ 520 002c 24       		.uleb128 0x24
+ 521 002d 00       		.byte	0
+ 522 002e 0B       		.uleb128 0xb
+ 523 002f 0B       		.uleb128 0xb
+ 524 0030 3E       		.uleb128 0x3e
+ 525 0031 0B       		.uleb128 0xb
+ 526 0032 03       		.uleb128 0x3
+ 527 0033 08       		.uleb128 0x8
+ 528 0034 00       		.byte	0
+ 529 0035 00       		.byte	0
+ 530 0036 05       		.uleb128 0x5
+ 531 0037 2E       		.uleb128 0x2e
+ 532 0038 01       		.byte	0x1
+ 533 0039 3F       		.uleb128 0x3f
+ 534 003a 19       		.uleb128 0x19
+ 535 003b 03       		.uleb128 0x3
+ 536 003c 0E       		.uleb128 0xe
+ 537 003d 3A       		.uleb128 0x3a
+ 538 003e 0B       		.uleb128 0xb
+ 539 003f 3B       		.uleb128 0x3b
+ 540 0040 0B       		.uleb128 0xb
+ 541 0041 27       		.uleb128 0x27
+ 542 0042 19       		.uleb128 0x19
+ 543 0043 11       		.uleb128 0x11
+ 544 0044 01       		.uleb128 0x1
+ 545 0045 12       		.uleb128 0x12
+ 546 0046 06       		.uleb128 0x6
+ 547 0047 40       		.uleb128 0x40
+ 548 0048 18       		.uleb128 0x18
+ 549 0049 9742     		.uleb128 0x2117
+ 550 004b 19       		.uleb128 0x19
+ 551 004c 01       		.uleb128 0x1
+ 552 004d 13       		.uleb128 0x13
+ 553 004e 00       		.byte	0
+ 554 004f 00       		.byte	0
+ 555 0050 06       		.uleb128 0x6
+ 556 0051 05       		.uleb128 0x5
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 21
+
+
+ 557 0052 00       		.byte	0
+ 558 0053 03       		.uleb128 0x3
+ 559 0054 08       		.uleb128 0x8
+ 560 0055 3A       		.uleb128 0x3a
+ 561 0056 0B       		.uleb128 0xb
+ 562 0057 3B       		.uleb128 0x3b
+ 563 0058 0B       		.uleb128 0xb
+ 564 0059 49       		.uleb128 0x49
+ 565 005a 13       		.uleb128 0x13
+ 566 005b 02       		.uleb128 0x2
+ 567 005c 18       		.uleb128 0x18
+ 568 005d 00       		.byte	0
+ 569 005e 00       		.byte	0
+ 570 005f 07       		.uleb128 0x7
+ 571 0060 15       		.uleb128 0x15
+ 572 0061 01       		.byte	0x1
+ 573 0062 27       		.uleb128 0x27
+ 574 0063 19       		.uleb128 0x19
+ 575 0064 01       		.uleb128 0x1
+ 576 0065 13       		.uleb128 0x13
+ 577 0066 00       		.byte	0
+ 578 0067 00       		.byte	0
+ 579 0068 08       		.uleb128 0x8
+ 580 0069 05       		.uleb128 0x5
+ 581 006a 00       		.byte	0
+ 582 006b 49       		.uleb128 0x49
+ 583 006c 13       		.uleb128 0x13
+ 584 006d 00       		.byte	0
+ 585 006e 00       		.byte	0
+ 586 006f 09       		.uleb128 0x9
+ 587 0070 0F       		.uleb128 0xf
+ 588 0071 00       		.byte	0
+ 589 0072 0B       		.uleb128 0xb
+ 590 0073 0B       		.uleb128 0xb
+ 591 0074 49       		.uleb128 0x49
+ 592 0075 13       		.uleb128 0x13
+ 593 0076 00       		.byte	0
+ 594 0077 00       		.byte	0
+ 595 0078 0A       		.uleb128 0xa
+ 596 0079 26       		.uleb128 0x26
+ 597 007a 00       		.byte	0
+ 598 007b 49       		.uleb128 0x49
+ 599 007c 13       		.uleb128 0x13
+ 600 007d 00       		.byte	0
+ 601 007e 00       		.byte	0
+ 602 007f 0B       		.uleb128 0xb
+ 603 0080 2E       		.uleb128 0x2e
+ 604 0081 01       		.byte	0x1
+ 605 0082 3F       		.uleb128 0x3f
+ 606 0083 19       		.uleb128 0x19
+ 607 0084 03       		.uleb128 0x3
+ 608 0085 0E       		.uleb128 0xe
+ 609 0086 3A       		.uleb128 0x3a
+ 610 0087 0B       		.uleb128 0xb
+ 611 0088 3B       		.uleb128 0x3b
+ 612 0089 0B       		.uleb128 0xb
+ 613 008a 27       		.uleb128 0x27
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 22
+
+
+ 614 008b 19       		.uleb128 0x19
+ 615 008c 11       		.uleb128 0x11
+ 616 008d 01       		.uleb128 0x1
+ 617 008e 12       		.uleb128 0x12
+ 618 008f 06       		.uleb128 0x6
+ 619 0090 40       		.uleb128 0x40
+ 620 0091 18       		.uleb128 0x18
+ 621 0092 9642     		.uleb128 0x2116
+ 622 0094 19       		.uleb128 0x19
+ 623 0095 01       		.uleb128 0x1
+ 624 0096 13       		.uleb128 0x13
+ 625 0097 00       		.byte	0
+ 626 0098 00       		.byte	0
+ 627 0099 0C       		.uleb128 0xc
+ 628 009a 05       		.uleb128 0x5
+ 629 009b 00       		.byte	0
+ 630 009c 03       		.uleb128 0x3
+ 631 009d 0E       		.uleb128 0xe
+ 632 009e 3A       		.uleb128 0x3a
+ 633 009f 0B       		.uleb128 0xb
+ 634 00a0 3B       		.uleb128 0x3b
+ 635 00a1 0B       		.uleb128 0xb
+ 636 00a2 49       		.uleb128 0x49
+ 637 00a3 13       		.uleb128 0x13
+ 638 00a4 02       		.uleb128 0x2
+ 639 00a5 18       		.uleb128 0x18
+ 640 00a6 00       		.byte	0
+ 641 00a7 00       		.byte	0
+ 642 00a8 0D       		.uleb128 0xd
+ 643 00a9 34       		.uleb128 0x34
+ 644 00aa 00       		.byte	0
+ 645 00ab 03       		.uleb128 0x3
+ 646 00ac 0E       		.uleb128 0xe
+ 647 00ad 3A       		.uleb128 0x3a
+ 648 00ae 0B       		.uleb128 0xb
+ 649 00af 3B       		.uleb128 0x3b
+ 650 00b0 0B       		.uleb128 0xb
+ 651 00b1 49       		.uleb128 0x49
+ 652 00b2 13       		.uleb128 0x13
+ 653 00b3 02       		.uleb128 0x2
+ 654 00b4 18       		.uleb128 0x18
+ 655 00b5 00       		.byte	0
+ 656 00b6 00       		.byte	0
+ 657 00b7 00       		.byte	0
+ 658              		.section	.debug_aranges,"",%progbits
+ 659 0000 24000000 		.4byte	0x24
+ 660 0004 0200     		.2byte	0x2
+ 661 0006 00000000 		.4byte	.Ldebug_info0
+ 662 000a 04       		.byte	0x4
+ 663 000b 00       		.byte	0
+ 664 000c 0000     		.2byte	0
+ 665 000e 0000     		.2byte	0
+ 666 0010 00000000 		.4byte	.LFB0
+ 667 0014 1C000000 		.4byte	.LFE0-.LFB0
+ 668 0018 00000000 		.4byte	.LFB1
+ 669 001c 48000000 		.4byte	.LFE1-.LFB1
+ 670 0020 00000000 		.4byte	0
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 23
+
+
+ 671 0024 00000000 		.4byte	0
+ 672              		.section	.debug_ranges,"",%progbits
+ 673              	.Ldebug_ranges0:
+ 674 0000 00000000 		.4byte	.LFB0
+ 675 0004 1C000000 		.4byte	.LFE0
+ 676 0008 00000000 		.4byte	.LFB1
+ 677 000c 48000000 		.4byte	.LFE1
+ 678 0010 00000000 		.4byte	0
+ 679 0014 00000000 		.4byte	0
+ 680              		.section	.debug_line,"",%progbits
+ 681              	.Ldebug_line0:
+ 682 0000 6B010000 		.section	.debug_str,"MS",%progbits,1
+ 682      02003501 
+ 682      00000201 
+ 682      FB0E0D00 
+ 682      01010101 
+ 683              	.LASF5:
+ 684 0000 5F5F696E 		.ascii	"__int8_t\000"
+ 684      74385F74 
+ 684      00
+ 685              	.LASF17:
+ 686 0009 6C657665 		.ascii	"level\000"
+ 686      6C00
+ 687              	.LASF16:
+ 688 000f 6C765F6C 		.ascii	"lv_log_add\000"
+ 688      6F675F61 
+ 688      646400
+ 689              	.LASF11:
+ 690 001a 696E7438 		.ascii	"int8_t\000"
+ 690      5F7400
+ 691              	.LASF22:
+ 692 0021 433A5C55 		.ascii	"C:\\Users\\Sava\\Documents\\PSoC Creator\\GUI_and_d"
+ 692      73657273 
+ 692      5C536176 
+ 692      615C446F 
+ 692      63756D65 
+ 693 004f 6973706C 		.ascii	"isplay\\LittlevGL(5v3)_demo_ILI9341.cydsn\000"
+ 693      61795C4C 
+ 693      6974746C 
+ 693      6576474C 
+ 693      28357633 
+ 694              	.LASF18:
+ 695 0078 66696C65 		.ascii	"file\000"
+ 695      00
+ 696              	.LASF1:
+ 697 007d 756E7369 		.ascii	"unsigned char\000"
+ 697      676E6564 
+ 697      20636861 
+ 697      7200
+ 698              	.LASF7:
+ 699 008b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 699      20756E73 
+ 699      69676E65 
+ 699      6420696E 
+ 699      7400
+ 700              	.LASF3:
+ 701 009d 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 24
+
+
+ 701      7420756E 
+ 701      7369676E 
+ 701      65642069 
+ 701      6E7400
+ 702              	.LASF13:
+ 703 00b0 6C765F6C 		.ascii	"lv_log_level_t\000"
+ 703      6F675F6C 
+ 703      6576656C 
+ 703      5F7400
+ 704              	.LASF6:
+ 705 00bf 5F5F7569 		.ascii	"__uint32_t\000"
+ 705      6E743332 
+ 705      5F7400
+ 706              	.LASF15:
+ 707 00ca 6C765F6C 		.ascii	"lv_log_register_print\000"
+ 707      6F675F72 
+ 707      65676973 
+ 707      7465725F 
+ 707      7072696E 
+ 708              	.LASF10:
+ 709 00e0 756E7369 		.ascii	"unsigned int\000"
+ 709      676E6564 
+ 709      20696E74 
+ 709      00
+ 710              	.LASF9:
+ 711 00ed 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 711      206C6F6E 
+ 711      6720756E 
+ 711      7369676E 
+ 711      65642069 
+ 712              	.LASF19:
+ 713 0104 6C696E65 		.ascii	"line\000"
+ 713      00
+ 714              	.LASF8:
+ 715 0109 6C6F6E67 		.ascii	"long long int\000"
+ 715      206C6F6E 
+ 715      6720696E 
+ 715      7400
+ 716              	.LASF21:
+ 717 0117 6C76676C 		.ascii	"lvgl\\lv_misc\\lv_log.c\000"
+ 717      5C6C765F 
+ 717      6D697363 
+ 717      5C6C765F 
+ 717      6C6F672E 
+ 718              	.LASF14:
+ 719 012d 63686172 		.ascii	"char\000"
+ 719      00
+ 720              	.LASF2:
+ 721 0132 73686F72 		.ascii	"short int\000"
+ 721      7420696E 
+ 721      7400
+ 722              	.LASF12:
+ 723 013c 75696E74 		.ascii	"uint32_t\000"
+ 723      33325F74 
+ 723      00
+ 724              	.LASF4:
+ 725 0145 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccPCPec8.s 			page 25
+
+
+ 725      20696E74 
+ 725      00
+ 726              	.LASF0:
+ 727 014e 7369676E 		.ascii	"signed char\000"
+ 727      65642063 
+ 727      68617200 
+ 728              	.LASF23:
+ 729 015a 7072696E 		.ascii	"print_cb\000"
+ 729      745F6362 
+ 729      00
+ 730              	.LASF20:
+ 731 0163 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 731      43313120 
+ 731      352E342E 
+ 731      31203230 
+ 731      31363036 
+ 732 0196 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 732      20726576 
+ 732      6973696F 
+ 732      6E203233 
+ 732      37373135 
+ 733 01c9 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 733      66756E63 
+ 733      74696F6E 
+ 733      2D736563 
+ 733      74696F6E 
+ 734 01fc 6E637469 		.ascii	"nctions -flto\000"
+ 734      6F6E7320 
+ 734      2D666C74 
+ 734      6F00
+ 735              		.comm	__gnu_lto_v1,1,1
+ 736              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

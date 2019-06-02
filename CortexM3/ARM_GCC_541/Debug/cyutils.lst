@@ -1,0 +1,966 @@
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cyutils.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.inline.d4c5d77,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d\000\001Q\006\004\000\212pq200\011\\\350ad"
+  19      60640001 
+  19      51060400 
+  19      8A707132 
+  19      3030095C 
+  20 0017 60616002 		.ascii	"`a`\002\013\002\000\025\361\001\244"
+  20      0B020015 
+  20      F101A4
+  21              		.text
+  22              		.section	.gnu.lto_CySetReg24.d4c5d77,"",%progbits
+  23 0000 789C9553 		.ascii	"x\234\225SMHTQ\024\276\337\275\357\315\233\3078\332"
+  23      4D485451 
+  23      14BEDFBD 
+  23      EFCD9BC7 
+  23      38DA
+  24 0012 C656B330 		.ascii	"\306V\2630h\220\331d\020\2656Z\264\255\334\012!:\213"
+  24      6890D964 
+  24      10B5365A 
+  24      B4ADDC0A 
+  24      213A8B
+  25 0025 C0324C83 		.ascii	"\3002L\203V^g\346)m\012*\225\021\207Q\242\234,\323\321"
+  25      565E67E6 
+  25      296D0A2A 
+  25      95118751 
+  25      A29C2CD3 
+  26 003a AC4C8DD7 		.ascii	"\254L\215\327P-\244\037\212Z\010AZh\320\312\221\351"
+  26      502DA41F 
+  26      8A5A0841 
+  26      5A68D0CA 
+  26      91E9
+  27 004c 8728A773 		.ascii	"\207(\247s\337{A\216Rx\341\375\234s\277\357;\337}\347"
+  27      DF7B418E 
+  27      5278E1FD 
+  27      9C73BFEF 
+  27      3BDF7DE7 
+  28 0060 3C8D81A9 		.ascii	"<\215\201\251U\2431v\200\236\225*\020\014\234\321\005"
+  28      55A33176 
+  28      809E952A 
+  28      100C9CD1 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 2
+
+
+  28      05
+  29 0071 B507D6C1 		.ascii	"\265\007\326\301\321\201/\374\027G\256{e\232G\206%\255"
+  29      D1812FFC 
+  29      1747AE7B 
+  29      659A4786 
+  29      25AD
+  30 0083 45EB5250 		.ascii	"E\353RPflX\202\261\"w4\030\206\021!\324\253\304\370"
+  30      666C5882 
+  30      B1227734 
+  30      18861121 
+  30      D4ABC4F8 
+  31 0097 8028704B 		.ascii	"\200(pK\000\032\205\371\347\375\037\313U\310QE\341\225"
+  31      001A85F9 
+  31      E7FD1FCB 
+  31      55C85145 
+  31      E195
+  32 00a9 C951CB14 		.ascii	"\311Q\313\024\273\301\350\375\305\302\323\256\362\352"
+  32      BBC1E8FD 
+  32      C5C2D3AE 
+  32      F2EA
+  33 00b7 6B52C6A4 		.ascii	"kR\306\244LG\245i\011\201\021\010\322\303\015\204\220"
+  33      4C47A569 
+  33      09811108 
+  33      D2C30D84 
+  33      90
+  34 00c8 4188518A 		.ascii	"A\210Q\212\341&\252\011\375i\266\373\015D\304af\307"
+  34      E126AA09 
+  34      FD69B6FB 
+  34      0D44C461 
+  34      66C7
+  35 00da 2E0C728F 		.ascii	".\014r\217\271\34005\334*ej\014\243\250V\360\231\221"
+  35      B9E03035 
+  35      DC2A656A 
+  35      0CA3A856 
+  35      F09991
+  36 00ed 85B7A6A8 		.ascii	"\205\267\246\250q\250\217\363\261y=|UQ\355\236e$\245"
+  36      71A88FF3 
+  36      B1793D7C 
+  36      5551ED9E 
+  36      6524A5
+  37 0100 9DA8B284 		.ascii	"\235\250\262\204\216\333\033\351j\021\372Cv\275'\350"
+  37      8EDB1BE9 
+  37      6A11FA43 
+  37      76BD27E8 
+  38 0110 4BA82357 		.ascii	"K\250#Wa\014a\367\260\030\207\217>\216\237\000\023\353"
+  38      610C61F7 
+  38      B018878F 
+  38      3E8E9F00 
+  38      13EB
+  39 0122 8F46FFC8 		.ascii	"\217F\377\310\245\346\320\227\261;I\316\247p\330\027"
+  39      A5E6D097 
+  39      B13B49CE 
+  39      A770D817 
+  40 0132 C25E5709 		.ascii	"\302^W\011Y\204\011\33474\365=\340\201\323CHf\334\332"
+  40      598409DC 
+  40      3734F53D 
+  40      E081D343 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 3
+
+
+  40      4866DCDA 
+  41 0146 ACB43026 		.ascii	"\254\2640&\034x2\273\230\367\264ejy\020\362|\255%\214"
+  41      1C7832BB 
+  41      98F7B465 
+  41      6A7910F2 
+  41      7CAD258C 
+  42 015a CDE84907 		.ascii	"\315\350I\007\375\227\023\371\376\035\241\343\265[\030"
+  42      FD9713F9 
+  42      FE1DA1E3 
+  42      B55B18
+  43 0169 B9B3C948 		.ascii	"\271\263\311H\366_F\246\266e\344\3566\214\334CX}\320"
+  43      F65F46A6 
+  43      B665E4EE 
+  43      368CDC43 
+  43      587DD0
+  44 017c B163B62C 		.ascii	"\261c\266,\026\343\322\276\\\271\314+\000\325l\002\322"
+  44      16E3D2BE 
+  44      5CB9CC2B 
+  44      00D56C02 
+  44      D2
+  45 018d 0ECD0FB5 		.ascii	"\016\315\017\265O\243F\372\014\272\351~\272\031\246"
+  45      4FA346FA 
+  45      0CBAE97E 
+  45      BA19A6
+  46 019c 0A032A2C 		.ascii	"\012\003*,SaP\205\214\255:\023\230\347\364\020+\210"
+  46      53615085 
+  46      8CAD3A13 
+  46      98E7F410 
+  46      2B88
+  47 01ae F567AF47 		.ascii	"\365g\257GT\213\342\202\307\005\030e\326\272\277\026"
+  47      548BE282 
+  47      C7051865 
+  47      D6BABF16 
+  48 01be 7437A5C5 		.ascii	"t7\245\305i\244V\220\353]\332\251\022\344\267\327\312"
+  48      69A45690 
+  48      EB5DDAA9 
+  48      12E4B7D7 
+  48      CA
+  49 01cf BD34D484 		.ascii	"\2754\324\204\352\316\200\014\345\223\027E\032\251\316"
+  49      EACE800C 
+  49      E5931745 
+  49      1AA9CE
+  50 01de 44A79447 		.ascii	"D\247\224G\251\200\237tp_\235\021\323H\203$\210\037"
+  50      A9809F74 
+  50      705F9D11 
+  50      D3488324 
+  50      881F
+  51 01f0 1FE8FAA1 		.ascii	"\037\350\372\241\271\212\206\332\247cQr\255\253\340"
+  51      B98A86DA 
+  51      A7635172 
+  51      ADABE0
+  52 01ff 25892448 		.ascii	"%\211$H\254\177\2460\257+m\023~<@\3105\363\223\273 "
+  52      AC7FA630 
+  52      AF2B6D13 
+  52      7E3C40C8 
+  52      35F393BB 
+  53 0214 93701BBD 		.ascii	"\223p\033\275lU\334\360\212\3178\305M\267x\316;N\200"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 4
+
+
+  53      6C55DCF0 
+  53      8ACF38C5 
+  53      4DB778CE 
+  53      3B4E80
+  54 0227 8A13EF49 		.ascii	"\212\023\357I\361\233]\341\376t\034\263(1S\346\232y"
+  54      F19B5DE1 
+  54      FE741CB3 
+  54      283153E6 
+  54      9A79
+  55 0239 BDFA2C15 		.ascii	"\275\372,\025p\315\354\300\\\251\231 \341\376o&\340"
+  55      70CDECC0 
+  55      5CA99920 
+  55      E1FE6F26 
+  55      E0
+  56 024a 9979E898 		.ascii	"\231y\350\230\011\262\317\210\331\223\225\212\340\264"
+  56      09B2CF88 
+  56      D993958A 
+  56      E0B4
+  57 0258 7595D37F 		.ascii	"u\225\323\177Am\330u8z*\332\332\320\026m:^\327\322\336"
+  57      416DD875 
+  57      387A2ADA 
+  57      DAD0166D 
+  57      3A5ED7D2 
+  58 026d DA18AD3F 		.ascii	"\332\030\255?R\327rh\177}\343\271\366\266\023\315g\366"
+  58      52D77268 
+  58      7F7DE3B9 
+  58      F6B613CD 
+  58      67F6
+  59 027f 3432ADA1 		.ascii	"42\255\241\251\251U?\333\320\334\0365\332N\236>H\321"
+  59      A9A9553F 
+  59      DBD0DC1E 
+  59      35DA4E9E 
+  59      3E48D1
+  60 0292 6FA03760 		.ascii	"o\2407`\325"
+  60      D5
+  61              		.text
+  62              		.section	.gnu.lto_.symbol_nodes.d4c5d77,"",%progbits
+  63 0000 789C6361 		.ascii	"x\234ca`d\020f\000\002&\206z\006\206\011\347\030@\324"
+  63      60641066 
+  63      00022686 
+  63      7A068609 
+  63      E71840D4 
+  64 0014 AA4645A0 		.ascii	"\252FE\240\010\000&\335\003\303"
+  64      080026DD 
+  64      03C3
+  65              		.text
+  66              		.section	.gnu.lto_.refs.d4c5d77,"",%progbits
+  67 0000 789C6361 		.ascii	"x\234ca`\004B \000\000\0009\000\007"
+  67      60044220 
+  67      00000039 
+  67      0007
+  68              		.text
+  69              		.section	.gnu.lto_.decls.d4c5d77,"",%progbits
+  70 0000 789C8D51 		.ascii	"x\234\215Q_HSQ\030?\337\275\3279of1D\366p\203\345\313"
+  70      5F485351 
+  70      183FDFBD 
+  70      D7396F66 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 5
+
+
+  70      3144F670 
+  71 0017 F634520B 		.ascii	"\3664R\013z\352e\220=U8\362I\010[\267\022BC\357\036"
+  71      7AEA6590 
+  71      3D5538F2 
+  71      49085BB7 
+  71      124243EF 
+  72 002c F676701A 		.ascii	"\366vp\032+z\230\220\222\222\261z0\327V[i\346J\037z"
+  72      2B7A9890 
+  72      9292B17A 
+  72      30D7565B 
+  72      69E64A1F 
+  73 0041 93A0A084 		.ascii	"\223\240\240\204\300D\266X=DB\177\334\213-[\3379\347"
+  73      C044B658 
+  73      3D44427F 
+  73      DC8B2D5B 
+  73      DF39E7
+  74 0054 CE3B95C8 		.ascii	"\316;\225\310\017\276{\316\375\235\337\367\357\367)"
+  74      0FBE7BCE 
+  74      FD9DDFF7 
+  74      EFF729
+  75 0063 0408B3B0 		.ascii	"\004\010\263\260L\310\005<\015\364\022\232\204g;\261"
+  75      4CC8053C 
+  75      0DF4129A 
+  75      84673BB1 
+  76 0073 8CB166C8 		.ascii	"\214\261f\310Nc\230jr\035\350\365\350S\350)\364yt\015"
+  76      4E63986A 
+  76      721DE8F5 
+  76      E853E829 
+  76      F479740D 
+  77 0087 DD8D3E87 		.ascii	"\335\215>\207~\352?\2716$\370]|\363\262z\031\226\030"
+  77      7EEA3FB9 
+  77      3624F85D 
+  77      7CF3B27A 
+  77      199618
+  78 009a 059811B3 		.ascii	"\005\230\021\263\277-\2150T\300R\031\022o\260\223\314"
+  78      BF2D8D30 
+  78      54C05219 
+  78      126FB093 
+  78      CC
+  79 00ab 5358F836 		.ascii	"SX\3706\002\237\225\233\365\000\242\260\010\252\344"
+  79      029F959B 
+  79      F500A2B0 
+  79      08AAE4
+  80 00ba 974B6359 		.ascii	"\227KcYq\005\262\331E\231[\221\317\354\336jv\233\311"
+  80      7105B2D9 
+  80      45995B91 
+  80      CFECDE6A 
+  80      769BC9
+  81 00cd E5A16FF6 		.ascii	"\345\241o\366\217\017\326\310\230\023\357\331\365\311"
+  81      8F0FD6C8 
+  81      9813EFD9 
+  81      F5C9
+  82 00db E3DE2445 		.ascii	"\343\336$E\213R*\035\260\224YY\210'\344\202\004n\025"
+  82      8B522A1D 
+  82      B0945959 
+  82      8827E482 
+  82      046E15
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 6
+
+
+  83 00ee 58FA7D08 		.ascii	"X\372}\010\245V3\353{\005\304\030\257\262\237\177\326"
+  83      A55633EB 
+  83      7B05C418 
+  83      AFB29F7F 
+  83      D6
+  84 00ff C80DFCFE 		.ascii	"\310\015\374\376v }\233\261\035*(\370\373\343\365X\276"
+  84      76207D9B 
+  84      B11D2A28 
+  84      F8FBE3F5 
+  84      58BE
+  85 0111 0E7FEB55 		.ascii	"\016\177\353UpmH\322\273\321\325\254\015TO\204\322~"
+  85      706D48D2 
+  85      BBD1D5AC 
+  85      0D544F84 
+  85      D27E
+  86 0123 1A0D53C7 		.ascii	"\032\015S\307\011\002\217@\203\207\240\021H\203\207"
+  86      09028F40 
+  86      8387A011 
+  86      488387
+  87 0132 658C8397 		.ascii	"e\214\203\227@\002\301\007\010N\260\206r\305\331c\031"
+  87      4002C107 
+  87      084EB086 
+  87      72C5D963 
+  87      19
+  88 0143 4AF7430A 		.ascii	"J\367C\012TH\202\314)8\234[\025\035\226r\323QIaZ0\302"
+  88      544882CC 
+  88      29389C5B 
+  88      151D9672 
+  88      D3514961 
+  89 015a 398561D7 		.ascii	"9\205a\327>\016\177\250R\261NxWu0\242\370mq\311^{}\263"
+  89      3E0E7FA8 
+  89      52B14E78 
+  89      577530A2 
+  89      F86D71C9 
+  90 0172 337882C9 		.ascii	"3x\202\311\312A\004\246\240\326\024\344\306\325\221"
+  90      CA4104A6 
+  90      A0D614E4 
+  90      C6D591
+  91 0181 02F07288 		.ascii	"\002\360r\210\301c\340\365\326\306\222\343\325\316\021"
+  91      C163E0F5 
+  91      D6C692E3 
+  91      D5CE11
+  92 0190 AE5F98BA 		.ascii	"\256_\230\272\024ho\250\010~\012N\374N#\225g\210|\275"
+  92      14686FA8 
+  92      087E0A4E 
+  92      FC4E2395 
+  92      67887CBD 
+  93 01a4 13A96B8C 		.ascii	"\023\251k\214\321X\214\346Jw\333\206\302t\001\343\\"
+  93      D1588CE6 
+  93      4A77DB86 
+  93      C27401E3 
+  93      5C
+  94 01b5 8C0693D6 		.ascii	"\214\006\223\326|xe\307}X\306e\316@#S~\360S\334\216"
+  94      7C7865C7 
+  94      7D58C665 
+  94      CE402353 
+  94      7EF053DC 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 7
+
+
+  95 01ca 7A6AB80C 		.ascii	"zj\270\014\250\330\204&61:\224\377\263G\356dwi1\237"
+  95      A8D88426 
+  95      36313A94 
+  95      FFB347EE 
+  95      64776931 
+  96 01df F8A28047 		.ascii	"\370\242\200G5%L\013\011_\340P\031\253\204\306$\344"
+  96      35254C0B 
+  96      095FE050 
+  96      19AB84C6 
+  96      24E4
+  97 01f1 DBF87E8F 		.ascii	"\333\370~\217\332\234\004Z48\204\032=G\2154S\243Y\034"
+  97      DA9C045A 
+  97      3438841A 
+  97      3D478D34 
+  97      53A3591C 
+  98 0205 E399D0A8 		.ascii	"\343\231\320\2500\260\366\336&T\335\025\377\326\360"
+  98      30B0F6DE 
+  98      2654DD15 
+  98      FFD6F0
+  99 0214 C4AFBA4A 		.ascii	"\304\257\272JM\347\266h:/4\345\247\352\013\371u\243"
+  99      4DE7B668 
+  99      3A2F34E5 
+  99      A7EA0BF9 
+  99      75A3
+ 100 0226 4DBFD87C 		.ascii	"M\277\330|\330\336z\362\214\313\327\324Dl\301\256n\243"
+ 100      D8DE7AF2 
+ 100      8CCBD7D4 
+ 100      446CC1AE 
+ 100      6EA3
+ 101 0238 A5F960AB 		.ascii	"\245\371`\253\336\255\367v\032\372\371\263\376\236`"
+ 101      DEADF776 
+ 101      1AFAF9B3 
+ 101      FE9E60
+ 102 0247 6F40EF38 		.ascii	"o@\3578\355\357\361\035\351\010\204\214\320\025\275"
+ 102      EDEFF11D 
+ 102      E908848C 
+ 102      D015BD
+ 103 0256 CF7B89FC 		.ascii	"\317{\211\374\233\0214\272.\367y\003\244\212\245:\372"
+ 103      9B1134BA 
+ 103      2EF77903 
+ 103      A48AA53A 
+ 103      FA
+ 104 0267 17AEFB0A 		.ascii	"\027\256\373\012|"
+ 104      7C
+ 105              		.text
+ 106              		.section	.gnu.lto_.symtab.d4c5d77,"",%progbits
+ 107 0000 43795365 		.ascii	"CySetReg24\000"
+ 107      74526567 
+ 107      323400
+ 108 000b 00       		.ascii	"\000"
+ 109 000c 00       		.ascii	"\000"
+ 110 000d 00       		.ascii	"\000"
+ 111 000e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 111      00000000 
+ 112 0016 B6000000 		.ascii	"\266\000\000\000"
+ 113              		.text
+ 114              		.section	.gnu.lto_.opts,"",%progbits
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 8
+
+
+ 115 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+ 115      6174682D 
+ 115      6572726E 
+ 115      6F272027 
+ 115      2D667369 
+ 116 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-strict-overflow' '-fno-openmp' '-"
+ 116      2D747261 
+ 116      70762720 
+ 116      272D666E 
+ 116      6F2D7374 
+ 117 0066 666E6F2D 		.ascii	"fno-openacc' '-mcpu=cortex-m3' '-mthumb' '-g' '-O0'"
+ 117      6F70656E 
+ 117      61636327 
+ 117      20272D6D 
+ 117      6370753D 
+ 118 0099 20272D66 		.ascii	" '-ffunction-sections' '-ffat-lto-objects' '-finlin"
+ 118      66756E63 
+ 118      74696F6E 
+ 118      2D736563 
+ 118      74696F6E 
+ 119 00cc 652D6675 		.ascii	"e-functions' '-flto'\000"
+ 119      6E637469 
+ 119      6F6E7327 
+ 119      20272D66 
+ 119      6C746F27 
+ 120              		.text
+ 121              		.cfi_sections	.debug_frame
+ 122              		.section	.text.CySetReg24,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	CySetReg24
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	CySetReg24, %function
+ 128              	CySetReg24:
+ 129              	.LFB0:
+ 130              		.file 1 "Generated_Source\\PSoC5\\cyutils.c"
+   1:Generated_Source\PSoC5/cyutils.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC5/cyutils.c **** * \file cyutils.c
+   3:Generated_Source\PSoC5/cyutils.c **** * \version 5.80
+   4:Generated_Source\PSoC5/cyutils.c **** *
+   5:Generated_Source\PSoC5/cyutils.c **** * \brief Provides a function to handle 24-bit value writes.
+   6:Generated_Source\PSoC5/cyutils.c **** *
+   7:Generated_Source\PSoC5/cyutils.c **** ********************************************************************************
+   8:Generated_Source\PSoC5/cyutils.c **** * \copyright
+   9:Generated_Source\PSoC5/cyutils.c **** * Copyright 2008-2018, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC5/cyutils.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC5/cyutils.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC5/cyutils.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC5/cyutils.c **** *******************************************************************************/
+  14:Generated_Source\PSoC5/cyutils.c **** 
+  15:Generated_Source\PSoC5/cyutils.c **** #include "cytypes.h"
+  16:Generated_Source\PSoC5/cyutils.c **** 
+  17:Generated_Source\PSoC5/cyutils.c **** #if (!CY_PSOC3)
+  18:Generated_Source\PSoC5/cyutils.c **** 
+  19:Generated_Source\PSoC5/cyutils.c ****     /***************************************************************************
+  20:Generated_Source\PSoC5/cyutils.c ****     * Function Name: CySetReg24
+  21:Generated_Source\PSoC5/cyutils.c ****     ************************************************************************//**
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 9
+
+
+  22:Generated_Source\PSoC5/cyutils.c ****     *
+  23:Generated_Source\PSoC5/cyutils.c ****     * Writes a 24-bit value to the specified register.
+  24:Generated_Source\PSoC5/cyutils.c ****     *
+  25:Generated_Source\PSoC5/cyutils.c ****     * \param add The address where data must be written.
+  26:Generated_Source\PSoC5/cyutils.c ****     * \param value The data that must be written.
+  27:Generated_Source\PSoC5/cyutils.c ****     *
+  28:Generated_Source\PSoC5/cyutils.c ****     * Reentrant:
+  29:Generated_Source\PSoC5/cyutils.c ****     *  No
+  30:Generated_Source\PSoC5/cyutils.c ****     *
+  31:Generated_Source\PSoC5/cyutils.c ****     ***************************************************************************/
+  32:Generated_Source\PSoC5/cyutils.c ****     void CySetReg24(uint32 volatile * addr, uint32 value)
+  33:Generated_Source\PSoC5/cyutils.c ****     {
+ 131              		.loc 1 33 0
+ 132              		.cfi_startproc
+ 133              		@ args = 0, pretend = 0, frame = 16
+ 134              		@ frame_needed = 1, uses_anonymous_args = 0
+ 135              		@ link register save eliminated.
+ 136 0000 80B4     		push	{r7}
+ 137              		.cfi_def_cfa_offset 4
+ 138              		.cfi_offset 7, -4
+ 139 0002 85B0     		sub	sp, sp, #20
+ 140              		.cfi_def_cfa_offset 24
+ 141 0004 00AF     		add	r7, sp, #0
+ 142              		.cfi_def_cfa_register 7
+ 143 0006 7860     		str	r0, [r7, #4]
+ 144 0008 3960     		str	r1, [r7]
+  34:Generated_Source\PSoC5/cyutils.c ****         uint8 volatile *tmpAddr;
+  35:Generated_Source\PSoC5/cyutils.c **** 
+  36:Generated_Source\PSoC5/cyutils.c ****         tmpAddr = (uint8 volatile *) addr;
+ 145              		.loc 1 36 0
+ 146 000a 7B68     		ldr	r3, [r7, #4]
+ 147 000c FB60     		str	r3, [r7, #12]
+  37:Generated_Source\PSoC5/cyutils.c **** 
+  38:Generated_Source\PSoC5/cyutils.c ****         tmpAddr[0u] = (uint8) value;
+ 148              		.loc 1 38 0
+ 149 000e 3B68     		ldr	r3, [r7]
+ 150 0010 DAB2     		uxtb	r2, r3
+ 151 0012 FB68     		ldr	r3, [r7, #12]
+ 152 0014 1A70     		strb	r2, [r3]
+  39:Generated_Source\PSoC5/cyutils.c ****         tmpAddr[1u] = (uint8) (value >> 8u);
+ 153              		.loc 1 39 0
+ 154 0016 FB68     		ldr	r3, [r7, #12]
+ 155 0018 0133     		adds	r3, r3, #1
+ 156 001a 3A68     		ldr	r2, [r7]
+ 157 001c 120A     		lsrs	r2, r2, #8
+ 158 001e D2B2     		uxtb	r2, r2
+ 159 0020 1A70     		strb	r2, [r3]
+  40:Generated_Source\PSoC5/cyutils.c ****         tmpAddr[2u] = (uint8) (value >> 16u);
+ 160              		.loc 1 40 0
+ 161 0022 FB68     		ldr	r3, [r7, #12]
+ 162 0024 0233     		adds	r3, r3, #2
+ 163 0026 3A68     		ldr	r2, [r7]
+ 164 0028 120C     		lsrs	r2, r2, #16
+ 165 002a D2B2     		uxtb	r2, r2
+ 166 002c 1A70     		strb	r2, [r3]
+  41:Generated_Source\PSoC5/cyutils.c ****     }
+ 167              		.loc 1 41 0
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 10
+
+
+ 168 002e 00BF     		nop
+ 169 0030 1437     		adds	r7, r7, #20
+ 170              		.cfi_def_cfa_offset 4
+ 171 0032 BD46     		mov	sp, r7
+ 172              		.cfi_def_cfa_register 13
+ 173              		@ sp needed
+ 174 0034 80BC     		pop	{r7}
+ 175              		.cfi_restore 7
+ 176              		.cfi_def_cfa_offset 0
+ 177 0036 7047     		bx	lr
+ 178              		.cfi_endproc
+ 179              	.LFE0:
+ 180              		.size	CySetReg24, .-CySetReg24
+ 181              		.text
+ 182              	.Letext0:
+ 183              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 184              		.section	.debug_info,"",%progbits
+ 185              	.Ldebug_info0:
+ 186 0000 EB000000 		.4byte	0xeb
+ 187 0004 0400     		.2byte	0x4
+ 188 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 189 000a 04       		.byte	0x4
+ 190 000b 01       		.uleb128 0x1
+ 191 000c 39010000 		.4byte	.LASF16
+ 192 0010 0C       		.byte	0xc
+ 193 0011 AE000000 		.4byte	.LASF17
+ 194 0015 1C000000 		.4byte	.LASF18
+ 195 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 196 001d 00000000 		.4byte	0
+ 197 0021 00000000 		.4byte	.Ldebug_line0
+ 198 0025 02       		.uleb128 0x2
+ 199 0026 01       		.byte	0x1
+ 200 0027 06       		.byte	0x6
+ 201 0028 2D010000 		.4byte	.LASF0
+ 202 002c 02       		.uleb128 0x2
+ 203 002d 01       		.byte	0x1
+ 204 002e 08       		.byte	0x8
+ 205 002f 73000000 		.4byte	.LASF1
+ 206 0033 02       		.uleb128 0x2
+ 207 0034 02       		.byte	0x2
+ 208 0035 05       		.byte	0x5
+ 209 0036 14010000 		.4byte	.LASF2
+ 210 003a 02       		.uleb128 0x2
+ 211 003b 02       		.byte	0x2
+ 212 003c 07       		.byte	0x7
+ 213 003d 9B000000 		.4byte	.LASF3
+ 214 0041 02       		.uleb128 0x2
+ 215 0042 04       		.byte	0x4
+ 216 0043 05       		.byte	0x5
+ 217 0044 24010000 		.4byte	.LASF4
+ 218 0048 02       		.uleb128 0x2
+ 219 0049 04       		.byte	0x4
+ 220 004a 07       		.byte	0x7
+ 221 004b 89000000 		.4byte	.LASF5
+ 222 004f 02       		.uleb128 0x2
+ 223 0050 08       		.byte	0x8
+ 224 0051 05       		.byte	0x5
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 11
+
+
+ 225 0052 01010000 		.4byte	.LASF6
+ 226 0056 02       		.uleb128 0x2
+ 227 0057 08       		.byte	0x8
+ 228 0058 07       		.byte	0x7
+ 229 0059 EA000000 		.4byte	.LASF7
+ 230 005d 03       		.uleb128 0x3
+ 231 005e 04       		.byte	0x4
+ 232 005f 05       		.byte	0x5
+ 233 0060 696E7400 		.ascii	"int\000"
+ 234 0064 02       		.uleb128 0x2
+ 235 0065 04       		.byte	0x4
+ 236 0066 07       		.byte	0x7
+ 237 0067 DD000000 		.4byte	.LASF8
+ 238 006b 04       		.uleb128 0x4
+ 239 006c 1E010000 		.4byte	.LASF9
+ 240 0070 02       		.byte	0x2
+ 241 0071 E401     		.2byte	0x1e4
+ 242 0073 2C000000 		.4byte	0x2c
+ 243 0077 04       		.uleb128 0x4
+ 244 0078 D6000000 		.4byte	.LASF10
+ 245 007c 02       		.byte	0x2
+ 246 007d E601     		.2byte	0x1e6
+ 247 007f 48000000 		.4byte	0x48
+ 248 0083 02       		.uleb128 0x2
+ 249 0084 04       		.byte	0x4
+ 250 0085 04       		.byte	0x4
+ 251 0086 16000000 		.4byte	.LASF11
+ 252 008a 02       		.uleb128 0x2
+ 253 008b 08       		.byte	0x8
+ 254 008c 04       		.byte	0x4
+ 255 008d CF000000 		.4byte	.LASF12
+ 256 0091 02       		.uleb128 0x2
+ 257 0092 01       		.byte	0x1
+ 258 0093 08       		.byte	0x8
+ 259 0094 0F010000 		.4byte	.LASF13
+ 260 0098 05       		.uleb128 0x5
+ 261 0099 6B000000 		.4byte	0x6b
+ 262 009d 05       		.uleb128 0x5
+ 263 009e 77000000 		.4byte	0x77
+ 264 00a2 06       		.uleb128 0x6
+ 265 00a3 06000000 		.4byte	.LASF19
+ 266 00a7 01       		.byte	0x1
+ 267 00a8 20       		.byte	0x20
+ 268 00a9 00000000 		.4byte	.LFB0
+ 269 00ad 38000000 		.4byte	.LFE0-.LFB0
+ 270 00b1 01       		.uleb128 0x1
+ 271 00b2 9C       		.byte	0x9c
+ 272 00b3 E2000000 		.4byte	0xe2
+ 273 00b7 07       		.uleb128 0x7
+ 274 00b8 11000000 		.4byte	.LASF14
+ 275 00bc 01       		.byte	0x1
+ 276 00bd 20       		.byte	0x20
+ 277 00be E2000000 		.4byte	0xe2
+ 278 00c2 02       		.uleb128 0x2
+ 279 00c3 91       		.byte	0x91
+ 280 00c4 6C       		.sleb128 -20
+ 281 00c5 07       		.uleb128 0x7
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 12
+
+
+ 282 00c6 00000000 		.4byte	.LASF15
+ 283 00ca 01       		.byte	0x1
+ 284 00cb 20       		.byte	0x20
+ 285 00cc 77000000 		.4byte	0x77
+ 286 00d0 02       		.uleb128 0x2
+ 287 00d1 91       		.byte	0x91
+ 288 00d2 68       		.sleb128 -24
+ 289 00d3 08       		.uleb128 0x8
+ 290 00d4 81000000 		.4byte	.LASF20
+ 291 00d8 01       		.byte	0x1
+ 292 00d9 22       		.byte	0x22
+ 293 00da E8000000 		.4byte	0xe8
+ 294 00de 02       		.uleb128 0x2
+ 295 00df 91       		.byte	0x91
+ 296 00e0 74       		.sleb128 -12
+ 297 00e1 00       		.byte	0
+ 298 00e2 09       		.uleb128 0x9
+ 299 00e3 04       		.byte	0x4
+ 300 00e4 9D000000 		.4byte	0x9d
+ 301 00e8 09       		.uleb128 0x9
+ 302 00e9 04       		.byte	0x4
+ 303 00ea 98000000 		.4byte	0x98
+ 304 00ee 00       		.byte	0
+ 305              		.section	.debug_abbrev,"",%progbits
+ 306              	.Ldebug_abbrev0:
+ 307 0000 01       		.uleb128 0x1
+ 308 0001 11       		.uleb128 0x11
+ 309 0002 01       		.byte	0x1
+ 310 0003 25       		.uleb128 0x25
+ 311 0004 0E       		.uleb128 0xe
+ 312 0005 13       		.uleb128 0x13
+ 313 0006 0B       		.uleb128 0xb
+ 314 0007 03       		.uleb128 0x3
+ 315 0008 0E       		.uleb128 0xe
+ 316 0009 1B       		.uleb128 0x1b
+ 317 000a 0E       		.uleb128 0xe
+ 318 000b 55       		.uleb128 0x55
+ 319 000c 17       		.uleb128 0x17
+ 320 000d 11       		.uleb128 0x11
+ 321 000e 01       		.uleb128 0x1
+ 322 000f 10       		.uleb128 0x10
+ 323 0010 17       		.uleb128 0x17
+ 324 0011 00       		.byte	0
+ 325 0012 00       		.byte	0
+ 326 0013 02       		.uleb128 0x2
+ 327 0014 24       		.uleb128 0x24
+ 328 0015 00       		.byte	0
+ 329 0016 0B       		.uleb128 0xb
+ 330 0017 0B       		.uleb128 0xb
+ 331 0018 3E       		.uleb128 0x3e
+ 332 0019 0B       		.uleb128 0xb
+ 333 001a 03       		.uleb128 0x3
+ 334 001b 0E       		.uleb128 0xe
+ 335 001c 00       		.byte	0
+ 336 001d 00       		.byte	0
+ 337 001e 03       		.uleb128 0x3
+ 338 001f 24       		.uleb128 0x24
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 13
+
+
+ 339 0020 00       		.byte	0
+ 340 0021 0B       		.uleb128 0xb
+ 341 0022 0B       		.uleb128 0xb
+ 342 0023 3E       		.uleb128 0x3e
+ 343 0024 0B       		.uleb128 0xb
+ 344 0025 03       		.uleb128 0x3
+ 345 0026 08       		.uleb128 0x8
+ 346 0027 00       		.byte	0
+ 347 0028 00       		.byte	0
+ 348 0029 04       		.uleb128 0x4
+ 349 002a 16       		.uleb128 0x16
+ 350 002b 00       		.byte	0
+ 351 002c 03       		.uleb128 0x3
+ 352 002d 0E       		.uleb128 0xe
+ 353 002e 3A       		.uleb128 0x3a
+ 354 002f 0B       		.uleb128 0xb
+ 355 0030 3B       		.uleb128 0x3b
+ 356 0031 05       		.uleb128 0x5
+ 357 0032 49       		.uleb128 0x49
+ 358 0033 13       		.uleb128 0x13
+ 359 0034 00       		.byte	0
+ 360 0035 00       		.byte	0
+ 361 0036 05       		.uleb128 0x5
+ 362 0037 35       		.uleb128 0x35
+ 363 0038 00       		.byte	0
+ 364 0039 49       		.uleb128 0x49
+ 365 003a 13       		.uleb128 0x13
+ 366 003b 00       		.byte	0
+ 367 003c 00       		.byte	0
+ 368 003d 06       		.uleb128 0x6
+ 369 003e 2E       		.uleb128 0x2e
+ 370 003f 01       		.byte	0x1
+ 371 0040 3F       		.uleb128 0x3f
+ 372 0041 19       		.uleb128 0x19
+ 373 0042 03       		.uleb128 0x3
+ 374 0043 0E       		.uleb128 0xe
+ 375 0044 3A       		.uleb128 0x3a
+ 376 0045 0B       		.uleb128 0xb
+ 377 0046 3B       		.uleb128 0x3b
+ 378 0047 0B       		.uleb128 0xb
+ 379 0048 27       		.uleb128 0x27
+ 380 0049 19       		.uleb128 0x19
+ 381 004a 11       		.uleb128 0x11
+ 382 004b 01       		.uleb128 0x1
+ 383 004c 12       		.uleb128 0x12
+ 384 004d 06       		.uleb128 0x6
+ 385 004e 40       		.uleb128 0x40
+ 386 004f 18       		.uleb128 0x18
+ 387 0050 9742     		.uleb128 0x2117
+ 388 0052 19       		.uleb128 0x19
+ 389 0053 01       		.uleb128 0x1
+ 390 0054 13       		.uleb128 0x13
+ 391 0055 00       		.byte	0
+ 392 0056 00       		.byte	0
+ 393 0057 07       		.uleb128 0x7
+ 394 0058 05       		.uleb128 0x5
+ 395 0059 00       		.byte	0
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 14
+
+
+ 396 005a 03       		.uleb128 0x3
+ 397 005b 0E       		.uleb128 0xe
+ 398 005c 3A       		.uleb128 0x3a
+ 399 005d 0B       		.uleb128 0xb
+ 400 005e 3B       		.uleb128 0x3b
+ 401 005f 0B       		.uleb128 0xb
+ 402 0060 49       		.uleb128 0x49
+ 403 0061 13       		.uleb128 0x13
+ 404 0062 02       		.uleb128 0x2
+ 405 0063 18       		.uleb128 0x18
+ 406 0064 00       		.byte	0
+ 407 0065 00       		.byte	0
+ 408 0066 08       		.uleb128 0x8
+ 409 0067 34       		.uleb128 0x34
+ 410 0068 00       		.byte	0
+ 411 0069 03       		.uleb128 0x3
+ 412 006a 0E       		.uleb128 0xe
+ 413 006b 3A       		.uleb128 0x3a
+ 414 006c 0B       		.uleb128 0xb
+ 415 006d 3B       		.uleb128 0x3b
+ 416 006e 0B       		.uleb128 0xb
+ 417 006f 49       		.uleb128 0x49
+ 418 0070 13       		.uleb128 0x13
+ 419 0071 02       		.uleb128 0x2
+ 420 0072 18       		.uleb128 0x18
+ 421 0073 00       		.byte	0
+ 422 0074 00       		.byte	0
+ 423 0075 09       		.uleb128 0x9
+ 424 0076 0F       		.uleb128 0xf
+ 425 0077 00       		.byte	0
+ 426 0078 0B       		.uleb128 0xb
+ 427 0079 0B       		.uleb128 0xb
+ 428 007a 49       		.uleb128 0x49
+ 429 007b 13       		.uleb128 0x13
+ 430 007c 00       		.byte	0
+ 431 007d 00       		.byte	0
+ 432 007e 00       		.byte	0
+ 433              		.section	.debug_aranges,"",%progbits
+ 434 0000 1C000000 		.4byte	0x1c
+ 435 0004 0200     		.2byte	0x2
+ 436 0006 00000000 		.4byte	.Ldebug_info0
+ 437 000a 04       		.byte	0x4
+ 438 000b 00       		.byte	0
+ 439 000c 0000     		.2byte	0
+ 440 000e 0000     		.2byte	0
+ 441 0010 00000000 		.4byte	.LFB0
+ 442 0014 38000000 		.4byte	.LFE0-.LFB0
+ 443 0018 00000000 		.4byte	0
+ 444 001c 00000000 		.4byte	0
+ 445              		.section	.debug_ranges,"",%progbits
+ 446              	.Ldebug_ranges0:
+ 447 0000 00000000 		.4byte	.LFB0
+ 448 0004 38000000 		.4byte	.LFE0
+ 449 0008 00000000 		.4byte	0
+ 450 000c 00000000 		.4byte	0
+ 451              		.section	.debug_line,"",%progbits
+ 452              	.Ldebug_line0:
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 15
+
+
+ 453 0000 5E000000 		.section	.debug_str,"MS",%progbits,1
+ 453      02004400 
+ 453      00000201 
+ 453      FB0E0D00 
+ 453      01010101 
+ 454              	.LASF15:
+ 455 0000 76616C75 		.ascii	"value\000"
+ 455      6500
+ 456              	.LASF19:
+ 457 0006 43795365 		.ascii	"CySetReg24\000"
+ 457      74526567 
+ 457      323400
+ 458              	.LASF14:
+ 459 0011 61646472 		.ascii	"addr\000"
+ 459      00
+ 460              	.LASF11:
+ 461 0016 666C6F61 		.ascii	"float\000"
+ 461      7400
+ 462              	.LASF18:
+ 463 001c 433A5C55 		.ascii	"C:\\Users\\Sava\\Documents\\PSoC Creator\\GUI_and_d"
+ 463      73657273 
+ 463      5C536176 
+ 463      615C446F 
+ 463      63756D65 
+ 464 004a 6973706C 		.ascii	"isplay\\LittlevGL(5v3)_demo_ILI9341.cydsn\000"
+ 464      61795C4C 
+ 464      6974746C 
+ 464      6576474C 
+ 464      28357633 
+ 465              	.LASF1:
+ 466 0073 756E7369 		.ascii	"unsigned char\000"
+ 466      676E6564 
+ 466      20636861 
+ 466      7200
+ 467              	.LASF20:
+ 468 0081 746D7041 		.ascii	"tmpAddr\000"
+ 468      64647200 
+ 469              	.LASF5:
+ 470 0089 6C6F6E67 		.ascii	"long unsigned int\000"
+ 470      20756E73 
+ 470      69676E65 
+ 470      6420696E 
+ 470      7400
+ 471              	.LASF3:
+ 472 009b 73686F72 		.ascii	"short unsigned int\000"
+ 472      7420756E 
+ 472      7369676E 
+ 472      65642069 
+ 472      6E7400
+ 473              	.LASF17:
+ 474 00ae 47656E65 		.ascii	"Generated_Source\\PSoC5\\cyutils.c\000"
+ 474      72617465 
+ 474      645F536F 
+ 474      75726365 
+ 474      5C50536F 
+ 475              	.LASF12:
+ 476 00cf 646F7562 		.ascii	"double\000"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 16
+
+
+ 476      6C6500
+ 477              	.LASF10:
+ 478 00d6 75696E74 		.ascii	"uint32\000"
+ 478      333200
+ 479              	.LASF8:
+ 480 00dd 756E7369 		.ascii	"unsigned int\000"
+ 480      676E6564 
+ 480      20696E74 
+ 480      00
+ 481              	.LASF7:
+ 482 00ea 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 482      206C6F6E 
+ 482      6720756E 
+ 482      7369676E 
+ 482      65642069 
+ 483              	.LASF6:
+ 484 0101 6C6F6E67 		.ascii	"long long int\000"
+ 484      206C6F6E 
+ 484      6720696E 
+ 484      7400
+ 485              	.LASF13:
+ 486 010f 63686172 		.ascii	"char\000"
+ 486      00
+ 487              	.LASF2:
+ 488 0114 73686F72 		.ascii	"short int\000"
+ 488      7420696E 
+ 488      7400
+ 489              	.LASF9:
+ 490 011e 75696E74 		.ascii	"uint8\000"
+ 490      3800
+ 491              	.LASF4:
+ 492 0124 6C6F6E67 		.ascii	"long int\000"
+ 492      20696E74 
+ 492      00
+ 493              	.LASF0:
+ 494 012d 7369676E 		.ascii	"signed char\000"
+ 494      65642063 
+ 494      68617200 
+ 495              	.LASF16:
+ 496 0139 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 496      43313120 
+ 496      352E342E 
+ 496      31203230 
+ 496      31363036 
+ 497 016c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 497      20726576 
+ 497      6973696F 
+ 497      6E203233 
+ 497      37373135 
+ 498 019f 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 498      66756E63 
+ 498      74696F6E 
+ 498      2D736563 
+ 498      74696F6E 
+ 499 01d2 6E637469 		.ascii	"nctions -flto\000"
+ 499      6F6E7320 
+ 499      2D666C74 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\ccFuzgYa.s 			page 17
+
+
+ 499      6F00
+ 500              		.comm	__gnu_lto_v1,1,1
+ 501              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

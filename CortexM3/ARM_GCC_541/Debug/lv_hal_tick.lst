@@ -1,0 +1,1687 @@
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"lv_hal_tick.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.inline.d4b914b,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d\000\001[\006\004`f``gc``\342z\020\313\300"
+  19      60640001 
+  19      5B060460 
+  19      66606067 
+  19      636060E2 
+  20 0018 C2C00411 		.ascii	"\302\300\004\021\342`\007\212\360l\310\205\211\2600"
+  20      E260078A 
+  20      F06CC885 
+  20      89B030
+  21 0027 7009A18A 		.ascii	"p\011\241\2120q\203H\000\233\007\004C"
+  21      30718348 
+  21      009B0704 
+  21      43
+  22              		.text
+  23              		.section	.gnu.lto_lv_tick_inc.d4b914b,"",%progbits
+  24 0000 789C8D91 		.ascii	"x\234\215\221\315k\223A\020\306\347\331y\337\274\264"
+  24      CD6B9341 
+  24      10C6E7D9 
+  24      79DFBCB4 
+  25 0010 C1EAC58B 		.ascii	"\301\352\305\213\324\222K(A(\012\236\375#<\013Aj\320"
+  25      D4924B28 
+  25      41280A9E 
+  25      FD233C0B 
+  25      416AD0
+  26 0023 624469A5 		.ascii	"bDi\245\320S\266I^l/\236j\300/*\026i\374lZ[cN\276\004"
+  26      D053B649 
+  26      5E6C2F9E 
+  26      6AC02F2A 
+  26      1669FC6C 
+  27 003d F1A2B516 		.ascii	"\361\242\265\026\021\012E\252\025\002\226\036\032\250"
+  27      110A45AA 
+  27      1502961E 
+  27      1AA8
+  28 004b 070F35CE 		.ascii	"\007\0175\316l\374h\301\203{\231\235\331\235\337\363"
+  28      6CFC68C1 
+  28      837B999D 
+  28      D99DDFF3 
+  29 005b CCAE4720 		.ascii	"\314\256G ]\203\206\350\204\304\203\2320AR\030\350\031"
+  29      5D8386E8 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 2
+
+
+  29      84C4839A 
+  29      30415218 
+  29      E819
+  30 006d 286790C3 		.ascii	"(g\220\3037\263cP\277\322\250\231\324\264\225\365)\274"
+  30      37B36350 
+  30      BFD2A899 
+  30      D4B495F5 
+  30      29BC
+  31 007f D963CB11 		.ascii	"\331c\313\021B&j\031\307 L#%\267\226\213\225[\274mB"
+  31      42266A19 
+  31      C7204C23 
+  31      25B7968B 
+  31      955BBC6D 
+  32 0094 063C499B 		.ascii	"\006<I\233\2137\276tij\220\220tq\354\353\274\307\207"
+  32      8B37BE74 
+  32      696A9090 
+  32      7471ECEB 
+  32      BCC787
+  33 00a7 41B27F75 		.ascii	"A\262\177uu\351\343\376\336{\326\346\255}\237\261\035"
+  33      75E9E3FE 
+  33      DE7BD6E6 
+  33      AD7D9FB1 
+  33      1D
+  34 00b8 21331E80 		.ascii	"!3\036\200\205\207\373\350F\031\335$%\302C\364\352\365"
+  34      8587FBE8 
+  34      4619DD24 
+  34      25C243F4 
+  34      EAF5
+  35 00ca F5D91FD7 		.ascii	"\365\331\037\327\366\305\212*\237h\213\342\021bbR\275"
+  35      F6C58A2A 
+  35      9F688BE2 
+  35      11626252 
+  35      BD
+  36 00db 4DACBCF8 		.ascii	"M\254\274\370\336\305)\307}\275|\247\340'\247\224\033"
+  36      DEC529C7 
+  36      7DBD7CA7 
+  36      E027A794 
+  36      1B
+  37 00ec AD8D5C2F 		.ascii	"\255\215\\/G\305D\310\036\036\357E;\313O\220\224\206"
+  37      47C544C8 
+  37      1E1EEF45 
+  37      3BCB4F90 
+  37      9486
+  38 00fe EAC2DD95 		.ascii	"\352\302\335\2258\037w\315\265\265\251rG\273\331\316"
+  38      381F77CD 
+  38      B5B5A972 
+  38      47BBD9CE 
+  39 010e BDB39870 		.ascii	"\275\263\230p\2753{{\307\331uW\220\2349\031\331V\253"
+  39      BD337B7B 
+  39      C7D97557 
+  39      909C3919 
+  39      D956AB
+  40 0121 60A355FF 		.ascii	"`\243U\3773\007,\206=\017\352\330\327-\321\226{\234"
+  40      33072C86 
+  40      3D0FEAD8 
+  40      D72DD196 
+  40      7B9C
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 3
+
+
+  41 0133 A691C00D 		.ascii	"\246\221\300\015\324\267+\325#\352Z\204Ja})\320\207"
+  41      D4B72BD5 
+  41      23EA5A84 
+  41      4A617D29 
+  41      D087
+  42 0145 F1DBBAB5 		.ascii	"\361\333\272\265\315\325 \267c\307\254= \265q\226\301"
+  42      CDD520B7 
+  42      63C7AC3D 
+  42      20B57196 
+  42      C1
+  43 0156 A4BC595C 		.ascii	"\244\274Y\\\177\033\237\304\355Q;\252\365\030\346\344"
+  43      7F1B9FC4 
+  43      ED513BAA 
+  43      F518E6E4 
+  44 0166 3766D53E 		.ascii	"7f\325>\236b\022\2739\362\024\230\227\223\006\362\245"
+  44      9E6212BB 
+  44      39F21498 
+  44      979306F2 
+  44      A5
+  45 0177 66B54765 		.ascii	"f\265Ge\012\314\273o\004\377P\012\334,R\336x\363\341"
+  45      0ACCBB6F 
+  45      04FF500A 
+  45      DC2C52DE 
+  45      78F3E1
+  46 018a 65A75372 		.ascii	"e\247Sru\3063QZpJUQ\022l\241\024kC}\341\026d:U\302\257"
+  46      75C63351 
+  46      5A704A55 
+  46      51126CA1 
+  46      146B437D 
+  47 01a5 71FE97FA 		.ascii	"q\376\227\372\374\017\265&Ta\321\006\362Q\323W\214\373"
+  47      FC0FB526 
+  47      5461D106 
+  47      F251D357 
+  47      8CFB
+  48 01b7 932DA35F 		.ascii	"\223-\243_Jt(;|6{*;\234>w\372wH_\036\350?\337\327Oq"
+  48      4A74283B 
+  48      7C367B2A 
+  48      3B9C3E77 
+  48      FA77485F 
+  49 01d2 8DE94B99 		.ascii	"\215\351K\231\301\201\213g:\207F\206\244~!\323w\364"
+  49      C1818B67 
+  49      3A874686 
+  49      A47E21D3 
+  49      77F4
+  50 01e4 EFF6D84F 		.ascii	"\357\366\330O\272\234\343\237"
+  50      BA9CE39F 
+  51              		.text
+  52              		.section	.gnu.lto_lv_tick_get.d4b914b,"",%progbits
+  53 0000 789C9552 		.ascii	"x\234\225R=o\023A\020\335\267{wF!\266SQ #\271\300E\232"
+  53      3D6F1341 
+  53      10DDB77B 
+  53      774621B6 
+  53      53512023 
+  54 0018 08C83FA1 		.ascii	"\010\310?\241F\262\242\010B\204\033BH\353\275\330\016"
+  54      46B2A208 
+  54      42841B42 
+  54      48EBBDD8 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 4
+
+
+  54      0E
+  55 0029 18488530 		.ascii	"\030H\2050\012\011rA\021\363i\233\217\0047pX\330\010"
+  55      0A097241 
+  55      11F3699B 
+  55      8F043770 
+  55      58D808
+  56 003c 29808244 		.ascii	")\200\202D\003\015$\310\022\221\021>\311\024H\0303\263"
+  56      030D24C8 
+  56      1291113E 
+  56      C9144818 
+  56      33B3
+  57 004e 3621201A 		.ascii	"6! \032\266\330\275\231y\363\336\233\321Y\002\202OI"
+  57      B6D8BD99 
+  57      79F3DE9B 
+  57      D1590282 
+  57      4F49
+  58 0060 0A314AEF 		.ascii	"\0121J\357A\016l\001\012!%\335Z*\272,\005\2132\026\030"
+  58      410E6C01 
+  58      0A2125DD 
+  58      5A2ABA2C 
+  58      058B3216 
+  59 0075 0D9194CA 		.ascii	"\015\221\224\312B\222\313\346|\225\035\211\365tiI\265"
+  59      4292CBE6 
+  59      7C951D89 
+  59      F5746949 
+  59      B5
+  60 0086 6546118C 		.ascii	"eF\021\214B\377\305\225\315\020\207@\224\302E\375:\033"
+  60      42FFC595 
+  60      CD108740 
+  60      94C245FD 
+  60      3A1B
+  61 0098 185ED67A 		.ascii	"\030^\326zV\277\257\345\203\013\005\317\312()\272R\240"
+  61      56BFAFE5 
+  61      830B05CF 
+  61      CA2829BA 
+  61      52A0
+  62 00aa 80089611 		.ascii	"\200\010\226\021a\342\353\030\026\004n\234\257=\012"
+  62      61E2EB18 
+  62      16046E9C 
+  62      AF3D0A
+  63 00b9 A87DE0EF 		.ascii	"\250}\340\357\347\337\3477\303\261k\334\350]\234\013"
+  63      E7DFE737 
+  63      C3B16BDC 
+  63      E85D9C0B 
+  64 00c9 2F682F1D 		.ascii	"/h/\035\245N\334\200\372\263Y0z\243\374\343R\320Ik:"
+  64      A54EDC80 
+  64      FAB35930 
+  64      7AA3FCE3 
+  64      52D0496B 
+  65 00de 51DC448C 		.ascii	"Q\334D\214\005\210\367\026\0342\256\010\260\364xeu\227"
+  65      0588F716 
+  65      1C32AE08 
+  65      B0F47865 
+  65      7597
+  66 00f0 DA6FA833 		.ascii	"\332o\2503\305O_\006\373\324\213\365\320\345\202\347"
+  66      C54F5F06 
+  66      FBD48BF5 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 5
+
+
+  66      D0E582E7 
+  67 0100 12B5C2ED 		.ascii	"\022\265\302\355\036\365h\004\007z\304\270\203\030\341"
+  67      1EF56804 
+  67      077AC4B8 
+  67      8318E1
+  68 010f 2FCC77DA 		.ascii	"/\314w\332\306\3129\355\345\347B4\203\261\"\376\366"
+  68      C6CA39ED 
+  68      E5E74234 
+  68      83B122FE 
+  68      F6
+  69 0120 8122622C 		.ascii	"\201\"b,^<\354\351n7\245\275\256\375y0`\011\316\331"
+  69      5E3CECE9 
+  69      6E37A5BD 
+  69      AEFD7930 
+  69      6009CED9 
+  70 0134 82141CC1 		.ascii	"\202\024\034\301m\242e\366\347\363\032U\003\325v\253"
+  70      6DA265F6 
+  70      E7F31A55 
+  70      03D576AB 
+  71 0144 E6DB6C95 		.ascii	"\346\333l\225\244r\231\352\253\000o\3172N+\225\346\273"
+  71      A47299EA 
+  71      AB006FCF 
+  71      324E2B95 
+  71      E6BB
+  72 0156 40B2A3CF 		.ascii	"@\262\243\317j=D\271\254\352M\333Lo\274\334\235\307"
+  72      6A3D44B9 
+  72      ACEA4DDB 
+  72      4C6FBCDC 
+  72      9DC7
+  73 0168 5557BB9C 		.ascii	"UW\273\234\267QF\022%v\201\273\310\203\020\017\316\254"
+  73      B7514612 
+  73      257681BB 
+  73      C883100F 
+  73      CEAC
+  74 017a 950798C7 		.ascii	"\225\007\230\307\006p\217*\015\314\346\312u\327\350"
+  74      06708F2A 
+  74      0DCCE6CA 
+  74      75D7E8
+  75 0189 A494B553 		.ascii	"\244\224\265S\312\371\207\224\223U0R[ko\236\016\030"
+  75      CAF98794 
+  75      93553052 
+  75      5B6B6F9E 
+  75      0E18
+  76 019b 29932766 		.ascii	")\223'f\222\272o\244VH\212x\2539\277\276\256z\274\366"
+  76      92BA6FA4 
+  76      56488A78 
+  76      AB39BFBE 
+  76      AE7ABCF6 
+  77 01af 7F785EDD 		.ascii	"\177x^\335\366\374\220\211> \3756\265\3477M\261Y\371"
+  77      F6FC9089 
+  77      3E20FD36 
+  77      B5E7374D 
+  77      B159F9
+  78 01c2 16647B64 		.ascii	"\026d{d\004\225\376\206}\376)\025\317\342?{\322\327"
+  78      0495FE86 
+  78      7DFE2915 
+  78      CFE23F7B 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 6
+
+
+  78      D2D7
+  79 01d4 E4714C89 		.ascii	"\344qL\211n\365\021\356\220\320\264\344-\310~\231\373"
+  79      6EF511EE 
+  79      90D0B4E4 
+  79      2DC87E99 
+  79      FB
+  80 01e5 5A92A6A1 		.ascii	"Z\222\246\241u\357M\314L$\216$f\342\307\307~=\361\351"
+  80      75EF4DCC 
+  80      4C248E24 
+  80      66E2C7C7 
+  80      7E3DF1E9 
+  81 01f9 C9F11323 		.ascii	"\311\361\023#\343\302\231:z\352tb:\314a|r\352d\374X"
+  81      E3C2993A 
+  81      7AEA7462 
+  81      3ACC617C 
+  81      72EA64FC 
+  82 020e 626C62E4 		.ascii	"blb\344\320O\241H\363\223"
+  82      D04FA148 
+  82      F393
+  83              		.text
+  84              		.section	.gnu.lto_lv_tick_elaps.d4b914b,"",%progbits
+  85 0000 789C5D52 		.ascii	"x\234]R=h\024A\024~\337\314\354\356\235h.\265F\270\346"
+  85      3D681441 
+  85      147EDFCC 
+  85      ECEE9D68 
+  85      2EB546B8 
+  86 0015 38D26899 		.ascii	"8\322h\231\332\316R,\254\204\020\216C\305\023D\302\265"
+  86      DACE522C 
+  86      AC84108E 
+  86      43C51344 
+  86      C2B5
+  87 0027 37DEDE2D 		.ascii	"7\336\336-\376$\205H\214I\354$$j4\011H$X\2701\304F\024"
+  87      FE248548 
+  87      8C49EC24 
+  87      246A3409 
+  87      482458B8 
+  88 003f 4CA351F0 		.ascii	"L\243Q\360\237 A!'\261\334\234\357\315\236\230d\212"
+  88      9F204121 
+  88      27B1DC9C 
+  88      EFCD9E98 
+  88      648A
+  89 0051 37F3DEFB 		.ascii	"7\363\336\373\276o\2777\263\206@\262\216)\242\243\274"
+  89      BE6FBF37 
+  89      B38640B2 
+  89      8E29A2A3 
+  89      BC
+  90 0062 F7491210 		.ascii	"\367I\022\0208\205R\232\310*\303\301hx\\1.z\3609\372"
+  90      3885529A 
+  90      C82AC3C1 
+  90      68785C31 
+  90      2E7AF039 
+  91 0077 1026A8A6 		.ascii	"\020&\250\246\264\361|\324\360G%\012o\032sw\364\226"
+  91      B4F17CD4 
+  91      F047250A 
+  91      6F1A7377 
+  91      F496
+  92 0089 6A6A0673 		.ascii	"jj\006s\332z5\376\255KR \317\351\204]\275\032\364NY"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 7
+
+
+  92      DA7A35FE 
+  92      AD4B5220 
+  92      CFE9845D 
+  92      BD1AF44E 
+  93 009e 5BB79F57 		.ascii	"[\267\237W6N\334\010\233\307\233ZQ[\021\246\321\203"
+  93      364EDC08 
+  93      9BC79B5A 
+  93      515B11A6 
+  93      D183
+  94 00b0 29F488E4 		.ascii	")\364\210\344=\3642\366\327\313\327\037s\3720\210\317"
+  94      3DF432F6 
+  94      D7CBD71F 
+  94      73FA3088 
+  94      CF
+  95 00c1 0BF5E5C9 		.ascii	"\013\365\345\311\2408)<{\263l\263L\302}\350\235<\321"
+  95      A038293C 
+  95      7BB36CB3 
+  95      4CC27DE8 
+  95      9D3CD1
+  96 00d4 C1031405 		.ascii	"\301\003\024\005>\232<]0\272\350\250\317\243\365\353"
+  96      3E9A3C5D 
+  96      30BAE8A8 
+  96      CFA3F5EB 
+  97 00e4 FB0B7785 		.ascii	"\373\013w\205\032\257E\2711\0337\362B\237\331M\227\305"
+  97      1AAF45B9 
+  97      311B37F2 
+  97      429FD94D 
+  97      97C5
+  98 00f6 E8AFF3DB 		.ascii	"\350\257\363\333#\007\374\206\345\225\307C\024\304\032"
+  98      2307FC86 
+  98      E595C743 
+  98      14C41A
+  99 0105 3B7AC4D3 		.ascii	";z\304\323\022\311|C\303\311VN\344\256\3318\211\272"
+  99      12C97C43 
+  99      C3C9564E 
+  99      E4AED938 
+  99      89BA
+ 100 0117 C6A65339 		.ascii	"\306\246S9\332\253\205Y\024D`\366dl\333\355\320\306"
+ 100      DAAB8559 
+ 100      144460F6 
+ 100      646CDBED 
+ 100      D0C6
+ 101 0129 6FFDA56D 		.ascii	"o\375\245m\177\037\234GC\322\362 g\337U\002\0273.f\335"
+ 101      7F1F9C47 
+ 101      43D2F220 
+ 101      67DF5502 
+ 101      17332E66 
+ 102 013e 2CB4295F 		.ascii	",\264)_\246\226\342M\377@(\346\305G\250\345^\027\027"
+ 102      A696E24D 
+ 102      FF4028E6 
+ 102      C547A8E5 
+ 102      5E1717
+ 103 0151 7F7E086A 		.ascii	"\177~\010j\211\275bmwS\363$l\017s\2501\325\320\0274"
+ 103      89BD626D 
+ 103      7753F324 
+ 103      6C0F73A8 
+ 103      31D5D017 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 8
+
+
+ 104 0166 D6C267C3 		.ascii	"\326\302g\303A\007\036j\217R)~N\275\216\360v\364b\342"
+ 104      41071E6A 
+ 104      8F52297E 
+ 104      4EBD8EF0 
+ 104      76F462E2 
+ 105 017a 54DAFCDF 		.ascii	"T\332\374\337o\311;s\267\376.Z=\2246\003\3510\376V\364"
+ 105      6FC93B73 
+ 105      B7FE2E5A 
+ 105      3D943603 
+ 105      E930FE56 
+ 106 018f BE53C9B8 		.ascii	"\276S\311\270\242qp/\205\217\317\177Z\322i7\033j\266"
+ 106      A271702F 
+ 106      858FCF7F 
+ 106      5AD26937 
+ 106      1B6AB6
+ 107 01a2 F11B605D 		.ascii	"\361\033`]=\364d\206\367\214y\334\307X\376_\364w\\\356"
+ 107      3DF46486 
+ 107      F78C79DC 
+ 107      C758FE5F 
+ 107      F4775CEE 
+ 108 01b6 26CB1636 		.ascii	"&\313\0266P\227\253\353p\304\331\246\330\3479\017V\252"
+ 108      5097ABEB 
+ 108      70C4D9A6 
+ 108      D8E7390F 
+ 108      56AA
+ 109 01c8 672AA72B 		.ascii	"g*\247+\325\376\263\003\377\266\376\301s\245\363GJ\224"
+ 109      D5FEB303 
+ 109      FFB6FEC1 
+ 109      73A5F347 
+ 109      4A94
+ 110 01da BD78A95C 		.ascii	"\275x\251\\uIf\2404\310\207\013\345\27787\275\233"
+ 110      754966A0 
+ 110      34C8870B 
+ 110      E5BF3837 
+ 110      BD9B
+ 111              		.text
+ 112              		.section	.gnu.lto_.symbol_nodes.d4b914b,"",%progbits
+ 113 0000 789C6361 		.ascii	"x\234ca`d\360e\000\002&\246z\006\206\011\347\030\030"
+ 113      6064F065 
+ 113      000226A6 
+ 113      7A068609 
+ 113      E71818
+ 114 0013 80D4AA46 		.ascii	"\200\324\252FE\006\006VF\206\026!\006\006fV\006F0\315"
+ 114      45060656 
+ 114      46861621 
+ 114      06066656 
+ 114      064630CD 
+ 115 0027 C45CCF88 		.ascii	"\304\\\317\210\242\200\211\245\236\011E\200\231\205"
+ 115      A28089A5 
+ 115      9E094580 
+ 115      9985
+ 116 0035 9961F183 		.ascii	"\231a\361\203\177\216\014\000\"C\017g"
+ 116      7F8E0C00 
+ 116      22430F67 
+ 117              		.text
+ 118              		.section	.gnu.lto_.refs.d4b914b,"",%progbits
+ 119 0000 789C25C6 		.ascii	"x\234%\3061\001\000\000\010\303\260v\303\003\376\235"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 9
+
+
+ 119      31010000 
+ 119      08C3B076 
+ 119      C303FE9D 
+ 120 0010 72902B83 		.ascii	"r\220+\203,PT\0223\355\027\313\001\004\306\000?"
+ 120      2C505412 
+ 120      33ED17CB 
+ 120      0104C600 
+ 120      3F
+ 121              		.text
+ 122              		.section	.gnu.lto_.decls.d4b914b,"",%progbits
+ 123 0000 789CBD54 		.ascii	"x\234\275T]L\034U\024\23633e\227u\027\032\322(1\033"
+ 123      5D4C1C55 
+ 123      149E3333 
+ 123      65977517 
+ 123      1AD22831 
+ 124 0015 B32969C0 		.ascii	"\263)i\300\207n\244\305\246\361IcR}\362\315>M2Y\226"
+ 124      876EA4C5 
+ 124      A6F14963 
+ 124      527DF2CD 
+ 124      3E4D3259 
+ 125 002a 61D9B87F 		.ascii	"a\331\270\177\356\016D\336n\201Fh\037\004\265&\024\253"
+ 125      EE0E44DE 
+ 125      6E814668 
+ 125      1F04B526 
+ 125      14AB
+ 126 003c 5B7E947F 		.ascii	"[~\224\177* \354\326n\335\226\237.v\227\245\215\032"
+ 126      2A20ECD6 
+ 126      6EDD969F 
+ 126      2E7697A5 
+ 126      8D1A
+ 127 004e 5BAA85B4 		.ascii	"[\252\205\2641m\352/j\322\242\210\347\316\314\356,+"
+ 127      316DEA2F 
+ 127      6AD2A288 
+ 127      E7CECCEE 
+ 127      2C2B
+ 128 0060 243E7992 		.ascii	"$>y\2223s\347\316w\277\357\273\347\236\031\236\001\206"
+ 128      3373E7CE 
+ 128      77BFEFBB 
+ 128      E79E199E 
+ 128      0186
+ 129 0072 467101C3 		.ascii	"Fq\001\3034\341p7\346&\006\217sG\031=8\314)\314(f\014"
+ 129      34E17037 
+ 129      E626068F 
+ 129      7347193D 
+ 129      38CC29CC 
+ 130 0089 93C54C60 		.ascii	"\223\305L`^e\266\006\305\030\265\265%\230{0\3071\313"
+ 130      5E65B606 
+ 130      C518B5B5 
+ 130      25987B30 
+ 130      C731CB
+ 131 009c 31939857 		.ascii	"1\223\230W0S\032\0264<\253\361$\362\270\250\226!\217"
+ 131      30531A16 
+ 131      343CABF1 
+ 131      24F2B8A8 
+ 131      96218F
+ 132 00af C7BA034F 		.ascii	"\307\272\003OT\363\230\361\264\230\307E=\357\312\343"
+ 132      54F398F1 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 10
+
+
+ 132      B498C745 
+ 132      3DEFCAE3 
+ 133 00bf 4A6346B4 		.ascii	"JcF\264\367\254\206\211j|Ky\3537X\370\353\317\305K\206"
+ 133      F7AC8689 
+ 133      6A7C4B79 
+ 133      EB3758F8 
+ 133      EBCFC54B 
+ 134 00d4 65B8415F 		.ascii	"e\270A_\003\015F\253]6@M\200,\245\216\000\3707X\241"
+ 134      030D46AB 
+ 134      5D36404D 
+ 134      802CA58E 
+ 134      00F83758 
+ 135 00e9 D0E7F300 		.ascii	"\320\347\363\000\3129(\241\277\000UX]\224\213\317H\243"
+ 135      CA3928A1 
+ 135      BF005558 
+ 135      5D948BCF 
+ 135      48A3
+ 136 00fb AC3A0426 		.ascii	"\254:\004&\353\"\203\315\341\323\334\353f\363\202\313"
+ 136      EB2283CD 
+ 136      E1D3DCEB 
+ 136      66F382CB 
+ 137 010b 6CFACE77 		.ascii	"l\372\316w?\277m\341\220\023\307\267\037\365\037\261"
+ 137      3FBF6DE1 
+ 137      9013C7B7 
+ 137      1FF51FB1 
+ 138 011b 0F138C76 		.ascii	"\017\023\214vB\330\247\364\312|\233\030\030\342~g\241"
+ 138      42D8A7F4 
+ 138      CA7C9B18 
+ 138      18E27E67 
+ 138      A1
+ 139 012c DC0494BE 		.ascii	"\334\004\224\276\030\247\306~\210>\262\250S\024q\375"
+ 139      18A7C67E 
+ 139      883EB2A8 
+ 139      531471FD 
+ 140 013c ADB55E03 		.ascii	"\255\265^\003\367\2042\276\326r\356}\212.1\001\217\217"
+ 140      F78432BE 
+ 140      D672EE7D 
+ 140      8A2E3101 
+ 140      8F8F
+ 141 014e BFA64EDF 		.ascii	"\277\246N\337)\302\307=&\260m\260\354P\307\203\353\205"
+ 141      29C2C73D 
+ 141      26B06DB0 
+ 141      EC50C783 
+ 141      EB85
+ 142 0160 5061FA88 		.ascii	"Pa\372\210\352\254\234\3523G\011\331\015\347\300\004"
+ 142      EAAC9CEA 
+ 142      334709D9 
+ 142      0DE7C004 
+ 143 0170 C3C0C100 		.ascii	"\303\300\301\000\330\351f\312Mxm%\244\211\2647\223\222"
+ 143      D8E966CA 
+ 143      4D786D25 
+ 143      A489B437 
+ 143      9392
+ 144 0182 97191805 		.ascii	"\227\031\030\005+\214\200\225\2011\250\240\232\024\007"
+ 144      2B8C8095 
+ 144      8131A8A0 
+ 144      9A1407
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 11
+
+
+ 145 0191 43383988 		.ascii	"C89\210\223(2\320\333\321]\300\365\0015\300\016\216"
+ 145      932832D0 
+ 145      DBD15DC0 
+ 145      F50135C0 
+ 145      0E8E
+ 146 01a3 A6E70D60 		.ascii	"\246\347\015`\252\330\226`b\033\002\325K\354d\3250\365"
+ 146      AAD89660 
+ 146      621B02D5 
+ 146      4BEC64D5 
+ 146      30F5
+ 147 01b5 328E5E3E 		.ascii	"2\216^>\321\275\2405\265\012\2533\247H\021O\353M\021"
+ 147      D1BDA035 
+ 147      B50AAB33 
+ 147      A748114F 
+ 147      EB4D11
+ 148 01c8 D53C9D5B 		.ascii	"\325<\235[Z\215t\231K\337Sj\326Ll<\034}<+\305\300\247"
+ 148      5A8D7499 
+ 148      4BDF536A 
+ 148      D64C6C3C 
+ 148      1C7D3C2B 
+ 149 01df 508AD749 		.ascii	"P\212\327I\340U\202\345\017\326~*\332\033&\3410Y\351"
+ 149      E05582E5 
+ 149      0FD67E2A 
+ 149      DA1B26E1 
+ 149      3059E9
+ 150 01f2 7AE7D085 		.ascii	"z\347\320\205qB\332p!Oq\320\257+\342\220\336>\206e<"
+ 150      7142DA70 
+ 150      214F71D0 
+ 150      AF2BE290 
+ 150      DE3E8665 
+ 151 0207 C129D88B 		.ascii	"\301)\330\213K\347\223g\"\006.\256\236\323\314\302\303"
+ 151      4BE79367 
+ 151      22062EAE 
+ 151      9ED3CCC2 
+ 151      C3
+ 152 0218 093E5794 		.ascii	"\011>W\224\372\321U#\212j\265&\372\346\346M+j\256\204"
+ 152      FAD15523 
+ 152      8A6AB526 
+ 152      FAE6E64D 
+ 152      2B6AAE84 
+ 153 022c 497CC3DD 		.ascii	"I|\303\335I\342-\270\212\245\030\230\326\025\247s\025"
+ 153      49E22DB8 
+ 153      8AA51898 
+ 153      D615A773 
+ 153      15
+ 154 023d A38AE2D7 		.ascii	"\243\212\342\327Sib\344\222\252\342v[\277;\325:[\270"
+ 154      536962E4 
+ 154      92AAE276 
+ 154      5BBF3BD5 
+ 154      3A5BB8
+ 155 0250 B38B0B8A 		.ascii	"\263\213\013\212\213\3172{\277\277\322\271nT\367\036"
+ 155      8BCF327B 
+ 155      BFBFD2B9 
+ 155      6E54F71E 
+ 156 0260 FF72DE4C 		.ascii	"\377r\336L\332\217\021\362<\005\301y\335\306\371\\\033"
+ 156      DA8F11F2 
+ 156      3C05C179 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 12
+
+
+ 156      DDC6F95C 
+ 156      1B
+ 157 0271 31C5C6ED 		.ascii	"1\305\306\355\3447\227\015\334M\325\306\330\361\273"
+ 157      E437970D 
+ 157      DC4DD5C6 
+ 157      D8F1BB
+ 158 0280 03466C25 		.ascii	"\003Fl%+\366!\3444\241Um\302\311\370o#<wO\301\262\327"
+ 158      2BF621E4 
+ 158      34A1556D 
+ 158      C2C9F86F 
+ 158      233C774F 
+ 159 0297 266ECCE5 		.ascii	"&n\314\345\364\331\037/4\023\0020\203\036/\351\202\326"
+ 159      F4D91F2F 
+ 159      34130230 
+ 159      831E2FE9 
+ 159      82D6
+ 160 02a9 6C9FFDD2 		.ascii	"l\237\375\322M\012J\0318h\205g\260I.c\223X\265&\211"
+ 160      4D0A4A19 
+ 160      38688567 
+ 160      B0492E63 
+ 160      9358B526 
+ 161 02be E3963ED7 		.ascii	"\343\226>\327\272\354\303\376Y\013\267\246\012\374\370"
+ 161      BAECC3FE 
+ 161      590BB7A6 
+ 161      0AFCF8
+ 162 02cd EE83562E 		.ascii	"\356\203V.+\020;i\035\242\3153\217\002\263\272\300\014"
+ 162      2B103B69 
+ 162      1DA2CD33 
+ 162      8F02B3BA 
+ 162      C00C
+ 163 02df ECA030B7 		.ascii	"\354\2400\267\275\302\331\266\211v\223\011\361\315\377"
+ 163      BDC2D9B6 
+ 163      89769309 
+ 163      F1CDFF
+ 164 02ee 0D1F391E 		.ascii	"\015\0379\036\036)\332\327CZzhK\225GG\011\341\340\012"
+ 164      1E29DAD7 
+ 164      435A7A68 
+ 164      4B954747 
+ 164      09E1E00A 
+ 165 0302 7AB8A87A 		.ascii	"z\270\250z\320\2263\364\031\257\011\330\207\213z\302"
+ 165      D09633F4 
+ 165      19AF09D8 
+ 165      878B7AC2 
+ 166 0312 CBABB48C 		.ascii	"\313\253\264\214\364\300\224\357~p\375D1\267\256\326"
+ 166      F4C094EF 
+ 166      7E70FD44 
+ 166      31B7AED6 
+ 167 0322 38717AB6 		.ascii	"8qz\266\303\202\214\244\233\304\273\372\000;F=\331/"
+ 167      C3828CA4 
+ 167      9BC4BBFA 
+ 167      003B463D 
+ 167      D92F
+ 168 0334 3442FD84 		.ascii	"4B\375\204\351\314\002\375\244\256*\254\027\317\334"
+ 168      E9CC02FD 
+ 168      A4AE2AAC 
+ 168      17CFDC
+ 169 0343 4B16994F 		.ascii	"K\026\231Od\2779\305\206\216N\202Y\371\217\341\035\301"
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 13
+
+
+ 169      64BF39C5 
+ 169      868E4E82 
+ 169      59F98FE1 
+ 169      1DC1
+ 170 0355 73BD6DDF 		.ascii	"s\275m\337\363\271\340\255\315\223\322\300)\005\234"
+ 170      F3B9E0AD 
+ 170      CD93D2C0 
+ 170      29059C
+ 171 0364 BEB5D8B9 		.ascii	"\276\265\330\271\253\354,\255s|\372\010i5\342W\246\264"
+ 171      ABEC2CAD 
+ 171      737CFA08 
+ 171      6935E257 
+ 171      A6B4
+ 172 0376 A9FA675C 		.ascii	"\251\372g\\\2042\004=\234\\\270\277\205\221\266\270"
+ 172      8432043D 
+ 172      9C5CB8BF 
+ 172      8591B6B8 
+ 173 0386 CE98D618 		.ascii	"\316\230\326\030\323\012c\352\253[\233F\215\361\357"
+ 173      D30A63EA 
+ 173      AB5B9B46 
+ 173      8DF1EF
+ 174 0395 82265621 		.ascii	"\202&V!\214e\010\227\240\214y\314\323 \312n\347k\242"
+ 174      8C650897 
+ 174      A08C79CC 
+ 174      D320CA6E 
+ 174      E76BA2
+ 175 03a8 DBE734BE 		.ascii	"\333\3474\276\364\312\253\266\027++\031\223(\326\273"
+ 175      F4CAABB6 
+ 175      172B2B19 
+ 175      9328D6BB 
+ 176 03b8 7DF2C103 		.ascii	"}\362\301\003\242|\014\234\317\011\201\240\337\025t"
+ 176      A27C0C9C 
+ 176      CF0981A0 
+ 176      DF1574
+ 177 03c7 786DB56E 		.ascii	"xm\265n\217\024\262U\274q\370\320\323\202\2631\020\224"
+ 177      8F14B255 
+ 177      BC71F8D0 
+ 177      D382B331 
+ 177      1094
+ 178 03d9 42212110 		.ascii	"B!!\020\362;m\316\240\344\220\375A\241\312~`\353\204"
+ 178      F23B6DCE 
+ 178      A0E490FD 
+ 178      41A1CA7E 
+ 178      60EB84
+ 179 03ec DB1BF007 		.ascii	"\333\033\360\007e\301\345\253\027\034A\257\360\254\275"
+ 179      65C1E5AB 
+ 179      171C41AF 
+ 179      F0ACBD
+ 180 03fb CA5E4947 		.ascii	"\312^IG\373}~\237\264_rT\273\005\024\366\324\327H\202"
+ 180      FB7D7E9F 
+ 180      B45F7254 
+ 180      BB0514F6 
+ 180      D4D74882 
+ 181 040f D7E1AC73 		.ascii	"\327\341\254s\373$A\254\221j\035\365\036Y\224\033\003"
+ 181      FB2441AC 
+ 181      916A1DF5 
+ 181      1E59941B 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 14
+
+
+ 181      03
+ 182 0420 52C85EC7 		.ascii	"R\310^\307\0303^\032\376/+\241\306\220 \206\344\032"
+ 182      18335E1A 
+ 182      FE2F2BA1 
+ 182      C6902086 
+ 182      E41A
+ 183 0432 D445FD27 		.ascii	"\324E\375'=\015.\217\200u\252sdnJ\311\354N\275z.I\266"
+ 183      3D0D2E8F 
+ 183      8075AA73 
+ 183      646E4AC9 
+ 183      EC4EBD7A 
+ 184 0449 64C692C7 		.ascii	"d\306\222\307\021\010Y\324\242\006_\027k=\016W\241Z"
+ 184      110859D4 
+ 184      A2065F17 
+ 184      6B3D0E57 
+ 184      A15A
+ 185 045b D0C3A26C 		.ascii	"\320\303\242l\320\356F\324@\270W\372\007\335aL\021"
+ 185      D0EE46D4 
+ 185      40B857FA 
+ 185      07DD614C 
+ 185      11
+ 186              		.text
+ 187              		.section	.gnu.lto_.symtab.d4b914b,"",%progbits
+ 188 0000 6C765F74 		.ascii	"lv_tick_inc\000"
+ 188      69636B5F 
+ 188      696E6300 
+ 189 000c 00       		.ascii	"\000"
+ 190 000d 00       		.ascii	"\000"
+ 191 000e 00       		.ascii	"\000"
+ 192 000f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 192      00000000 
+ 193 0017 B6000000 		.ascii	"\266\000\000\000"
+ 194 001b 6C765F74 		.ascii	"lv_tick_get\000"
+ 194      69636B5F 
+ 194      67657400 
+ 195 0027 00       		.ascii	"\000"
+ 196 0028 00       		.ascii	"\000"
+ 197 0029 00       		.ascii	"\000"
+ 198 002a 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 198      00000000 
+ 199 0032 B9000000 		.ascii	"\271\000\000\000"
+ 200 0036 6C765F74 		.ascii	"lv_tick_elaps\000"
+ 200      69636B5F 
+ 200      656C6170 
+ 200      7300
+ 201 0044 00       		.ascii	"\000"
+ 202 0045 00       		.ascii	"\000"
+ 203 0046 00       		.ascii	"\000"
+ 204 0047 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 204      00000000 
+ 205 004f BD000000 		.ascii	"\275\000\000\000"
+ 206              		.text
+ 207              		.section	.gnu.lto_.opts,"",%progbits
+ 208 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+ 208      6174682D 
+ 208      6572726E 
+ 208      6F272027 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 15
+
+
+ 208      2D667369 
+ 209 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-strict-overflow' '-fno-openmp' '-"
+ 209      2D747261 
+ 209      70762720 
+ 209      272D666E 
+ 209      6F2D7374 
+ 210 0066 666E6F2D 		.ascii	"fno-openacc' '-mcpu=cortex-m3' '-mthumb' '-g' '-O0'"
+ 210      6F70656E 
+ 210      61636327 
+ 210      20272D6D 
+ 210      6370753D 
+ 211 0099 20272D66 		.ascii	" '-ffunction-sections' '-ffat-lto-objects' '-finlin"
+ 211      66756E63 
+ 211      74696F6E 
+ 211      2D736563 
+ 211      74696F6E 
+ 212 00cc 652D6675 		.ascii	"e-functions' '-flto'\000"
+ 212      6E637469 
+ 212      6F6E7327 
+ 212      20272D66 
+ 212      6C746F27 
+ 213              		.text
+ 214              		.cfi_sections	.debug_frame
+ 215              		.bss
+ 216              		.align	2
+ 217              	sys_time:
+ 218 0000 00000000 		.space	4
+ 219              	tick_irq_flag:
+ 220 0004 00       		.space	1
+ 221              		.section	.text.lv_tick_inc,"ax",%progbits
+ 222              		.align	2
+ 223              		.global	lv_tick_inc
+ 224              		.thumb
+ 225              		.thumb_func
+ 226              		.type	lv_tick_inc, %function
+ 227              	lv_tick_inc:
+ 228              	.LFB0:
+ 229              		.file 1 "lvgl\\lv_hal\\lv_hal_tick.c"
+   1:lvgl\lv_hal/lv_hal_tick.c **** /**
+   2:lvgl\lv_hal/lv_hal_tick.c ****  * @file systick.c
+   3:lvgl\lv_hal/lv_hal_tick.c ****  * Provide access to the system tick with 1 millisecond resolution
+   4:lvgl\lv_hal/lv_hal_tick.c ****  */
+   5:lvgl\lv_hal/lv_hal_tick.c **** 
+   6:lvgl\lv_hal/lv_hal_tick.c **** /*********************
+   7:lvgl\lv_hal/lv_hal_tick.c ****  *      INCLUDES
+   8:lvgl\lv_hal/lv_hal_tick.c ****  *********************/
+   9:lvgl\lv_hal/lv_hal_tick.c **** #ifdef LV_CONF_INCLUDE_SIMPLE
+  10:lvgl\lv_hal/lv_hal_tick.c **** #include "lv_conf.h"
+  11:lvgl\lv_hal/lv_hal_tick.c **** #else
+  12:lvgl\lv_hal/lv_hal_tick.c **** #include "../../lv_conf.h"
+  13:lvgl\lv_hal/lv_hal_tick.c **** #endif
+  14:lvgl\lv_hal/lv_hal_tick.c **** 
+  15:lvgl\lv_hal/lv_hal_tick.c **** #include "lv_hal_tick.h"
+  16:lvgl\lv_hal/lv_hal_tick.c **** #include <stddef.h>
+  17:lvgl\lv_hal/lv_hal_tick.c **** 
+  18:lvgl\lv_hal/lv_hal_tick.c **** #if LV_TICK_CUSTOM == 1
+  19:lvgl\lv_hal/lv_hal_tick.c **** #include LV_TICK_CUSTOM_INCLUDE
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 16
+
+
+  20:lvgl\lv_hal/lv_hal_tick.c **** #endif
+  21:lvgl\lv_hal/lv_hal_tick.c **** 
+  22:lvgl\lv_hal/lv_hal_tick.c **** /*********************
+  23:lvgl\lv_hal/lv_hal_tick.c ****  *      DEFINES
+  24:lvgl\lv_hal/lv_hal_tick.c ****  *********************/
+  25:lvgl\lv_hal/lv_hal_tick.c **** 
+  26:lvgl\lv_hal/lv_hal_tick.c **** /**********************
+  27:lvgl\lv_hal/lv_hal_tick.c ****  *      TYPEDEFS
+  28:lvgl\lv_hal/lv_hal_tick.c ****  **********************/
+  29:lvgl\lv_hal/lv_hal_tick.c **** 
+  30:lvgl\lv_hal/lv_hal_tick.c **** /**********************
+  31:lvgl\lv_hal/lv_hal_tick.c ****  *  STATIC PROTOTYPES
+  32:lvgl\lv_hal/lv_hal_tick.c ****  **********************/
+  33:lvgl\lv_hal/lv_hal_tick.c **** 
+  34:lvgl\lv_hal/lv_hal_tick.c **** /**********************
+  35:lvgl\lv_hal/lv_hal_tick.c ****  *  STATIC VARIABLES
+  36:lvgl\lv_hal/lv_hal_tick.c ****  **********************/
+  37:lvgl\lv_hal/lv_hal_tick.c **** static uint32_t sys_time = 0;
+  38:lvgl\lv_hal/lv_hal_tick.c **** static volatile uint8_t tick_irq_flag;
+  39:lvgl\lv_hal/lv_hal_tick.c **** 
+  40:lvgl\lv_hal/lv_hal_tick.c **** /**********************
+  41:lvgl\lv_hal/lv_hal_tick.c ****  *      MACROS
+  42:lvgl\lv_hal/lv_hal_tick.c ****  **********************/
+  43:lvgl\lv_hal/lv_hal_tick.c **** 
+  44:lvgl\lv_hal/lv_hal_tick.c **** /**********************
+  45:lvgl\lv_hal/lv_hal_tick.c ****  *   GLOBAL FUNCTIONS
+  46:lvgl\lv_hal/lv_hal_tick.c ****  **********************/
+  47:lvgl\lv_hal/lv_hal_tick.c **** 
+  48:lvgl\lv_hal/lv_hal_tick.c **** /**
+  49:lvgl\lv_hal/lv_hal_tick.c ****  * You have to call this function periodically
+  50:lvgl\lv_hal/lv_hal_tick.c ****  * @param tick_period the call period of this function in milliseconds
+  51:lvgl\lv_hal/lv_hal_tick.c ****  */
+  52:lvgl\lv_hal/lv_hal_tick.c **** LV_ATTRIBUTE_TICK_INC void lv_tick_inc(uint32_t tick_period)
+  53:lvgl\lv_hal/lv_hal_tick.c **** {
+ 230              		.loc 1 53 0
+ 231              		.cfi_startproc
+ 232              		@ args = 0, pretend = 0, frame = 8
+ 233              		@ frame_needed = 1, uses_anonymous_args = 0
+ 234              		@ link register save eliminated.
+ 235 0000 80B4     		push	{r7}
+ 236              		.cfi_def_cfa_offset 4
+ 237              		.cfi_offset 7, -4
+ 238 0002 83B0     		sub	sp, sp, #12
+ 239              		.cfi_def_cfa_offset 16
+ 240 0004 00AF     		add	r7, sp, #0
+ 241              		.cfi_def_cfa_register 7
+ 242 0006 7860     		str	r0, [r7, #4]
+  54:lvgl\lv_hal/lv_hal_tick.c ****     tick_irq_flag = 0;
+ 243              		.loc 1 54 0
+ 244 0008 064B     		ldr	r3, .L2
+ 245 000a 0022     		movs	r2, #0
+ 246 000c 1A70     		strb	r2, [r3]
+  55:lvgl\lv_hal/lv_hal_tick.c ****     sys_time += tick_period;
+ 247              		.loc 1 55 0
+ 248 000e 064B     		ldr	r3, .L2+4
+ 249 0010 1A68     		ldr	r2, [r3]
+ 250 0012 7B68     		ldr	r3, [r7, #4]
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 17
+
+
+ 251 0014 1344     		add	r3, r3, r2
+ 252 0016 044A     		ldr	r2, .L2+4
+ 253 0018 1360     		str	r3, [r2]
+  56:lvgl\lv_hal/lv_hal_tick.c **** }
+ 254              		.loc 1 56 0
+ 255 001a 00BF     		nop
+ 256 001c 0C37     		adds	r7, r7, #12
+ 257              		.cfi_def_cfa_offset 4
+ 258 001e BD46     		mov	sp, r7
+ 259              		.cfi_def_cfa_register 13
+ 260              		@ sp needed
+ 261 0020 80BC     		pop	{r7}
+ 262              		.cfi_restore 7
+ 263              		.cfi_def_cfa_offset 0
+ 264 0022 7047     		bx	lr
+ 265              	.L3:
+ 266              		.align	2
+ 267              	.L2:
+ 268 0024 04000000 		.word	tick_irq_flag
+ 269 0028 00000000 		.word	sys_time
+ 270              		.cfi_endproc
+ 271              	.LFE0:
+ 272              		.size	lv_tick_inc, .-lv_tick_inc
+ 273              		.section	.text.lv_tick_get,"ax",%progbits
+ 274              		.align	2
+ 275              		.global	lv_tick_get
+ 276              		.thumb
+ 277              		.thumb_func
+ 278              		.type	lv_tick_get, %function
+ 279              	lv_tick_get:
+ 280              	.LFB1:
+  57:lvgl\lv_hal/lv_hal_tick.c **** 
+  58:lvgl\lv_hal/lv_hal_tick.c **** /**
+  59:lvgl\lv_hal/lv_hal_tick.c ****  * Get the elapsed milliseconds since start up
+  60:lvgl\lv_hal/lv_hal_tick.c ****  * @return the elapsed milliseconds
+  61:lvgl\lv_hal/lv_hal_tick.c ****  */
+  62:lvgl\lv_hal/lv_hal_tick.c **** uint32_t lv_tick_get(void)
+  63:lvgl\lv_hal/lv_hal_tick.c **** {
+ 281              		.loc 1 63 0
+ 282              		.cfi_startproc
+ 283              		@ args = 0, pretend = 0, frame = 8
+ 284              		@ frame_needed = 1, uses_anonymous_args = 0
+ 285              		@ link register save eliminated.
+ 286 0000 80B4     		push	{r7}
+ 287              		.cfi_def_cfa_offset 4
+ 288              		.cfi_offset 7, -4
+ 289 0002 83B0     		sub	sp, sp, #12
+ 290              		.cfi_def_cfa_offset 16
+ 291 0004 00AF     		add	r7, sp, #0
+ 292              		.cfi_def_cfa_register 7
+ 293              	.L5:
+  64:lvgl\lv_hal/lv_hal_tick.c **** #if LV_TICK_CUSTOM == 0
+  65:lvgl\lv_hal/lv_hal_tick.c ****     uint32_t result;
+  66:lvgl\lv_hal/lv_hal_tick.c ****     do {
+  67:lvgl\lv_hal/lv_hal_tick.c ****         tick_irq_flag = 1;
+ 294              		.loc 1 67 0 discriminator 1
+ 295 0006 084B     		ldr	r3, .L7
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 18
+
+
+ 296 0008 0122     		movs	r2, #1
+ 297 000a 1A70     		strb	r2, [r3]
+  68:lvgl\lv_hal/lv_hal_tick.c ****         result = sys_time;
+ 298              		.loc 1 68 0 discriminator 1
+ 299 000c 074B     		ldr	r3, .L7+4
+ 300 000e 1B68     		ldr	r3, [r3]
+ 301 0010 7B60     		str	r3, [r7, #4]
+  69:lvgl\lv_hal/lv_hal_tick.c ****     } while(!tick_irq_flag);     /*'lv_tick_inc()' clears this flag which can be in an interrupt. C
+ 302              		.loc 1 69 0 discriminator 1
+ 303 0012 054B     		ldr	r3, .L7
+ 304 0014 1B78     		ldrb	r3, [r3]
+ 305 0016 DBB2     		uxtb	r3, r3
+ 306 0018 002B     		cmp	r3, #0
+ 307 001a F4D0     		beq	.L5
+  70:lvgl\lv_hal/lv_hal_tick.c **** 
+  71:lvgl\lv_hal/lv_hal_tick.c ****     return result;
+ 308              		.loc 1 71 0
+ 309 001c 7B68     		ldr	r3, [r7, #4]
+  72:lvgl\lv_hal/lv_hal_tick.c **** #else
+  73:lvgl\lv_hal/lv_hal_tick.c ****     return LV_TICK_CUSTOM_SYS_TIME_EXPR;
+  74:lvgl\lv_hal/lv_hal_tick.c **** #endif
+  75:lvgl\lv_hal/lv_hal_tick.c **** }
+ 310              		.loc 1 75 0
+ 311 001e 1846     		mov	r0, r3
+ 312 0020 0C37     		adds	r7, r7, #12
+ 313              		.cfi_def_cfa_offset 4
+ 314 0022 BD46     		mov	sp, r7
+ 315              		.cfi_def_cfa_register 13
+ 316              		@ sp needed
+ 317 0024 80BC     		pop	{r7}
+ 318              		.cfi_restore 7
+ 319              		.cfi_def_cfa_offset 0
+ 320 0026 7047     		bx	lr
+ 321              	.L8:
+ 322              		.align	2
+ 323              	.L7:
+ 324 0028 04000000 		.word	tick_irq_flag
+ 325 002c 00000000 		.word	sys_time
+ 326              		.cfi_endproc
+ 327              	.LFE1:
+ 328              		.size	lv_tick_get, .-lv_tick_get
+ 329              		.section	.text.lv_tick_elaps,"ax",%progbits
+ 330              		.align	2
+ 331              		.global	lv_tick_elaps
+ 332              		.thumb
+ 333              		.thumb_func
+ 334              		.type	lv_tick_elaps, %function
+ 335              	lv_tick_elaps:
+ 336              	.LFB2:
+  76:lvgl\lv_hal/lv_hal_tick.c **** 
+  77:lvgl\lv_hal/lv_hal_tick.c **** /**
+  78:lvgl\lv_hal/lv_hal_tick.c ****  * Get the elapsed milliseconds since a previous time stamp
+  79:lvgl\lv_hal/lv_hal_tick.c ****  * @param prev_tick a previous time stamp (return value of systick_get() )
+  80:lvgl\lv_hal/lv_hal_tick.c ****  * @return the elapsed milliseconds since 'prev_tick'
+  81:lvgl\lv_hal/lv_hal_tick.c ****  */
+  82:lvgl\lv_hal/lv_hal_tick.c **** uint32_t lv_tick_elaps(uint32_t prev_tick)
+  83:lvgl\lv_hal/lv_hal_tick.c **** {
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 19
+
+
+ 337              		.loc 1 83 0
+ 338              		.cfi_startproc
+ 339              		@ args = 0, pretend = 0, frame = 16
+ 340              		@ frame_needed = 1, uses_anonymous_args = 0
+ 341 0000 80B5     		push	{r7, lr}
+ 342              		.cfi_def_cfa_offset 8
+ 343              		.cfi_offset 7, -8
+ 344              		.cfi_offset 14, -4
+ 345 0002 84B0     		sub	sp, sp, #16
+ 346              		.cfi_def_cfa_offset 24
+ 347 0004 00AF     		add	r7, sp, #0
+ 348              		.cfi_def_cfa_register 7
+ 349 0006 7860     		str	r0, [r7, #4]
+  84:lvgl\lv_hal/lv_hal_tick.c ****     uint32_t act_time = lv_tick_get();
+ 350              		.loc 1 84 0
+ 351 0008 FFF7FEFF 		bl	lv_tick_get
+ 352 000c F860     		str	r0, [r7, #12]
+  85:lvgl\lv_hal/lv_hal_tick.c **** 
+  86:lvgl\lv_hal/lv_hal_tick.c ****     /*If there is no overflow in sys_time simple subtract*/
+  87:lvgl\lv_hal/lv_hal_tick.c ****     if(act_time >= prev_tick) {
+ 353              		.loc 1 87 0
+ 354 000e FA68     		ldr	r2, [r7, #12]
+ 355 0010 7B68     		ldr	r3, [r7, #4]
+ 356 0012 9A42     		cmp	r2, r3
+ 357 0014 04D3     		bcc	.L10
+  88:lvgl\lv_hal/lv_hal_tick.c ****         prev_tick = act_time - prev_tick;
+ 358              		.loc 1 88 0
+ 359 0016 FA68     		ldr	r2, [r7, #12]
+ 360 0018 7B68     		ldr	r3, [r7, #4]
+ 361 001a D31A     		subs	r3, r2, r3
+ 362 001c 7B60     		str	r3, [r7, #4]
+ 363 001e 06E0     		b	.L11
+ 364              	.L10:
+  89:lvgl\lv_hal/lv_hal_tick.c ****     } else {
+  90:lvgl\lv_hal/lv_hal_tick.c ****         prev_tick = UINT32_MAX - prev_tick + 1;
+ 365              		.loc 1 90 0
+ 366 0020 7B68     		ldr	r3, [r7, #4]
+ 367 0022 5B42     		negs	r3, r3
+ 368 0024 7B60     		str	r3, [r7, #4]
+  91:lvgl\lv_hal/lv_hal_tick.c ****         prev_tick += act_time;
+ 369              		.loc 1 91 0
+ 370 0026 7A68     		ldr	r2, [r7, #4]
+ 371 0028 FB68     		ldr	r3, [r7, #12]
+ 372 002a 1344     		add	r3, r3, r2
+ 373 002c 7B60     		str	r3, [r7, #4]
+ 374              	.L11:
+  92:lvgl\lv_hal/lv_hal_tick.c ****     }
+  93:lvgl\lv_hal/lv_hal_tick.c **** 
+  94:lvgl\lv_hal/lv_hal_tick.c ****     return prev_tick;
+ 375              		.loc 1 94 0
+ 376 002e 7B68     		ldr	r3, [r7, #4]
+  95:lvgl\lv_hal/lv_hal_tick.c **** }
+ 377              		.loc 1 95 0
+ 378 0030 1846     		mov	r0, r3
+ 379 0032 1037     		adds	r7, r7, #16
+ 380              		.cfi_def_cfa_offset 8
+ 381 0034 BD46     		mov	sp, r7
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 20
+
+
+ 382              		.cfi_def_cfa_register 13
+ 383              		@ sp needed
+ 384 0036 80BD     		pop	{r7, pc}
+ 385              		.cfi_endproc
+ 386              	.LFE2:
+ 387              		.size	lv_tick_elaps, .-lv_tick_elaps
+ 388              		.text
+ 389              	.Letext0:
+ 390              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 391              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 392              		.section	.debug_info,"",%progbits
+ 393              	.Ldebug_info0:
+ 394 0000 44010000 		.4byte	0x144
+ 395 0004 0400     		.2byte	0x4
+ 396 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 397 000a 04       		.byte	0x4
+ 398 000b 01       		.uleb128 0x1
+ 399 000c 8A010000 		.4byte	.LASF22
+ 400 0010 0C       		.byte	0xc
+ 401 0011 2E010000 		.4byte	.LASF23
+ 402 0015 29000000 		.4byte	.LASF24
+ 403 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 404 001d 00000000 		.4byte	0
+ 405 0021 00000000 		.4byte	.Ldebug_line0
+ 406 0025 02       		.uleb128 0x2
+ 407 0026 01       		.byte	0x1
+ 408 0027 06       		.byte	0x6
+ 409 0028 7E010000 		.4byte	.LASF0
+ 410 002c 03       		.uleb128 0x3
+ 411 002d 00000000 		.4byte	.LASF5
+ 412 0031 02       		.byte	0x2
+ 413 0032 1D       		.byte	0x1d
+ 414 0033 37000000 		.4byte	0x37
+ 415 0037 02       		.uleb128 0x2
+ 416 0038 01       		.byte	0x1
+ 417 0039 08       		.byte	0x8
+ 418 003a 80000000 		.4byte	.LASF1
+ 419 003e 02       		.uleb128 0x2
+ 420 003f 02       		.byte	0x2
+ 421 0040 05       		.byte	0x5
+ 422 0041 56010000 		.4byte	.LASF2
+ 423 0045 02       		.uleb128 0x2
+ 424 0046 02       		.byte	0x2
+ 425 0047 07       		.byte	0x7
+ 426 0048 AE000000 		.4byte	.LASF3
+ 427 004c 02       		.uleb128 0x2
+ 428 004d 04       		.byte	0x4
+ 429 004e 05       		.byte	0x5
+ 430 004f 69010000 		.4byte	.LASF4
+ 431 0053 03       		.uleb128 0x3
+ 432 0054 DB000000 		.4byte	.LASF6
+ 433 0058 02       		.byte	0x2
+ 434 0059 41       		.byte	0x41
+ 435 005a 5E000000 		.4byte	0x5e
+ 436 005e 02       		.uleb128 0x2
+ 437 005f 04       		.byte	0x4
+ 438 0060 07       		.byte	0x7
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 21
+
+
+ 439 0061 9C000000 		.4byte	.LASF7
+ 440 0065 02       		.uleb128 0x2
+ 441 0066 08       		.byte	0x8
+ 442 0067 05       		.byte	0x5
+ 443 0068 48010000 		.4byte	.LASF8
+ 444 006c 02       		.uleb128 0x2
+ 445 006d 08       		.byte	0x8
+ 446 006e 07       		.byte	0x7
+ 447 006f 08010000 		.4byte	.LASF9
+ 448 0073 04       		.uleb128 0x4
+ 449 0074 04       		.byte	0x4
+ 450 0075 05       		.byte	0x5
+ 451 0076 696E7400 		.ascii	"int\000"
+ 452 007a 02       		.uleb128 0x2
+ 453 007b 04       		.byte	0x4
+ 454 007c 07       		.byte	0x7
+ 455 007d F2000000 		.4byte	.LASF10
+ 456 0081 03       		.uleb128 0x3
+ 457 0082 1F010000 		.4byte	.LASF11
+ 458 0086 03       		.byte	0x3
+ 459 0087 18       		.byte	0x18
+ 460 0088 2C000000 		.4byte	0x2c
+ 461 008c 03       		.uleb128 0x3
+ 462 008d 60010000 		.4byte	.LASF12
+ 463 0091 03       		.byte	0x3
+ 464 0092 30       		.byte	0x30
+ 465 0093 53000000 		.4byte	0x53
+ 466 0097 02       		.uleb128 0x2
+ 467 0098 08       		.byte	0x8
+ 468 0099 04       		.byte	0x4
+ 469 009a 72010000 		.4byte	.LASF13
+ 470 009e 05       		.uleb128 0x5
+ 471 009f E6000000 		.4byte	.LASF25
+ 472 00a3 01       		.byte	0x1
+ 473 00a4 34       		.byte	0x34
+ 474 00a5 00000000 		.4byte	.LFB0
+ 475 00a9 2C000000 		.4byte	.LFE0-.LFB0
+ 476 00ad 01       		.uleb128 0x1
+ 477 00ae 9C       		.byte	0x9c
+ 478 00af C2000000 		.4byte	0xc2
+ 479 00b3 06       		.uleb128 0x6
+ 480 00b4 CF000000 		.4byte	.LASF16
+ 481 00b8 01       		.byte	0x1
+ 482 00b9 34       		.byte	0x34
+ 483 00ba 8C000000 		.4byte	0x8c
+ 484 00be 02       		.uleb128 0x2
+ 485 00bf 91       		.byte	0x91
+ 486 00c0 74       		.sleb128 -12
+ 487 00c1 00       		.byte	0
+ 488 00c2 07       		.uleb128 0x7
+ 489 00c3 14000000 		.4byte	.LASF14
+ 490 00c7 01       		.byte	0x1
+ 491 00c8 3E       		.byte	0x3e
+ 492 00c9 8C000000 		.4byte	0x8c
+ 493 00cd 00000000 		.4byte	.LFB1
+ 494 00d1 30000000 		.4byte	.LFE1-.LFB1
+ 495 00d5 01       		.uleb128 0x1
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 22
+
+
+ 496 00d6 9C       		.byte	0x9c
+ 497 00d7 EA000000 		.4byte	0xea
+ 498 00db 08       		.uleb128 0x8
+ 499 00dc 27010000 		.4byte	.LASF18
+ 500 00e0 01       		.byte	0x1
+ 501 00e1 41       		.byte	0x41
+ 502 00e2 8C000000 		.4byte	0x8c
+ 503 00e6 02       		.uleb128 0x2
+ 504 00e7 91       		.byte	0x91
+ 505 00e8 74       		.sleb128 -12
+ 506 00e9 00       		.byte	0
+ 507 00ea 09       		.uleb128 0x9
+ 508 00eb 8E000000 		.4byte	.LASF15
+ 509 00ef 01       		.byte	0x1
+ 510 00f0 52       		.byte	0x52
+ 511 00f1 8C000000 		.4byte	0x8c
+ 512 00f5 00000000 		.4byte	.LFB2
+ 513 00f9 38000000 		.4byte	.LFE2-.LFB2
+ 514 00fd 01       		.uleb128 0x1
+ 515 00fe 9C       		.byte	0x9c
+ 516 00ff 20010000 		.4byte	0x120
+ 517 0103 06       		.uleb128 0x6
+ 518 0104 0A000000 		.4byte	.LASF17
+ 519 0108 01       		.byte	0x1
+ 520 0109 52       		.byte	0x52
+ 521 010a 8C000000 		.4byte	0x8c
+ 522 010e 02       		.uleb128 0x2
+ 523 010f 91       		.byte	0x91
+ 524 0110 6C       		.sleb128 -20
+ 525 0111 08       		.uleb128 0x8
+ 526 0112 FF000000 		.4byte	.LASF19
+ 527 0116 01       		.byte	0x1
+ 528 0117 54       		.byte	0x54
+ 529 0118 8C000000 		.4byte	0x8c
+ 530 011c 02       		.uleb128 0x2
+ 531 011d 91       		.byte	0x91
+ 532 011e 74       		.sleb128 -12
+ 533 011f 00       		.byte	0
+ 534 0120 08       		.uleb128 0x8
+ 535 0121 20000000 		.4byte	.LASF20
+ 536 0125 01       		.byte	0x1
+ 537 0126 25       		.byte	0x25
+ 538 0127 8C000000 		.4byte	0x8c
+ 539 012b 05       		.uleb128 0x5
+ 540 012c 03       		.byte	0x3
+ 541 012d 00000000 		.4byte	sys_time
+ 542 0131 08       		.uleb128 0x8
+ 543 0132 C1000000 		.4byte	.LASF21
+ 544 0136 01       		.byte	0x1
+ 545 0137 26       		.byte	0x26
+ 546 0138 42010000 		.4byte	0x142
+ 547 013c 05       		.uleb128 0x5
+ 548 013d 03       		.byte	0x3
+ 549 013e 04000000 		.4byte	tick_irq_flag
+ 550 0142 0A       		.uleb128 0xa
+ 551 0143 81000000 		.4byte	0x81
+ 552 0147 00       		.byte	0
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 23
+
+
+ 553              		.section	.debug_abbrev,"",%progbits
+ 554              	.Ldebug_abbrev0:
+ 555 0000 01       		.uleb128 0x1
+ 556 0001 11       		.uleb128 0x11
+ 557 0002 01       		.byte	0x1
+ 558 0003 25       		.uleb128 0x25
+ 559 0004 0E       		.uleb128 0xe
+ 560 0005 13       		.uleb128 0x13
+ 561 0006 0B       		.uleb128 0xb
+ 562 0007 03       		.uleb128 0x3
+ 563 0008 0E       		.uleb128 0xe
+ 564 0009 1B       		.uleb128 0x1b
+ 565 000a 0E       		.uleb128 0xe
+ 566 000b 55       		.uleb128 0x55
+ 567 000c 17       		.uleb128 0x17
+ 568 000d 11       		.uleb128 0x11
+ 569 000e 01       		.uleb128 0x1
+ 570 000f 10       		.uleb128 0x10
+ 571 0010 17       		.uleb128 0x17
+ 572 0011 00       		.byte	0
+ 573 0012 00       		.byte	0
+ 574 0013 02       		.uleb128 0x2
+ 575 0014 24       		.uleb128 0x24
+ 576 0015 00       		.byte	0
+ 577 0016 0B       		.uleb128 0xb
+ 578 0017 0B       		.uleb128 0xb
+ 579 0018 3E       		.uleb128 0x3e
+ 580 0019 0B       		.uleb128 0xb
+ 581 001a 03       		.uleb128 0x3
+ 582 001b 0E       		.uleb128 0xe
+ 583 001c 00       		.byte	0
+ 584 001d 00       		.byte	0
+ 585 001e 03       		.uleb128 0x3
+ 586 001f 16       		.uleb128 0x16
+ 587 0020 00       		.byte	0
+ 588 0021 03       		.uleb128 0x3
+ 589 0022 0E       		.uleb128 0xe
+ 590 0023 3A       		.uleb128 0x3a
+ 591 0024 0B       		.uleb128 0xb
+ 592 0025 3B       		.uleb128 0x3b
+ 593 0026 0B       		.uleb128 0xb
+ 594 0027 49       		.uleb128 0x49
+ 595 0028 13       		.uleb128 0x13
+ 596 0029 00       		.byte	0
+ 597 002a 00       		.byte	0
+ 598 002b 04       		.uleb128 0x4
+ 599 002c 24       		.uleb128 0x24
+ 600 002d 00       		.byte	0
+ 601 002e 0B       		.uleb128 0xb
+ 602 002f 0B       		.uleb128 0xb
+ 603 0030 3E       		.uleb128 0x3e
+ 604 0031 0B       		.uleb128 0xb
+ 605 0032 03       		.uleb128 0x3
+ 606 0033 08       		.uleb128 0x8
+ 607 0034 00       		.byte	0
+ 608 0035 00       		.byte	0
+ 609 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 24
+
+
+ 610 0037 2E       		.uleb128 0x2e
+ 611 0038 01       		.byte	0x1
+ 612 0039 3F       		.uleb128 0x3f
+ 613 003a 19       		.uleb128 0x19
+ 614 003b 03       		.uleb128 0x3
+ 615 003c 0E       		.uleb128 0xe
+ 616 003d 3A       		.uleb128 0x3a
+ 617 003e 0B       		.uleb128 0xb
+ 618 003f 3B       		.uleb128 0x3b
+ 619 0040 0B       		.uleb128 0xb
+ 620 0041 27       		.uleb128 0x27
+ 621 0042 19       		.uleb128 0x19
+ 622 0043 11       		.uleb128 0x11
+ 623 0044 01       		.uleb128 0x1
+ 624 0045 12       		.uleb128 0x12
+ 625 0046 06       		.uleb128 0x6
+ 626 0047 40       		.uleb128 0x40
+ 627 0048 18       		.uleb128 0x18
+ 628 0049 9742     		.uleb128 0x2117
+ 629 004b 19       		.uleb128 0x19
+ 630 004c 01       		.uleb128 0x1
+ 631 004d 13       		.uleb128 0x13
+ 632 004e 00       		.byte	0
+ 633 004f 00       		.byte	0
+ 634 0050 06       		.uleb128 0x6
+ 635 0051 05       		.uleb128 0x5
+ 636 0052 00       		.byte	0
+ 637 0053 03       		.uleb128 0x3
+ 638 0054 0E       		.uleb128 0xe
+ 639 0055 3A       		.uleb128 0x3a
+ 640 0056 0B       		.uleb128 0xb
+ 641 0057 3B       		.uleb128 0x3b
+ 642 0058 0B       		.uleb128 0xb
+ 643 0059 49       		.uleb128 0x49
+ 644 005a 13       		.uleb128 0x13
+ 645 005b 02       		.uleb128 0x2
+ 646 005c 18       		.uleb128 0x18
+ 647 005d 00       		.byte	0
+ 648 005e 00       		.byte	0
+ 649 005f 07       		.uleb128 0x7
+ 650 0060 2E       		.uleb128 0x2e
+ 651 0061 01       		.byte	0x1
+ 652 0062 3F       		.uleb128 0x3f
+ 653 0063 19       		.uleb128 0x19
+ 654 0064 03       		.uleb128 0x3
+ 655 0065 0E       		.uleb128 0xe
+ 656 0066 3A       		.uleb128 0x3a
+ 657 0067 0B       		.uleb128 0xb
+ 658 0068 3B       		.uleb128 0x3b
+ 659 0069 0B       		.uleb128 0xb
+ 660 006a 27       		.uleb128 0x27
+ 661 006b 19       		.uleb128 0x19
+ 662 006c 49       		.uleb128 0x49
+ 663 006d 13       		.uleb128 0x13
+ 664 006e 11       		.uleb128 0x11
+ 665 006f 01       		.uleb128 0x1
+ 666 0070 12       		.uleb128 0x12
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 25
+
+
+ 667 0071 06       		.uleb128 0x6
+ 668 0072 40       		.uleb128 0x40
+ 669 0073 18       		.uleb128 0x18
+ 670 0074 9742     		.uleb128 0x2117
+ 671 0076 19       		.uleb128 0x19
+ 672 0077 01       		.uleb128 0x1
+ 673 0078 13       		.uleb128 0x13
+ 674 0079 00       		.byte	0
+ 675 007a 00       		.byte	0
+ 676 007b 08       		.uleb128 0x8
+ 677 007c 34       		.uleb128 0x34
+ 678 007d 00       		.byte	0
+ 679 007e 03       		.uleb128 0x3
+ 680 007f 0E       		.uleb128 0xe
+ 681 0080 3A       		.uleb128 0x3a
+ 682 0081 0B       		.uleb128 0xb
+ 683 0082 3B       		.uleb128 0x3b
+ 684 0083 0B       		.uleb128 0xb
+ 685 0084 49       		.uleb128 0x49
+ 686 0085 13       		.uleb128 0x13
+ 687 0086 02       		.uleb128 0x2
+ 688 0087 18       		.uleb128 0x18
+ 689 0088 00       		.byte	0
+ 690 0089 00       		.byte	0
+ 691 008a 09       		.uleb128 0x9
+ 692 008b 2E       		.uleb128 0x2e
+ 693 008c 01       		.byte	0x1
+ 694 008d 3F       		.uleb128 0x3f
+ 695 008e 19       		.uleb128 0x19
+ 696 008f 03       		.uleb128 0x3
+ 697 0090 0E       		.uleb128 0xe
+ 698 0091 3A       		.uleb128 0x3a
+ 699 0092 0B       		.uleb128 0xb
+ 700 0093 3B       		.uleb128 0x3b
+ 701 0094 0B       		.uleb128 0xb
+ 702 0095 27       		.uleb128 0x27
+ 703 0096 19       		.uleb128 0x19
+ 704 0097 49       		.uleb128 0x49
+ 705 0098 13       		.uleb128 0x13
+ 706 0099 11       		.uleb128 0x11
+ 707 009a 01       		.uleb128 0x1
+ 708 009b 12       		.uleb128 0x12
+ 709 009c 06       		.uleb128 0x6
+ 710 009d 40       		.uleb128 0x40
+ 711 009e 18       		.uleb128 0x18
+ 712 009f 9642     		.uleb128 0x2116
+ 713 00a1 19       		.uleb128 0x19
+ 714 00a2 01       		.uleb128 0x1
+ 715 00a3 13       		.uleb128 0x13
+ 716 00a4 00       		.byte	0
+ 717 00a5 00       		.byte	0
+ 718 00a6 0A       		.uleb128 0xa
+ 719 00a7 35       		.uleb128 0x35
+ 720 00a8 00       		.byte	0
+ 721 00a9 49       		.uleb128 0x49
+ 722 00aa 13       		.uleb128 0x13
+ 723 00ab 00       		.byte	0
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 26
+
+
+ 724 00ac 00       		.byte	0
+ 725 00ad 00       		.byte	0
+ 726              		.section	.debug_aranges,"",%progbits
+ 727 0000 2C000000 		.4byte	0x2c
+ 728 0004 0200     		.2byte	0x2
+ 729 0006 00000000 		.4byte	.Ldebug_info0
+ 730 000a 04       		.byte	0x4
+ 731 000b 00       		.byte	0
+ 732 000c 0000     		.2byte	0
+ 733 000e 0000     		.2byte	0
+ 734 0010 00000000 		.4byte	.LFB0
+ 735 0014 2C000000 		.4byte	.LFE0-.LFB0
+ 736 0018 00000000 		.4byte	.LFB1
+ 737 001c 30000000 		.4byte	.LFE1-.LFB1
+ 738 0020 00000000 		.4byte	.LFB2
+ 739 0024 38000000 		.4byte	.LFE2-.LFB2
+ 740 0028 00000000 		.4byte	0
+ 741 002c 00000000 		.4byte	0
+ 742              		.section	.debug_ranges,"",%progbits
+ 743              	.Ldebug_ranges0:
+ 744 0000 00000000 		.4byte	.LFB0
+ 745 0004 2C000000 		.4byte	.LFE0
+ 746 0008 00000000 		.4byte	.LFB1
+ 747 000c 30000000 		.4byte	.LFE1
+ 748 0010 00000000 		.4byte	.LFB2
+ 749 0014 38000000 		.4byte	.LFE2
+ 750 0018 00000000 		.4byte	0
+ 751 001c 00000000 		.4byte	0
+ 752              		.section	.debug_line,"",%progbits
+ 753              	.Ldebug_line0:
+ 754 0000 7C010000 		.section	.debug_str,"MS",%progbits,1
+ 754      02002D01 
+ 754      00000201 
+ 754      FB0E0D00 
+ 754      01010101 
+ 755              	.LASF5:
+ 756 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 756      6E74385F 
+ 756      7400
+ 757              	.LASF17:
+ 758 000a 70726576 		.ascii	"prev_tick\000"
+ 758      5F746963 
+ 758      6B00
+ 759              	.LASF14:
+ 760 0014 6C765F74 		.ascii	"lv_tick_get\000"
+ 760      69636B5F 
+ 760      67657400 
+ 761              	.LASF20:
+ 762 0020 7379735F 		.ascii	"sys_time\000"
+ 762      74696D65 
+ 762      00
+ 763              	.LASF24:
+ 764 0029 433A5C55 		.ascii	"C:\\Users\\Sava\\Documents\\PSoC Creator\\GUI_and_d"
+ 764      73657273 
+ 764      5C536176 
+ 764      615C446F 
+ 764      63756D65 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 27
+
+
+ 765 0057 6973706C 		.ascii	"isplay\\LittlevGL(5v3)_demo_ILI9341.cydsn\000"
+ 765      61795C4C 
+ 765      6974746C 
+ 765      6576474C 
+ 765      28357633 
+ 766              	.LASF1:
+ 767 0080 756E7369 		.ascii	"unsigned char\000"
+ 767      676E6564 
+ 767      20636861 
+ 767      7200
+ 768              	.LASF15:
+ 769 008e 6C765F74 		.ascii	"lv_tick_elaps\000"
+ 769      69636B5F 
+ 769      656C6170 
+ 769      7300
+ 770              	.LASF7:
+ 771 009c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 771      20756E73 
+ 771      69676E65 
+ 771      6420696E 
+ 771      7400
+ 772              	.LASF3:
+ 773 00ae 73686F72 		.ascii	"short unsigned int\000"
+ 773      7420756E 
+ 773      7369676E 
+ 773      65642069 
+ 773      6E7400
+ 774              	.LASF21:
+ 775 00c1 7469636B 		.ascii	"tick_irq_flag\000"
+ 775      5F697271 
+ 775      5F666C61 
+ 775      6700
+ 776              	.LASF16:
+ 777 00cf 7469636B 		.ascii	"tick_period\000"
+ 777      5F706572 
+ 777      696F6400 
+ 778              	.LASF6:
+ 779 00db 5F5F7569 		.ascii	"__uint32_t\000"
+ 779      6E743332 
+ 779      5F7400
+ 780              	.LASF25:
+ 781 00e6 6C765F74 		.ascii	"lv_tick_inc\000"
+ 781      69636B5F 
+ 781      696E6300 
+ 782              	.LASF10:
+ 783 00f2 756E7369 		.ascii	"unsigned int\000"
+ 783      676E6564 
+ 783      20696E74 
+ 783      00
+ 784              	.LASF19:
+ 785 00ff 6163745F 		.ascii	"act_time\000"
+ 785      74696D65 
+ 785      00
+ 786              	.LASF9:
+ 787 0108 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 787      206C6F6E 
+ 787      6720756E 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 28
+
+
+ 787      7369676E 
+ 787      65642069 
+ 788              	.LASF11:
+ 789 011f 75696E74 		.ascii	"uint8_t\000"
+ 789      385F7400 
+ 790              	.LASF18:
+ 791 0127 72657375 		.ascii	"result\000"
+ 791      6C7400
+ 792              	.LASF23:
+ 793 012e 6C76676C 		.ascii	"lvgl\\lv_hal\\lv_hal_tick.c\000"
+ 793      5C6C765F 
+ 793      68616C5C 
+ 793      6C765F68 
+ 793      616C5F74 
+ 794              	.LASF8:
+ 795 0148 6C6F6E67 		.ascii	"long long int\000"
+ 795      206C6F6E 
+ 795      6720696E 
+ 795      7400
+ 796              	.LASF2:
+ 797 0156 73686F72 		.ascii	"short int\000"
+ 797      7420696E 
+ 797      7400
+ 798              	.LASF12:
+ 799 0160 75696E74 		.ascii	"uint32_t\000"
+ 799      33325F74 
+ 799      00
+ 800              	.LASF4:
+ 801 0169 6C6F6E67 		.ascii	"long int\000"
+ 801      20696E74 
+ 801      00
+ 802              	.LASF13:
+ 803 0172 6C6F6E67 		.ascii	"long double\000"
+ 803      20646F75 
+ 803      626C6500 
+ 804              	.LASF0:
+ 805 017e 7369676E 		.ascii	"signed char\000"
+ 805      65642063 
+ 805      68617200 
+ 806              	.LASF22:
+ 807 018a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 807      43313120 
+ 807      352E342E 
+ 807      31203230 
+ 807      31363036 
+ 808 01bd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 808      20726576 
+ 808      6973696F 
+ 808      6E203233 
+ 808      37373135 
+ 809 01f0 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 809      66756E63 
+ 809      74696F6E 
+ 809      2D736563 
+ 809      74696F6E 
+ 810 0223 6E637469 		.ascii	"nctions -flto\000"
+ 810      6F6E7320 
+ARM GAS  C:\Users\Sava\AppData\Local\Temp\cc7GgAbk.s 			page 29
+
+
+ 810      2D666C74 
+ 810      6F00
+ 811              		.comm	__gnu_lto_v1,1,1
+ 812              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

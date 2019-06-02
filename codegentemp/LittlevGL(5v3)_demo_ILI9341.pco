@@ -1,0 +1,51 @@
+# LittlevGL(5v3)_demo_ILI9341
+# 2019-05-31 08:49:34Z
+
+# IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 0
+# IO_1@[IOP=(1)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 1
+# IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 1 3
+# IO_0@[IOP=(15)][IoId=(0)] is reserved: MhzXtalEnabled
+dont_use_io iocell 15 0
+# IO_1@[IOP=(15)][IoId=(1)] is reserved: MhzXtalEnabled
+dont_use_io iocell 15 1
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "d_lsb(0)" iocell 3 0
+set_io "d_lsb(1)" iocell 3 1
+set_io "d_lsb(2)" iocell 3 2
+set_io "d_lsb(3)" iocell 3 3
+set_io "d_lsb(4)" iocell 3 4
+set_io "d_lsb(5)" iocell 3 5
+set_io "d_lsb(6)" iocell 3 6
+set_io "d_lsb(7)" iocell 3 7
+set_io "d_c(0)" iocell 4 0
+set_io "ncs(0)" iocell 4 3
+set_io "nwr(0)" iocell 4 1
+set_io "nrd(0)" iocell 4 2
+set_io "d_msb(0)" iocell 0 0
+set_io "d_msb(1)" iocell 0 1
+set_io "d_msb(2)" iocell 0 2
+set_io "d_msb(3)" iocell 0 3
+set_io "d_msb(4)" iocell 0 4
+set_io "d_msb(5)" iocell 0 5
+set_io "d_msb(6)" iocell 0 6
+set_io "d_msb(7)" iocell 0 7
+set_io "RST(0)" iocell 4 4
+set_location "\GraphicLCDIntf:full\" 2 2 1 0
+set_location "\GraphicLCDIntf:status_1\" 2 1 0 2
+set_location "\GraphicLCDIntf:StsReg\" 2 2 3
+set_location "\GraphicLCDIntf:LsbReg\" 3 1 3
+set_location "\GraphicLCDIntf:GraphLcd16:Lsb\" 3 2 2
+set_location "\GraphicLCDIntf:GraphLcd16:MsbReg\" 2 1 3
+set_location "\GraphicLCDIntf:GraphLcd16:Msb\" 2 2 2
+set_location "\GraphicLCDIntf:state_3\" 2 1 0 1
+set_location "\GraphicLCDIntf:state_2\" 3 1 1 0
+set_location "\GraphicLCDIntf:state_1\" 2 1 0 0
+set_location "\GraphicLCDIntf:state_0\" 3 1 0 1
+set_location "Net_25" 3 1 1 2
+set_location "Net_26" 3 1 0 2
+set_location "Net_28" 3 1 0 3
+set_location "Net_27" 3 1 1 1
+set_location "Net_39" 3 1 0 0
