@@ -304,7 +304,7 @@ void ILI9341_flush(int32_t x1, int32_t y1, int32_t x2, int32_t y2, const lv_colo
     
     
     uint16 full_w = x2 - x1 +1;
-    int16 i,j;
+    int16 i;
     uint16 act_w = act_x2 - act_x1 +1;
     for(i = act_y1; i <= act_y2; i++)
     {   
