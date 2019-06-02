@@ -309,8 +309,6 @@ void ILI9341_flush(int32_t x1, int32_t y1, int32_t x2, int32_t y2, const lv_colo
     for(i = act_y1; i <= act_y2; i++)
     {   
         GraphicLCDIntf_WriteM16_A1((uint16 *) color_map, act_w);
-               
-    /*  Put put_px function here    */
         color_map += full_w;
     }
     
