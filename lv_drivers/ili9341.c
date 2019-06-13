@@ -157,15 +157,13 @@ static const uint8_t ILI9341_regValues_2_4[]  = {        // BOE 2.4"
 
 
            //  From regVal_2_4
-        {0x01, {0}, 0x00},
-        {0x28, {0}, 0x00},                          /* Software reset */
+        {0x01, {0}, 0x00},                          /* Software reset */
+        {0x28, {0}, 0x00},                          /* Display off */
         {0x3A, {0x55}, 1},                          /* Pixel Format Set */
-//        {0xF6, {0x1, 0x1, 0x00}, 3},                /* Interface control from level 2 commands (doesn't do anything) */
-        {0x36, {0x48}, 1},                          /* Memory Access Control */
+        {0x36, {0xE8}, 1},                          /* Memory Access Control MY = 1; MX = 1; MV = 1; ML = 0; BGR = 1; MH = 0; */
         {0x26, {0x1}, 1},                           /* Gamma Set */
         {0x11, {0}, 0},                             /* Sleep Out */
         {0x29, {0}, 0x0},                           // Display on
-//        {0x36, {0x0}, 1},                           /* Memory Acess Control */
         {0x2A, {0x00, 0x00, 0x01, 0x3F}, 4},        // Collumn address set 320
         {0x2B, {0x00, 0x00, 0x00, 0xEF}, 4},        // Row address set 240
         {0x33, {0x0, 0x0, 0x1, 0x40, 0x0, 0x0}, 6}, /* Vertical Scrolling Definition */
